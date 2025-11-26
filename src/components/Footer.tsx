@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "@/assets/giftovate-logo.png";
 
 const Footer = () => {
   return (
@@ -6,8 +7,11 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold text-lg mb-4 bg-gradient-hero bg-clip-text text-transparent">
-              Giftovate Therapeutics
+            <div className="flex items-center space-x-2 mb-4">
+              <img src={logo} alt="Giftovate Therapeutics Ltd Logo" className="h-12 w-auto" />
+            </div>
+            <h3 className="font-bold text-lg mb-2 bg-gradient-hero bg-clip-text text-transparent">
+              Giftovate Therapeutics Ltd
             </h3>
             <p className="text-sm text-muted-foreground">
               Developing affordable hyperhidrosis solutions in Africa

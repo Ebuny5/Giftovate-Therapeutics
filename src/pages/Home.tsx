@@ -32,7 +32,7 @@ const Home = () => {
               Sustainable Relief for Hyperhidrosis
             </h1>
             <p className="text-lg md:text-xl mb-8 text-white/95 leading-relaxed">
-              Giftovate develops low-energy wearables and plant-based EcoCaps, creating local jobs and reducing waste through circular design.
+              Giftovate Therapeutics Ltd develops low-energy wearables and plant-based EcoCaps, creating local jobs and reducing waste through circular design.
             </p>
           </div>
         </div>
