@@ -10,15 +10,10 @@ import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
 import gloveImage from "@/assets/glove-background.jpg";
 import faceMaskImage from "@/assets/face-mask.png";
 import coolingSockImage from "@/assets/cooling-sock.jpg";
+import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 
 const Home = () => {
   const products = [
-    {
-      icon: Droplets,
-      title: "Cooling Sock",
-      description: "Stay cool and dry with our innovative cooling sock",
-      link: "/cooling-sock",
-    },
     {
       icon: Leaf,
       title: "EcoCaps",
@@ -173,6 +168,31 @@ const Home = () => {
               <Link to="/cooling-sock" className="text-primary hover:underline font-medium">
                 Learn more about Cooling Sock →
               </Link>
+            </div>
+          </div>
+
+          {/* EcoCaps Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div>
+              <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
+                SUSTAINABLE HERBAL RELIEF
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                EcoCaps: Plant-Based Natural Solution
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Introducing EcoCaps, our innovative plant-based herbal capsules designed for sustainable and eco-friendly relief. Co-created with local communities, these capsules harness the power of nature to provide a soothing solution for those struggling with excessive sweating. Pilot-tested through our SweatSmart initiative, EcoCaps offer a natural alternative that aligns with our commitment to affordability and accessibility. Join us in embracing a greener approach to health with EcoCaps, the herbal relief your body deserves.
+              </p>
+              <Link to="/ecocaps" className="text-primary hover:underline font-medium">
+                Learn more about EcoCaps →
+              </Link>
+            </div>
+            <div className="relative">
+              <img 
+                src={ecocapsImage} 
+                alt="EcoCaps plant-based herbal capsules for sustainable hyperhidrosis relief"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
             </div>
           </div>
 
