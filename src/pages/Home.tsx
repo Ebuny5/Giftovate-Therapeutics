@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Droplets, Smartphone, ThermometerSun, Leaf } from "lucide-react";
+import heroImage from "@/assets/hero-glove.jpg";
 
 const Home = () => {
   const products = [
@@ -38,42 +39,53 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-hero text-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Early Detection and Relief for Hyperhidrosis
+      <section className="relative text-white py-32 md:py-48 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroImage} 
+            alt="Thermoelectric glove with sustainable design" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Sustainable Relief for Hyperhidrosis
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Discover innovative solutions for excessive sweating with the SweatSmart app and community pilots
+            <p className="text-lg md:text-xl mb-8 text-white/95 leading-relaxed">
+              Giftovate develops low-energy wearables and plant-based EcoCaps, creating local jobs and reducing waste through circular design.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/sweatsmart-app">
-                <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                  Explore SweatSmart
-                </Button>
-              </Link>
-              <Link to="/programs">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                  Our Programs
-                </Button>
-              </Link>
-            </div>
+            <Link to="/sweatsmart-app">
+              <Button size="lg" className="bg-primary/90 hover:bg-primary text-white font-semibold px-8">
+                TRY SWEATSMART
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Affordable Hyperhidrosis Solutions for Africa
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Giftovate Therapeutics Ltd develops innovative solutions combining technology, 
-              wearable devices, and community engagement to improve care and reduce stigma around excessive sweating.
+          <div className="max-w-3xl mx-auto mb-16">
+            <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
+              EMPOWERING RELIEF
             </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Transforming hyperhidrosis care in africa
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              Giftovate Therapeutics Ltd is dedicated to revolutionizing the way we detect and relieve 
+              palmar and plantar hyperhidrosis. Founded by Gifty Aruwajoye, we partner with Beyond Sweat 
+              to tackle the stigma surrounding excessive sweating while ensuring affordable access to care. 
+              Our innovative SweatSmart app and prototype devices are designed with local communities in mind, 
+              prioritizing safety, ethics, and invaluable feedback from users. Join us in our mission to change 
+              lives through early detection and effective relief.
+            </p>
+            <Link to="/programs" className="text-primary hover:underline font-medium">
+              Get in touch →
+            </Link>
           </div>
 
           {/* Products Grid */}
