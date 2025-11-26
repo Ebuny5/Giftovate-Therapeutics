@@ -3,25 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Droplets, Smartphone, ThermometerSun, Leaf } from "lucide-react";
+import { Droplets, Leaf } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable.png";
 import empoweringImage from "@/assets/empowering-relief.jpg";
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
+import gloveImage from "@/assets/hero-glove.jpg";
 
 const Home = () => {
   const products = [
-    {
-      icon: Smartphone,
-      title: "SweatSmart App",
-      description: "Empower your sweat management with our innovative mobile app",
-      link: "/sweatsmart-app",
-    },
-    {
-      icon: ThermometerSun,
-      title: "Thermoelectric Glove",
-      description: "Experience comfort with our cooling glove prototype",
-      link: "/thermoelectric-glove",
-    },
     {
       icon: Droplets,
       title: "Cooling Sock",
@@ -126,8 +115,36 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Thermoelectric Glove Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div className="relative">
+              <img 
+                src={gloveImage} 
+                alt="Thermoelectric glove prototype for palm sweating relief"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
+                ADVANCED COOLING TECHNOLOGY
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Thermoelectric Glove: Redefining Comfort
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Introducing the prototype thermoelectric glove, a groundbreaking solution designed to provide 
+                relief for those suffering from excessive palm sweating. This innovative wearable technology uses 
+                advanced thermoelectric materials to regulate temperature and minimize sweat production, bringing 
+                comfort and confidence to your daily activities.
+              </p>
+              <Link to="/thermoelectric-glove" className="text-primary hover:underline font-medium">
+                Learn more about the Thermoelectric Glove →
+              </Link>
+            </div>
+          </div>
+
           {/* Products Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {products.map((product, index) => (
               <Link key={index} to={product.link}>
                 <Card className="p-6 h-full hover:shadow-soft transition-all duration-300 hover:-translate-y-1 cursor-pointer border-border/50 hover:border-primary/50">
