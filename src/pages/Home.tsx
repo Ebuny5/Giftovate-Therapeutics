@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Droplets, Smartphone, ThermometerSun, Leaf } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable.png";
+import empoweringImage from "@/assets/empowering-relief.jpg";
 
 const Home = () => {
   const products = [
@@ -68,24 +69,33 @@ const Home = () => {
       {/* About Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-16">
-            <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
-              EMPOWERING RELIEF
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Transforming hyperhidrosis care in africa
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Giftovate Therapeutics Ltd is dedicated to revolutionizing the way we detect and relieve 
-              palmar and plantar hyperhidrosis. Founded by Gifty Aruwajoye, we partner with Beyond Sweat 
-              to tackle the stigma surrounding excessive sweating while ensuring affordable access to care. 
-              Our innovative SweatSmart app and prototype devices are designed with local communities in mind, 
-              prioritizing safety, ethics, and invaluable feedback from users. Join us in our mission to change 
-              lives through early detection and effective relief.
-            </p>
-            <Link to="/programs" className="text-primary hover:underline font-medium">
-              Get in touch →
-            </Link>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div>
+              <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
+                EMPOWERING RELIEF
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Transforming hyperhidrosis care in africa
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Giftovate Therapeutics Ltd is dedicated to revolutionizing the way we detect and relieve 
+                palmar and plantar hyperhidrosis. Founded by Gifty Aruwajoye, we partner with Beyond Sweat 
+                to tackle the stigma surrounding excessive sweating while ensuring affordable access to care. 
+                Our innovative SweatSmart app and prototype devices are designed with local communities in mind, 
+                prioritizing safety, ethics, and invaluable feedback from users. Join us in our mission to change 
+                lives through early detection and effective relief.
+              </p>
+              <Link to="/programs" className="text-primary hover:underline font-medium">
+                Get in touch →
+              </Link>
+            </div>
+            <div className="relative">
+              <img 
+                src={empoweringImage} 
+                alt="SweatSmart app and glove device with healthcare team"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
           </div>
 
           {/* Products Grid */}
