@@ -8,6 +8,7 @@ import heroImage from "@/assets/hero-sustainable.png";
 import empoweringImage from "@/assets/empowering-relief.jpg";
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
 import gloveImage from "@/assets/glove-background.jpg";
+import faceMaskImage from "@/assets/face-mask.png";
 
 const Home = () => {
   const products = [
@@ -139,6 +140,34 @@ const Home = () => {
               </p>
               <Link to="/thermoelectric-glove" className="text-primary hover:underline font-medium">
                 Learn more about the Thermoelectric Glove →
+              </Link>
+            </div>
+          </div>
+
+          {/* Face Mask Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div className="relative order-2 md:order-1">
+              <img 
+                src={faceMaskImage} 
+                alt="Face mask prototype for craniofacial hyperhidrosis relief"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
+                FACIAL COOLING SOLUTION
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Face Mask: Relief for Craniofacial Hyperhidrosis
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Our innovative face mask prototype addresses craniofacial hyperhidrosis, providing targeted relief 
+                for excessive facial sweating. Designed with advanced cooling technology and breathable materials, 
+                this wearable solution helps manage forehead, cheek, and facial perspiration, restoring confidence 
+                in social and professional settings.
+              </p>
+              <Link to="/programs" className="text-primary hover:underline font-medium">
+                Learn more about Face Mask →
               </Link>
             </div>
           </div>
