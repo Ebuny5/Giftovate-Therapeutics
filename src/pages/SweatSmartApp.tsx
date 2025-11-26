@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Smartphone, BarChart3, Bell, Users } from "lucide-react";
+import appPreview from "@/assets/sweatsmart-app-preview.jpg";
 
 const SweatSmartApp = () => {
   const features = [
@@ -41,7 +42,7 @@ const SweatSmartApp = () => {
                 SweatSmart App
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8">
-                Empower your sweat management with our innovative mobile application
+                Smart tools for sweat management
               </p>
               <Button size="lg" variant="secondary">
                 Download App (Coming Soon)
@@ -50,14 +51,43 @@ const SweatSmartApp = () => {
           </div>
         </section>
 
-        {/* Features Section */}
+        {/* Main Description Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Revolutionizing Sweat Detection
+                  </h2>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    The SweatSmart app revolutionizes how you detect excessive sweating, specifically targeting 
+                    palmar and plantar hyperhidrosis. Using a simple palm scan, the app provides immediate feedback 
+                    and early screening results, empowering users to take control of their condition.
+                  </p>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    This innovative tool is designed for ease of use in everyday settings, making it accessible for 
+                    everyone. As part of our community pilots, the app collects de-identified data to enhance its 
+                    effectiveness and tailor solutions for African users.
+                  </p>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                    Join us in pioneering a smarter approach to sweat management and experience the relief you deserve. 
+                    Our digital tool reduces diagnostic waste by connecting the right people with the right solutions.
+                  </p>
+                </div>
+                <div className="relative">
+                  <img 
+                    src={appPreview} 
+                    alt="SweatSmart mobile app interface showing palm scan feature"
+                    className="rounded-lg shadow-lg w-full h-auto"
+                  />
+                </div>
+              </div>
+
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Comprehensive Sweat Management</h2>
+                <h2 className="text-3xl font-bold mb-4">Key Features</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  The SweatSmart app puts powerful tracking and management tools in your pocket
+                  Powerful tracking and management tools in your pocket
                 </p>
               </div>
 
