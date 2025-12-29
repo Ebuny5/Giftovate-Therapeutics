@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-sustainable.png";
 import empoweringImage from "@/assets/empowering-relief.jpg";
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
-import gloveImage from "@/assets/glove-background.jpg";
+import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
 import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
