@@ -53,7 +53,7 @@ const SweatSmartApp = () => {
       ],
     },
     {
-      icon: Brain,
+      icon: Fingerprint,
       letter: "C",
       title: "Personalized Insights & Pattern Analysis",
       description:
