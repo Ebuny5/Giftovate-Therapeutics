@@ -4,18 +4,15 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  CloudSun,
+  Flame,
+  Waves,
+  Zap,
+  BellRing,
   TrendingUp,
-  Brain,
-  Search,
-  Award,
-  Activity,
-  Thermometer,
-  Shield,
-  AlertTriangle,
-  BarChart3,
-  FileText,
-  MapPin,
+  Fingerprint,
+  BotMessageSquare,
+  UserCheck,
+  Trophy,
 } from "lucide-react";
 import heroImage from "@/assets/sweatsmart-hero.jpg";
 
