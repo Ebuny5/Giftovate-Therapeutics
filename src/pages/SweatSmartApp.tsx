@@ -2,100 +2,299 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Smartphone, BarChart3, Bell, Users } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import {
+  CloudSun,
+  TrendingUp,
+  Brain,
+  Search,
+  Award,
+  Activity,
+  Thermometer,
+  Shield,
+  AlertTriangle,
+  BarChart3,
+  FileText,
+  MapPin,
+} from "lucide-react";
 import heroImage from "@/assets/sweatsmart-hero.jpg";
 
 const SweatSmartApp = () => {
   const features = [
     {
-      icon: Smartphone,
-      title: "Easy Tracking",
-      description: "Log your sweating episodes and identify patterns with our intuitive interface",
+      icon: CloudSun,
+      letter: "A",
+      title: "Proactive Climate Alerting",
+      description:
+        "Unlike generic weather applications, SweatSmart features a background climate monitoring system that syncs every 30 minutes.",
+      details: [
+        {
+          subtitle: "Threshold Intelligence",
+          text: 'The system is hardcoded to trigger "High Risk" alerts when local temperature exceeds 28°C or humidity crosses 70%.',
+        },
+        {
+          subtitle: "Agentic Management",
+          text: "Warriors receive personalized advice: \"Extreme humidity detected 77% — your body cannot cool itself via evaporation. Move to a ventilated space and use cooling products now to stabilize your sudomotor baseline.\"",
+        },
+      ],
     },
     {
       icon: BarChart3,
-      title: "Data Analytics",
-      description: "Visualize your progress with detailed charts and insights",
+      letter: "B",
+      title: "Visual Analytics Dashboard (Trend Mastery)",
+      description:
+        "Our dashboard provides high-fidelity visual analytics that transform subjective frustration into objective evidence.",
+      details: [
+        {
+          subtitle: "Trend Overview",
+          text: "Utilizing a dual-axis combination chart, the platform visualizes Episode Count (bars) against HDSS Severity (line) across daily, weekly, monthly, and yearly timeframes.",
+        },
+        {
+          subtitle: "Peak Time Detection",
+          text: "The dashboard identifies specific temporal patterns—such as a 1 PM peak time—to help users prepare for their most vulnerable moments.",
+        },
+      ],
     },
     {
-      icon: Bell,
-      title: "Smart Reminders",
-      description: "Get personalized notifications for treatment and self-care routines",
+      icon: Brain,
+      letter: "C",
+      title: "Personalized Insights & Pattern Analysis",
+      description:
+        'The Insights Page uses the user\'s complete episode history to generate "Pattern Analysis" modules.',
+      details: [
+        {
+          subtitle: "Trigger Intelligence",
+          text: "The system ranks 14+ unique triggers (e.g., Hot Temperature, Outdoor Sun, Synthetic Fabrics) based on their correlation with high-severity episodes.",
+        },
+        {
+          subtitle: "Evidence-Based Strategies",
+          text: "Based on your individual heatmap, Hyper AI suggests targeted treatments such as Iontophoresis for palms/soles or topical anticholinergics like Sofdra to block gland signals.",
+        },
+      ],
     },
     {
-      icon: Users,
-      title: "Community Connection",
-      description: "Connect with others managing hyperhidrosis and share experiences",
+      icon: Activity,
+      letter: "D",
+      title: "Hyper AI Consultant",
+      description:
+        "Hyper AI functions as a 24/7 clinical consultant that adopts the Transparent Reasoning methodology.",
+      details: [
+        {
+          subtitle: "Multimodal Reasoning",
+          text: "It cross-references live Electrodermal Activity (EDA) spikes (3.8 μS baseline) and Heart Rate data with climate context and history to provide probabilistic explanations for every episode.",
+        },
+        {
+          subtitle: "Consultant Status",
+          text: "It provides downloadable PDF Warrior Reports specifically formatted for dermatologists, including HDSS trend lines and trigger correlation matrices.",
+        },
+      ],
+    },
+    {
+      icon: MapPin,
+      letter: "E",
+      title: "Specialist Radar (Verified Expertise)",
+      description:
+        "To eliminate misdiagnosis in Africa, the Specialist Radar locates IHS-certified dermatologists and experts based on the user's state or country. This bridges the care gap by connecting warriors to doctors who recognize Hh as a legitimate condition.",
+      details: [],
+    },
+    {
+      icon: Award,
+      letter: "F",
+      title: "Warrior Gamification: The Achievement Badge",
+      description:
+        "To foster resilience and community, the app features the Hyperhidrosis Warrior Badge. Warriors earn this badge by consistently logging their journey, providing them with a shareable symbol of their bravery in the face of stigma.",
+      details: [],
     },
   ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       <div className="flex-grow">
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-          <div 
+        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+          <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${heroImage})` }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-primary/60" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary/70" />
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                SweatSmart App
+              <Badge variant="secondary" className="mb-6 text-sm px-4 py-1.5">
+                Now Live — Beta Community of 50+ Warriors
+              </Badge>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
+                Engineering a Sweat-Free Future
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8">
-                Smart tools for sweat management
+              <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+                SweatSmart is the world's first clinical-grade digital ecosystem
+                designed to break the anxiety-sweat cycle through integrated
+                intelligence and high-fidelity analytics.
               </p>
-              <Button size="lg" variant="secondary">
-                Download App (Coming Soon)
-              </Button>
+              <a
+                href="https://www.sweatsmart.guru"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" variant="secondary" className="text-base px-8 py-6">
+                  Get Early Access to SweatSmart
+                </Button>
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Main Description Section */}
+        {/* Mission Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Revolutionizing Sweat Detection
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  The SweatSmart app revolutionizes how you detect excessive sweating, specifically targeting 
-                  palmar and plantar hyperhidrosis. Using a simple palm scan, the app provides immediate feedback 
-                  and early screening results, empowering users to take control of their condition.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  This innovative tool is designed for ease of use in everyday settings, making it accessible for 
-                  everyone. As part of our community pilots, the app collects de-identified data to enhance its 
-                  effectiveness and tailor solutions for African users.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Join us in pioneering a smarter approach to sweat management and experience the relief you deserve. 
-                  Our digital tool reduces diagnostic waste by connecting the right people with the right solutions.
-                </p>
-              </div>
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Our Mission
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Giftovate Therapeutics Ltd is a clinical-stage health-technology
+                startup dedicated to solving the physical, social, and
+                psychological crisis of Hyperhidrosis (Hh). Our mission is to
+                move Hh care in Africa from a state of{" "}
+                <span className="font-semibold text-foreground">
+                  "silent suffering"
+                </span>{" "}
+                to a state of{" "}
+                <span className="font-semibold text-foreground">
+                  "agentic mastery."
+                </span>{" "}
+                We achieve this through our operational digital platform,
+                SweatSmart, and our upcoming line of thermoelectric cooling
+                hardware.
+              </p>
+            </div>
+          </div>
+        </section>
 
+        {/* The Problem Section */}
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Key Features</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Powerful tracking and management tools in your pocket
+                <div className="inline-flex items-center gap-2 mb-4">
+                  <AlertTriangle className="text-destructive" size={28} />
+                  <h2 className="text-3xl md:text-4xl font-bold">
+                    The Problem
+                  </h2>
+                </div>
+                <p className="text-xl text-muted-foreground">
+                  The Vicious Cycle of Heat and Anxiety
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
+                <Card className="p-8 border-destructive/20">
+                  <div className="rounded-full bg-destructive/10 p-4 w-16 h-16 flex items-center justify-center mb-6">
+                    <Thermometer className="text-destructive" size={28} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">
+                    Climate Exacerbation
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    In tropical climates, once air temperature reaches 35°C the
+                    body relies solely on evaporation for cooling. However, when
+                    relative humidity exceeds 70%, evaporation becomes physically
+                    ineffective, trapping metabolic heat and triggering profuse,
+                    non-stop sweating. Our research indicates that for Hh
+                    warriors, symptoms spike significantly once ambient
+                    conditions cross the{" "}
+                    <span className="font-semibold text-foreground">
+                      28°C and 70% humidity threshold
+                    </span>
+                    , creating an intolerable physical burden.
+                  </p>
+                </Card>
+
+                <Card className="p-8 border-destructive/20">
+                  <div className="rounded-full bg-destructive/10 p-4 w-16 h-16 flex items-center justify-center mb-6">
+                    <Shield className="text-destructive" size={28} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">
+                    The Anticipatory Feedback Loop
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    The constant trepidation of sweating in public creates an
+                    anxiety-stress loop that further stimulates sudomotor
+                    activity, leading to social withdrawal and{" "}
+                    <span className="font-semibold text-foreground">
+                      27%+ rates of depression
+                    </span>{" "}
+                    among warriors. Hyperhidrosis is a pathological
+                    over-activation of the sympathetic nervous system,
+                    specifically involving the cholinergic receptors on the
+                    eccrine glands.
+                  </p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* The Solution: SweatSmart Features */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  The Solution: SweatSmart
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  A fully operational digital ecosystem serving a dedicated beta
+                  community of 50+ participants — the world's first
+                  clinical-grade tool designed to break the anxiety-sweat cycle.
+                </p>
+              </div>
+
+              <div className="space-y-8">
                 {features.map((feature, index) => (
-                  <Card key={index} className="p-8 hover:shadow-soft transition-all border-border/50">
-                    <div className="rounded-full bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center mb-6">
-                      <feature.icon className="text-white" size={28} />
+                  <Card
+                    key={index}
+                    className="p-8 md:p-10 hover:shadow-lg transition-all border-border/50"
+                  >
+                    <div className="flex flex-col md:flex-row gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="rounded-2xl bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center">
+                          <feature.icon className="text-white" size={28} />
+                        </div>
+                      </div>
+                      <div className="flex-grow">
+                        <div className="flex items-center gap-3 mb-3">
+                          <Badge variant="outline" className="text-xs">
+                            {feature.letter}
+                          </Badge>
+                          <h3 className="text-xl md:text-2xl font-bold">
+                            {feature.title}
+                          </h3>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed mb-4">
+                          {feature.description}
+                        </p>
+                        {feature.details.length > 0 && (
+                          <div className="grid sm:grid-cols-2 gap-4 mt-4">
+                            {feature.details.map((detail, dIndex) => (
+                              <div
+                                key={dIndex}
+                                className="bg-muted/50 rounded-lg p-4"
+                              >
+                                <h4 className="font-semibold text-sm mb-2 text-foreground">
+                                  {detail.subtitle}
+                                </h4>
+                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                  {detail.text}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
                   </Card>
                 ))}
               </div>
@@ -103,70 +302,27 @@ const SweatSmartApp = () => {
           </div>
         </section>
 
-        {/* How It Works */}
+        {/* CTA Section */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold mb-12 text-center">How It Works</h2>
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">Download & Setup</h3>
-                    <p className="text-muted-foreground">
-                      Install the SweatSmart app and complete your personalized profile
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">Track Episodes</h3>
-                    <p className="text-muted-foreground">
-                      Log sweating episodes, triggers, and treatment responses
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">
-                    3
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">Analyze & Improve</h3>
-                    <p className="text-muted-foreground">
-                      Review insights and adjust your management strategy
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold">
-                    4
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">Connect & Share</h3>
-                    <p className="text-muted-foreground">
-                      Join the community and participate in pilot programs
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
             <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
-              <h2 className="text-3xl font-bold mb-4">Ready to Take Control of Your Sweating?</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Ready to Take Control of Your Sweating?
+              </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Join our early access program to be the first to experience SweatSmart
+                Join our growing community of 50+ warriors already using
+                SweatSmart to master their condition with data-driven
+                intelligence.
               </p>
-              <Button size="lg">Join Pilot Program</Button>
+              <a
+                href="https://www.sweatsmart.guru"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="text-base px-8 py-6">
+                  Get Early Access to SweatSmart
+                </Button>
+              </a>
             </Card>
           </div>
         </section>
