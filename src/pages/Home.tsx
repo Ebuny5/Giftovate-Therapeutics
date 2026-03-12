@@ -50,12 +50,7 @@ const Home = () => {
                 Transforming hyperhidrosis care in africa
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Giftovate Therapeutics Ltd is dedicated to revolutionizing the way we detect and relieve 
-                palmar and plantar hyperhidrosis. Founded by Gifty Aruwajoye, we partner with Beyond Sweat 
-                to tackle the stigma surrounding excessive sweating while ensuring affordable access to care. 
-                Our innovative SweatSmart app and prototype devices are designed with local communities in mind, 
-                prioritizing safety, ethics, and invaluable feedback from users. Join us in our mission to change 
-                lives through early detection and effective relief.
+              Hyperhidrosis is not a cosmetic problem; it is a silent medical crisis affecting 385 million warriors globally. At Giftovate Therapeutics Ltd, we are dismantling the barriers to care in Africa. By fusing clinical-grade sudomotor biometrics with revolutionary thermoelectric hardware, we are giving warriors what they deserve most: the freedom to be seen without trepidation. We achieve this through our operational digital platform, SweatSmart, and our upcoming line of thermoelectric cooling hardware.
               </p>
               <Link to="/programs" className="text-primary hover:underline font-medium">
                 Get in touch →
