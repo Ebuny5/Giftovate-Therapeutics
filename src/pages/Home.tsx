@@ -144,13 +144,13 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
               <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
-                SUSTAINABLE HERBAL RELIEF
+                SUDOMOTOR SYNERGY FROM WITHIN
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                EcoCaps: Plant-Based Natural Solution
+                EcoCaps: Holistic. Sustainable. Validated.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Introducing EcoCaps, our innovative plant-based herbal capsules designed for sustainable and eco-friendly relief. Co-created with local communities, these capsules harness the power of nature to provide a soothing solution for those struggling with excessive sweating. Pilot-tested through our SweatSmart initiative, EcoCaps offer a natural alternative that aligns with our commitment to affordability and accessibility. Join us in embracing a greener approach to health with EcoCaps, the herbal relief your body deserves.
+                Reclaim your internal balance. EcoCaps represent our commitment to plant-based sudomotor regulation. Co-created with local African communities and pilot-tested through the SweatSmart initiative, these eco-friendly capsules offer a natural, synergetic alternative for warriors seeking relief without the side effects of traditional pharmaceuticals.
               </p>
               <Link to="/ecocaps" className="text-primary hover:underline font-medium">
                 Learn more about EcoCaps →
