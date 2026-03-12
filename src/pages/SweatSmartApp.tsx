@@ -266,8 +266,8 @@ const SweatSmartApp = () => {
                   >
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="flex-shrink-0">
-                        <div className="rounded-2xl bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center">
-                          <feature.icon className="text-white" size={28} />
+                        <div className="rounded-2xl p-4 w-16 h-16 flex items-center justify-center" style={{ backgroundColor: feature.iconBg }}>
+                          <feature.icon style={{ color: feature.iconColor }} size={28} />
                         </div>
                       </div>
                       <div className="flex-grow">
