@@ -13,7 +13,8 @@ const Programs = () => {
     {
       icon: HeartHandshake,
       title: "Stigma Reduction",
-      description: "Educational initiatives to increase awareness and reduce stigma associated with hyperhidrosis in African communities.",
+      description: "Educational initiatives to increase awareness and reduce stigma associated with hyperhidrosis in African communities, through Beyond Sweat Foundation.",
+      link: "https://www.beyondsweat.org",
     },
     {
       icon: TrendingUp,
