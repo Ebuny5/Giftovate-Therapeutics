@@ -10,6 +10,7 @@ import SweatSmartApp from "./pages/SweatSmartApp";
 import ThermoelectricGlove from "./pages/ThermoelectricGlove";
 import CoolingSock from "./pages/CoolingSock";
 import EcoCaps from "./pages/EcoCaps";
+import FaceMask from "./pages/FaceMask";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
