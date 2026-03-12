@@ -186,7 +186,7 @@ const SweatSmartApp = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <Card className="p-8 border-destructive/20">
                   <div className="rounded-full bg-destructive/10 p-4 w-16 h-16 flex items-center justify-center mb-6">
-                    <Thermometer className="text-destructive" size={28} />
+                    <Waves className="text-destructive" size={28} />
                   </div>
                   <h3 className="text-xl font-bold mb-4">
                     Climate Exacerbation
