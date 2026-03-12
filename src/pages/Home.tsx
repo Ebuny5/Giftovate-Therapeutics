@@ -94,16 +94,16 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
               <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
-                ADVANCED COOLING TECHNOLOGY
+                THE THERMOELECTRIC FRONTIER
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Thermoelectric Glove: Redefining Comfort
+                Active Cooling for Localized Relief
               </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Needles and systemic drugs are the past. Peltier technology is the future.
+              </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Introducing the prototype thermoelectric glove, a groundbreaking solution designed to provide 
-                relief for those suffering from excessive palm sweating. This innovative wearable technology uses 
-                advanced thermoelectric materials to regulate temperature and minimize sweat production, bringing 
-                comfort and confidence to your daily activities.
+                Our prototype thermoelectric gloves utilize high-precision cooling modules to actively pump heat away from the skin. By stabilizing your thermal baseline in real-time, we provide a localized, non-invasive solution for severe palmar hyperhidrosis. It's more than a glove; it's manual dexterity restored.
               </p>
               <Link to="/thermoelectric-glove" className="text-primary hover:underline font-medium">
                 Learn more about the Thermoelectric Glove →
