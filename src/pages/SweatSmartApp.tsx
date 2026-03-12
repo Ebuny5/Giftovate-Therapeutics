@@ -208,7 +208,7 @@ const SweatSmartApp = () => {
 
                 <Card className="p-8 border-destructive/20">
                   <div className="rounded-full bg-destructive/10 p-4 w-16 h-16 flex items-center justify-center mb-6">
-                    <Shield className="text-destructive" size={28} />
+                    <Zap className="text-destructive" size={28} />
                   </div>
                   <h3 className="text-xl font-bold mb-4">
                     The Anticipatory Feedback Loop
