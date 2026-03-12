@@ -97,13 +97,10 @@ const Home = () => {
                 THE THERMOELECTRIC FRONTIER
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Active Cooling for Localized Relief
+                Thermoelectric Glove: Restoring Precision & Performance
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Needles and systemic drugs are the past. Peltier technology is the future.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Our prototype thermoelectric gloves utilize high-precision cooling modules to actively pump heat away from the skin. By stabilizing your thermal baseline in real-time, we provide a localized, non-invasive solution for severe palmar hyperhidrosis. It's more than a glove; it's manual dexterity restored.
+                Active Sudomotor Suppression meets Rapid Recovery. While passive glove liners only manage the aftermath, Giftovate's prototype thermoelectric gloves address the source. By utilizing integrated Peltier cooling modules, the glove actively pumps heat away from the skin's surface, bypassing the "evaporative failure" that occurs in tropical climates once humidity crosses 70%.
               </p>
               <Link to="/thermoelectric-glove" className="text-primary hover:underline font-medium">
                 Learn more about the Thermoelectric Glove →
