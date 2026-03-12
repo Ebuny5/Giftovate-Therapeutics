@@ -95,7 +95,7 @@ const SweatSmartApp = () => {
       details: [],
     },
     {
-      icon: Award,
+      icon: Trophy,
       letter: "F",
       title: "Warrior Gamification: The Achievement Badge",
       description:
