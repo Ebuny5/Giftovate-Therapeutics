@@ -21,6 +21,8 @@ const SweatSmartApp = () => {
     {
       icon: BellRing,
       letter: "A",
+      iconColor: "hsl(var(--icon-bell))",
+      iconBg: "hsl(var(--icon-bell) / 0.12)",
       title: "Proactive Climate Alerting",
       description:
         "Unlike generic weather applications, SweatSmart features a background climate monitoring system that syncs every 30 minutes.",
@@ -38,6 +40,8 @@ const SweatSmartApp = () => {
     {
       icon: TrendingUp,
       letter: "B",
+      iconColor: "hsl(var(--icon-trend))",
+      iconBg: "hsl(var(--icon-trend) / 0.12)",
       title: "Visual Analytics Dashboard (Trend Mastery)",
       description:
         "Our dashboard provides high-fidelity visual analytics that transform subjective frustration into objective evidence.",
@@ -55,6 +59,8 @@ const SweatSmartApp = () => {
     {
       icon: Fingerprint,
       letter: "C",
+      iconColor: "hsl(var(--icon-fingerprint))",
+      iconBg: "hsl(var(--icon-fingerprint) / 0.12)",
       title: "Personalized Insights & Pattern Analysis",
       description:
         'The Insights Page uses the user\'s complete episode history to generate "Pattern Analysis" modules.',
@@ -72,6 +78,8 @@ const SweatSmartApp = () => {
     {
       icon: BotMessageSquare,
       letter: "D",
+      iconColor: "hsl(var(--icon-bot))",
+      iconBg: "hsl(var(--icon-bot) / 0.12)",
       title: "Hyper AI Consultant",
       description:
         "Hyper AI functions as a 24/7 clinical consultant that adopts the Transparent Reasoning methodology.",
@@ -89,6 +97,8 @@ const SweatSmartApp = () => {
     {
       icon: UserCheck,
       letter: "E",
+      iconColor: "hsl(var(--icon-usercheck))",
+      iconBg: "hsl(var(--icon-usercheck) / 0.12)",
       title: "Specialist Radar (Verified Expertise)",
       description:
         "To eliminate misdiagnosis in Africa, the Specialist Radar locates IHS-certified dermatologists and experts based on the user's state or country. This bridges the care gap by connecting warriors to doctors who recognize Hh as a legitimate condition.",
@@ -97,6 +107,8 @@ const SweatSmartApp = () => {
     {
       icon: Trophy,
       letter: "F",
+      iconColor: "hsl(var(--icon-trophy))",
+      iconBg: "hsl(var(--icon-trophy) / 0.12)",
       title: "Warrior Gamification: The Achievement Badge",
       description:
         "To foster resilience and community, the app features the Hyperhidrosis Warrior Badge. Warriors earn this badge by consistently logging their journey, providing them with a shareable symbol of their bravery in the face of stigma.",
