@@ -79,12 +79,10 @@ const Home = () => {
                 INNOVATIVE SCREENING
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                SweatSmart App: Revolutionizing Sweat Detection
+                Engineering a Sweat-Free Future
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                The SweatSmart app revolutionizes how you detect excessive sweating, specifically targeting 
-                palmar and plantar hyperhidrosis. Using a simple palm scan, the app provides immediate feedback 
-                and early screening results, empowering users to take control of their condition.
+                SweatSmart is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence and high-fidelity analytics.
               </p>
               <Link to="/sweatsmart-app" className="text-primary hover:underline font-medium">
                 Learn more about SweatSmart →
