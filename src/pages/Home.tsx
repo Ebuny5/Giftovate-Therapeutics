@@ -176,16 +176,13 @@ const Home = () => {
             </div>
             <div className="order-1 md:order-2">
               <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
-                FACIAL COOLING SOLUTION
+                PRECISION THERMAL REGULATION
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Face Mask: Relief for Craniofacial Hyperhidrosis
+                Face Mask: Craniofacial Mastery
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Our innovative face mask prototype addresses craniofacial hyperhidrosis, providing targeted relief 
-                for excessive facial sweating. Designed with advanced cooling technology and breathable materials, 
-                this wearable solution helps manage forehead, cheek, and facial perspiration, restoring confidence 
-                in social and professional settings.
+                Stop the "rain" before it begins. Command the room with total composure. Our innovative face mask prototype provides targeted, silent relief for craniofacial hyperhidrosis. Utilizing integrated Peltier cooling modules, the mask provides active heat extraction from the forehead and cheeks, bypassing the "evaporative failure" that occurs in tropical zones once the climate crosses the 28°C and 70% humidity threshold.
               </p>
               <Link to="/programs" className="text-primary hover:underline font-medium">
                 Learn more about Face Mask →
