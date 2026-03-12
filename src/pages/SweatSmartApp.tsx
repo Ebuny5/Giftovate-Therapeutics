@@ -70,7 +70,7 @@ const SweatSmartApp = () => {
       ],
     },
     {
-      icon: Activity,
+      icon: BotMessageSquare,
       letter: "D",
       title: "Hyper AI Consultant",
       description:
