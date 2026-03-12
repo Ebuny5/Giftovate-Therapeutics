@@ -185,7 +185,7 @@ const SweatSmartApp = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-2 mb-4">
-                  <Flame className="text-destructive" size={28} />
+                  <Flame style={{ color: "hsl(var(--icon-flame))" }} size={28} />
                   <h2 className="text-3xl md:text-4xl font-bold">
                     The Problem
                   </h2>
