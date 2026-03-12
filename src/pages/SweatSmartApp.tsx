@@ -154,10 +154,7 @@ const SweatSmartApp = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Giftovate Therapeutics Ltd is a clinical-stage health-technology
-                startup dedicated to solving the physical, social, and
-                psychological crisis of Hyperhidrosis (Hh). Our mission is to
-                move Hh care in Africa from a state of{" "}
+                Our mission is to move Hh care in Africa from a state of{" "}
                 <span className="font-semibold text-foreground">
                   "silent suffering"
                 </span>{" "}
