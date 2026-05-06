@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-sustainable.png";
-import empoweringImage from "@/assets/empowering-relief.jpg";
+import empoweringImage from "@/assets/giftovate-logo.png";
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
 import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
@@ -56,11 +56,11 @@ const Home = () => {
                 Get in touch →
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <img 
                 src={empoweringImage} 
-                alt="SweatSmart app and glove device with healthcare team"
-                className="rounded-lg shadow-lg w-full h-auto"
+                alt="Giftovate Therapeutics Ltd logo"
+                className="w-full h-auto max-w-md"
               />
             </div>
           </div>
