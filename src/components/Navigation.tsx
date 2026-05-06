@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3">
             <img src={logo} alt="Giftovate Therapeutics Ltd Logo" className="h-12 w-auto" />
-            <div className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+            <div className="text-xl font-bold text-[#6B21A8]">
               Giftovate Therapeutics Ltd
             </div>
           </Link>
