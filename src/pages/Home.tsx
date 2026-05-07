@@ -53,13 +53,13 @@ const Home = () => {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               We achieve this through our operational digital platform,{" "}
-              <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">SweatSmart</a>
+              <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer" className="text-[#6B21A8] hover:underline font-medium">SweatSmart</a>
               —which provides proactive climate-aware alerts and HidroAlly clinical intelligence—and our upcoming line of localized thermoelectric cooling hardware, including smart gloves and Eco-Caps currently in the functional prototype stage.
             </p>
             <h3 className="text-2xl font-bold mb-4 mt-8">Our Strategic Partnership</h3>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Our technical innovation is fueled by our close partnership with the{" "}
-              <a href="https://beyondsweat.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Beyond Sweat Foundation</a>
+              <a href="https://beyondsweat.org" target="_blank" rel="noopener noreferrer" className="text-[#6B21A8] hover:underline font-medium">Beyond Sweat Foundation</a>
               . While Giftovate engineers the hardware and software solutions, the Foundation leads our mission-critical advocacy, community awareness, and educational outreaches. Together, we are building the first-ever Pan-African dataset to break the silence and restore bodily dignity to the 5% of the West African workforce currently threatened by heat-stress-induced productivity loss.
             </p>
             <Link to="/programs" className="text-primary hover:underline font-medium">
