@@ -71,7 +71,7 @@ const SweatSmartApp = () => {
         },
         {
           subtitle: "Evidence-Based Strategies",
-          text: "Based on your individual heatmap, Hyper AI suggests targeted treatments such as Iontophoresis for palms/soles or topical anticholinergics like Sofdra to block gland signals.",
+          text: "Based on your individual heatmap, HidroAlly suggests targeted treatments such as Iontophoresis for palms/soles or topical anticholinergics like Sofdra to block gland signals.",
         },
       ],
     },
@@ -80,9 +80,9 @@ const SweatSmartApp = () => {
       letter: "D",
       iconColor: "hsl(var(--icon-bot))",
       iconBg: "hsl(var(--icon-bot) / 0.12)",
-      title: "Hyper AI Consultant",
+      title: "HidroAlly Consultant",
       description:
-        "Hyper AI functions as a 24/7 clinical consultant that adopts the Transparent Reasoning methodology.",
+        "HidroAlly functions as a 24/7 clinical consultant that adopts the Transparent Reasoning methodology.",
       details: [
         {
           subtitle: "Multimodal Reasoning",

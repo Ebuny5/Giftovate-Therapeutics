@@ -106,7 +106,7 @@ const ThermoelectricGlove = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2" />
-                    <p className="text-sm">Hyper AI integration sends proactive alerts when conditions require activation</p>
+                    <p className="text-sm">HidroAlly integration sends proactive alerts when conditions require activation</p>
                   </div>
                 </div>
               </Card>

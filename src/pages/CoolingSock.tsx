@@ -86,10 +86,10 @@ const CoolingSock = () => {
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">Integration with Hyper AI</h2>
+              <h2 className="text-3xl font-bold mb-8 text-center">Integration with HidroAlly</h2>
               <Card className="p-8">
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Giftovate hardware is the "physical edge" of the SweatSmart ecosystem. Through the Wearable Sensor Simulator, users can monitor their real-time Electrodermal Activity (EDA) and Heart Rate. When Hyper AI detects an imminent episode triggered by climate or stress, it sends a proactive alert:
+                  Giftovate hardware is the "physical edge" of the SweatSmart ecosystem. Through the Wearable Sensor Simulator, users can monitor their real-time Electrodermal Activity (EDA) and Heart Rate. When HidroAlly detects an imminent episode triggered by climate or stress, it sends a proactive alert:
                 </p>
                 <Card className="bg-accent/30 border-accent p-6 mb-6">
                   <p className="text-sm italic text-accent-foreground">

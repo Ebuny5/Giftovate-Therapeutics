@@ -27,9 +27,9 @@ const FaceMask = () => {
     },
     {
       icon: Zap,
-      title: "Hyper AI Integration",
+      title: "HidroAlly Integration",
       description:
-        "When Hyper AI detects an imminent episode triggered by climate or stress, it sends a proactive alert to activate your face mask's cooling system and stabilize your sudomotor baseline.",
+        "When HidroAlly detects an imminent episode triggered by climate or stress, it sends a proactive alert to activate your face mask's cooling system and stabilize your sudomotor baseline.",
     },
   ];
 
