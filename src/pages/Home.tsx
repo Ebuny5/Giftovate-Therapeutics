@@ -41,28 +41,30 @@ const Home = () => {
       {/* About Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div>
-              <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
-                EMPOWERING RELIEF
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Transforming hyperhidrosis care in africa
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Hyperhidrosis is not a cosmetic problem; it is a silent medical crisis affecting 385 million warriors globally. At Giftovate Therapeutics Ltd, we are dismantling the barriers to care in Africa. By fusing clinical-grade sudomotor biometrics with revolutionary thermoelectric hardware, we are giving warriors what they deserve most: the freedom to be seen without trepidation. We achieve this through our operational digital platform, SweatSmart, and our upcoming line of thermoelectric cooling hardware.
-              </p>
-              <Link to="/programs" className="text-primary hover:underline font-medium">
-                Get in touch →
-              </Link>
-            </div>
-            <div className="relative flex items-center justify-center">
-              <img 
-                src={empoweringImage} 
-                alt="Giftovate Therapeutics Ltd logo"
-                className="w-full h-auto max-w-md"
-              />
-            </div>
+          <div className="max-w-4xl mx-auto mb-16">
+            <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">
+              EMPOWERING RELIEF
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Transforming Hyperhidrosis Care in Africa
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              Hyperhidrosis is not merely a cosmetic concern; it is a silent medical crisis impacting 385 million Warriors worldwide. At Giftovate Therapeutics Ltd, we are dismantling the systemic barriers to specialized care across the continent. By fusing clinical-grade sudomotor biometrics with revolutionary thermoelectric hardware, we empower Warriors with the freedom to be seen without trepidation.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              We achieve this through our operational digital platform,{" "}
+              <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">SweatSmart</a>
+              —which provides proactive climate-aware alerts and HidroAlly clinical intelligence—and our upcoming line of localized thermoelectric cooling hardware, including smart gloves and Eco-Caps currently in the functional prototype stage.
+            </p>
+            <h3 className="text-2xl font-bold mb-4 mt-8">Our Strategic Partnership</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              Our technical innovation is fueled by our close partnership with the{" "}
+              <a href="https://beyondsweat.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Beyond Sweat Foundation</a>
+              . While Giftovate engineers the hardware and software solutions, the Foundation leads our mission-critical advocacy, community awareness, and educational outreaches. Together, we are building the first-ever Pan-African dataset to break the silence and restore bodily dignity to the 5% of the West African workforce currently threatened by heat-stress-induced productivity loss.
+            </p>
+            <Link to="/programs" className="text-primary hover:underline font-medium">
+              Get in touch →
+            </Link>
           </div>
 
           {/* SweatSmart App Section */}
