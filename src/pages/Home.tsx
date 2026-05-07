@@ -17,25 +17,12 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative text-white py-32 md:py-48 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={heroImage} 
-            alt="Thermoelectric glove with sustainable design" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Sustainable Relief for Hyperhidrosis
-            </h1>
-            <p className="text-lg md:text-xl mb-8 text-white/95 leading-relaxed">
-              Giftovate Therapeutics Ltd develops low-energy wearables and plant-based EcoCaps, creating local jobs and reducing waste through circular design.
-            </p>
-          </div>
-        </div>
+      <section className="relative overflow-hidden">
+        <img 
+          src={heroImage} 
+          alt="Thermoelectric glove with sustainable design" 
+          className="w-full h-auto object-cover"
+        />
       </section>
 
       {/* About Section */}
