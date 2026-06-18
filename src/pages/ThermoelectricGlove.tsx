@@ -35,24 +35,31 @@ const ThermoelectricGlove = () => {
       
       <div className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-hero text-white py-16 md:py-24">
+        <section className="bg-background py-10 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="text-sm font-semibold text-white/80 mb-3 uppercase tracking-wider">
-                THE THERMOELECTRIC FRONTIER
-              </p>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Thermoelectric Glove: Restoring Precision & Performance
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-4">
-                Active Sudomotor Suppression meets Rapid Recovery.
-              </p>
-              <p className="text-lg text-white/80 mb-8 max-w-3xl mx-auto">
-                While passive glove liners only manage the aftermath, Giftovate's prototype thermoelectric gloves address the source. By utilizing integrated Peltier cooling modules, the glove actively pumps heat away from the skin's surface.
-              </p>
-              <Button size="lg" variant="secondary">
-                Join the Pilot Program
-              </Button>
+            <div className="max-w-4xl mx-auto">
+              <img
+                src={gloveImage}
+                alt="Thermoelectric cooling glove"
+                className="w-full h-auto rounded-2xl mb-10 md:mb-14"
+              />
+              <div className="text-center">
+                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">
+                  THE THERMOELECTRIC FRONTIER
+                </p>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                  Thermoelectric Glove: Restoring Precision & Performance
+                </h1>
+                <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                  Active Sudomotor Suppression meets Rapid Recovery.
+                </p>
+                <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+                  While passive glove liners only manage the aftermath, Giftovate's prototype thermoelectric gloves address the source. By utilizing integrated Peltier cooling modules, the glove actively pumps heat away from the skin's surface.
+                </p>
+                <Button size="lg">
+                  Join the Pilot Program
+                </Button>
+              </div>
             </div>
           </div>
         </section>
