@@ -29,7 +29,7 @@ const Home = () => {
       <section className="py-16 md:py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto mb-16">
-            <p className="text-sm font-semibold text-[hsl(var(--overline))] mb-3 uppercase tracking-wider">
+            <p className="overline-label mb-3">
               EMPOWERING RELIEF
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -64,7 +64,7 @@ const Home = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <p className="text-sm font-semibold text-[hsl(var(--overline))] mb-3 uppercase tracking-wider">
+              <p className="overline-label mb-3">
                 INNOVATIVE SCREENING
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -82,7 +82,7 @@ const Home = () => {
           {/* Thermoelectric Glove Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
-              <p className="text-sm font-semibold text-[hsl(var(--overline))] mb-3 uppercase tracking-wider">
+              <p className="overline-label mb-3">
                 THE THERMOELECTRIC FRONTIER
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -114,7 +114,7 @@ const Home = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <p className="text-sm font-semibold text-[hsl(var(--overline))] mb-3 uppercase tracking-wider">
+              <p className="overline-label mb-3">
                 THE PLANTAR PROTOCOL
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -132,7 +132,7 @@ const Home = () => {
           {/* EcoCaps Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
-              <p className="text-sm font-semibold text-[hsl(var(--overline))] mb-3 uppercase tracking-wider">
+              <p className="overline-label mb-3">
                 SUDOMOTOR SYNERGY FROM WITHIN
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -164,7 +164,7 @@ const Home = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <p className="text-sm font-semibold text-[hsl(var(--overline))] mb-3 uppercase tracking-wider">
+              <p className="overline-label mb-3">
                 PRECISION THERMAL REGULATION
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">

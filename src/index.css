@@ -133,7 +133,16 @@ All colors MUST be HSL.
   }
 
   /* Overline label utility */
-  .overline,
+  .overline-label {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: hsl(var(--overline));
+    display: inline-block;
+  }
+
   [class*="uppercase"][class*="tracking-wider"] {
     letter-spacing: 0.14em;
   }
