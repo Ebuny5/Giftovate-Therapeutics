@@ -10,8 +10,8 @@ import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
 import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
-import ringAsset from "@/assets/giftovate-ring.jpg.asset.json";
-import hubAsset from "@/assets/giftovate-hub.jpg.asset.json";
+import ringImage from "@/assets/giftovate-ring.jpg";
+import oasisImage from "@/assets/giftovate-oasis.jpg";
 
 const Home = () => {
   return (
@@ -99,13 +99,37 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src={ringAsset.url}
+                src={ringImage}
                 alt="Giftovate Ring biometric wearable"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
           </div>
 
+          {/* Cooling Sock Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div className="relative order-2 md:order-1">
+              <img
+                src={coolingSockImage}
+                alt="Cooling sock prototype for plantar hyperhidrosis relief"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <p className="overline-label mb-3">
+                THE PLANTAR PROTOCOL
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Active Cooling Socks: Ending "Shoe-Removal Anxiety"
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                For warriors with plantar hyperhidrosis, every day feels like walking through a rainstorm inside their shoes. Our cooling socks are engineered with moisture-wicking natural fibers (Bamboo and Merino Wool) and integrated Peltier units to eliminate the "Catch-22" of enclosed footwear. Walk at your natural pace with total stability, knowing your feet are locked into a dry, high-friction environment.
+              </p>
+              <Link to="/cooling-sock" className="text-primary hover:underline font-medium">
+                Learn more about Cooling Sock →
+              </Link>
+            </div>
+          </div>
 
           {/* Thermoelectric Glove Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
@@ -129,31 +153,6 @@ const Home = () => {
                 alt="Thermoelectric glove prototype for palm sweating relief"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
-            </div>
-          </div>
-
-          {/* Cooling Sock Section */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div className="relative order-2 md:order-1">
-              <img 
-                src={coolingSockImage} 
-                alt="Cooling sock prototype for plantar hyperhidrosis relief"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <p className="overline-label mb-3">
-                THE PLANTAR PROTOCOL
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Active Cooling Socks: Ending "Shoe-Removal Anxiety"
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                For warriors with plantar hyperhidrosis, every day feels like walking through a rainstorm inside their shoes. Our cooling socks are engineered with moisture-wicking natural fibers (Bamboo and Merino Wool) and integrated Peltier units to eliminate the "Catch-22" of enclosed footwear. Walk at your natural pace with total stability, knowing your feet are locked into a dry, high-friction environment.
-              </p>
-              <Link to="/cooling-sock" className="text-primary hover:underline font-medium">
-                Learn more about Cooling Sock →
-              </Link>
             </div>
           </div>
 
@@ -186,7 +185,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div className="relative order-2 md:order-1">
               <img
-                src={hubAsset.url}
+                src={oasisImage}
                 alt="Giftovate Oasis recovery station"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -201,7 +200,7 @@ const Home = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.
               </p>
-              <Link to="/giftovate-hub" className="text-primary hover:underline font-medium">
+              <Link to="/giftovate-oasis" className="text-primary hover:underline font-medium">
                 Learn more about the Giftovate Oasis →
               </Link>
             </div>
