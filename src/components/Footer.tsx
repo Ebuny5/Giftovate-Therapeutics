@@ -22,8 +22,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Products</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/sweatsmart-app" className="text-muted-foreground hover:text-primary transition-colors">SweatSmart App</Link></li>
+              <li><Link to="/giftovate-ring" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Ring</Link></li>
+              <li><Link to="/giftovate-hub" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Oasis</Link></li>
               <li><Link to="/thermoelectric-glove" className="text-muted-foreground hover:text-primary transition-colors">Thermoelectric Glove</Link></li>
               <li><Link to="/cooling-sock" className="text-muted-foreground hover:text-primary transition-colors">Cooling Sock</Link></li>
+              <li><Link to="/face-mask" className="text-muted-foreground hover:text-primary transition-colors">Face Mask</Link></li>
               <li><Link to="/ecocaps" className="text-muted-foreground hover:text-primary transition-colors">EcoCaps</Link></li>
             </ul>
           </div>
@@ -32,6 +35,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/programs" className="text-muted-foreground hover:text-primary transition-colors">Programs</Link></li>
+              <li><Link to="/roadmap" className="text-muted-foreground hover:text-primary transition-colors">Roadmap</Link></li>
               <li><Link to="/resources" className="text-muted-foreground hover:text-primary transition-colors">Resources</Link></li>
               <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link></li>
             </ul>
