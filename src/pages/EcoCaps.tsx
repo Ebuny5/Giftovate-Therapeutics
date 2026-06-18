@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Leaf, Users, FlaskConical, Wallet } from "lucide-react";
+import ecoCapsImage from "@/assets/ecocaps-hero.jpg";
 
 const EcoCaps = () => {
   const features = [
@@ -34,24 +35,31 @@ const EcoCaps = () => {
       
       <div className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-hero text-white py-16 md:py-24">
+        <section className="bg-background py-10 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="text-sm font-semibold text-white/80 mb-3 uppercase tracking-wider">
-                SUDOMOTOR SYNERGY FROM WITHIN
-              </p>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                EcoCaps: Holistic. Sustainable. Validated.
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-4">
-                Reclaim your internal balance.
-              </p>
-              <p className="text-lg text-white/80 mb-8 max-w-3xl mx-auto">
-                EcoCaps represent our commitment to plant-based sudomotor regulation. Co-created with local African communities and pilot-tested through the SweatSmart initiative, these eco-friendly capsules offer a natural, synergetic alternative for warriors seeking relief without the side effects of traditional pharmaceuticals.
-              </p>
-              <Button size="lg" variant="secondary">
-                Join the EcoCaps Pilot
-              </Button>
+            <div className="max-w-4xl mx-auto">
+              <img
+                src={ecoCapsImage}
+                alt="EcoCaps plant-based capsules"
+                className="w-full h-auto rounded-2xl mb-10 md:mb-14"
+              />
+              <div className="text-center">
+                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">
+                  SUDOMOTOR SYNERGY FROM WITHIN
+                </p>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                  EcoCaps: Holistic. Sustainable. Validated.
+                </h1>
+                <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                  Reclaim your internal balance.
+                </p>
+                <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+                  EcoCaps represent our commitment to plant-based sudomotor regulation. Co-created with local African communities and pilot-tested through the SweatSmart initiative, these eco-friendly capsules offer a natural, synergetic alternative for warriors seeking relief without the side effects of traditional pharmaceuticals.
+                </p>
+                <Button size="lg">
+                  Join the EcoCaps Pilot
+                </Button>
+              </div>
             </div>
           </div>
         </section>
