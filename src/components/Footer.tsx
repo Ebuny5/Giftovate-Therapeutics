@@ -23,7 +23,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><Link to="/sweatsmart-app" className="text-muted-foreground hover:text-primary transition-colors">SweatSmart App</Link></li>
               <li><Link to="/giftovate-ring" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Ring</Link></li>
-              <li><Link to="/giftovate-hub" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Oasis</Link></li>
+              <li><Link to="/giftovate-oasis" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Oasis</Link></li>
               <li><Link to="/thermoelectric-glove" className="text-muted-foreground hover:text-primary transition-colors">Thermoelectric Glove</Link></li>
               <li><Link to="/cooling-sock" className="text-muted-foreground hover:text-primary transition-colors">Cooling Sock</Link></li>
               <li><Link to="/face-mask" className="text-muted-foreground hover:text-primary transition-colors">Face Mask</Link></li>

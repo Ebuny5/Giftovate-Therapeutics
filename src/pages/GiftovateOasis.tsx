@@ -12,9 +12,9 @@ import {
   FileText,
   ShieldAlert,
 } from "lucide-react";
-import hubAsset from "@/assets/giftovate-hub.jpg.asset.json";
+import oasisImage from "@/assets/giftovate-oasis.jpg";
 
-const GiftovateHub = () => {
+const GiftovateOasis = () => {
   const accessFeatures = [
     {
       icon: Snowflake,
@@ -70,10 +70,10 @@ const GiftovateHub = () => {
   ];
 
   const steps = [
-    { step: "1", title: "Book", text: "Select a 15-minute thermoelectric recovery session through our app or visit your local hub." },
+    { step: "1", title: "Book", text: "Select a 15-minute thermoelectric recovery session through our app or visit your local Oasis." },
     { step: "2", title: "Expert Care", text: "Receive professional-grade cooling therapy from a trained Specialist who understands the science of hyperhidrosis." },
     { step: "3", title: "Sustain", text: "A single session provides hours of relief, stabilizing your thermal baseline and restoring your confidence." },
-    { step: "4", title: "Community Impact", text: "By choosing Giftovate Oasiss, you are directly supporting the employment and professional development of a young person in your community." },
+    { step: "4", title: "Community Impact", text: "By choosing Giftovate Oasis, you are directly supporting the employment and professional development of a young person in your community." },
   ];
 
   return (
@@ -85,7 +85,7 @@ const GiftovateHub = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <img
-                src={hubAsset.url}
+                src={oasisImage}
                 alt="Giftovate Oasis recovery station with SweatSmart AI dashboard and thermoelectric gloves"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
@@ -197,4 +197,4 @@ const GiftovateHub = () => {
   );
 };
 
-export default GiftovateHub;
+export default GiftovateOasis;

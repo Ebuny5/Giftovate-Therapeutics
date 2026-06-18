@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Activity, HeartPulse, Watch, Radio } from "lucide-react";
-import ringAsset from "@/assets/giftovate-ring.jpg.asset.json";
+import ringImage from "@/assets/giftovate-ring.jpg";
 
 const GiftovateRing = () => {
   const features = [
@@ -60,7 +60,7 @@ const GiftovateRing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <img
-                src={ringAsset.url}
+                src={ringImage}
                 alt="Giftovate Ring biometric wearable on a warrior's finger"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
