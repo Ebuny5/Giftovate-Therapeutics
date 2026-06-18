@@ -155,7 +155,7 @@ const Home = () => {
           </div>
 
           {/* Face Mask Section */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-12">
             <div className="relative order-2 md:order-1">
               <img 
                 src={faceMaskImage} 
@@ -183,7 +183,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="-mt-2 pt-0 pb-16 md:-mt-4 md:pt-0 md:pb-20">
+      <section className="pt-8 pb-16 md:pt-10 md:pb-20">
         <div className="container mx-auto px-4">
           <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
             <h2 className="text-3xl font-bold mb-4">Ready to Take Control?</h2>
