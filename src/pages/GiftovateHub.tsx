@@ -20,7 +20,7 @@ const GiftovateHub = () => {
       icon: Snowflake,
       title: "15-Minute Thermoelectric Recovery",
       description:
-        "For those who cannot afford personal wearables (gloves, socks, or masks), the Hub provides access to high-intensity, thermoelectric cooling sessions that deliver hours of relief.",
+        "For those who cannot afford personal wearables (gloves, socks, or masks), the Oasis provides access to high-intensity, thermoelectric cooling sessions that deliver hours of relief.",
     },
     {
       icon: UserCheck,
@@ -73,7 +73,7 @@ const GiftovateHub = () => {
     { step: "1", title: "Book", text: "Select a 15-minute thermoelectric recovery session through our app or visit your local hub." },
     { step: "2", title: "Expert Care", text: "Receive professional-grade cooling therapy from a trained Specialist who understands the science of hyperhidrosis." },
     { step: "3", title: "Sustain", text: "A single session provides hours of relief, stabilizing your thermal baseline and restoring your confidence." },
-    { step: "4", title: "Community Impact", text: "By choosing Giftovate Hubs, you are directly supporting the employment and professional development of a young person in your community." },
+    { step: "4", title: "Community Impact", text: "By choosing Giftovate Oasiss, you are directly supporting the employment and professional development of a young person in your community." },
   ];
 
   return (
@@ -86,7 +86,7 @@ const GiftovateHub = () => {
             <div className="max-w-4xl mx-auto">
               <img
                 src={hubAsset.url}
-                alt="Giftovate Hub recovery station with SweatSmart AI dashboard and thermoelectric gloves"
+                alt="Giftovate Oasis recovery station with SweatSmart AI dashboard and thermoelectric gloves"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
               <div className="text-center">
@@ -94,10 +94,10 @@ const GiftovateHub = () => {
                   CLINICAL RELIEF ON DEMAND
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                  Giftovate Hub: Empowering Lives, One Session at a Time.
+                  Giftovate Oasis: Empowering Lives, One Session at a Time.
                 </h1>
                 <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                  We believe that effective hyperhidrosis relief should be a standard of care for all, not a luxury. The Giftovate Hub is our localized solution to the hardware deficit in Africa — providing a pathway to professional-grade sudomotor suppression at an affordable, per-session cost, while simultaneously building a new generation of health-tech professionals.
+                  We believe that effective hyperhidrosis relief should be a standard of care for all, not a luxury. The Giftovate Oasis is our localized solution to the hardware deficit in Africa — providing a pathway to professional-grade sudomotor suppression at an affordable, per-session cost, while simultaneously building a new generation of health-tech professionals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button size="lg">Express Interest in Recovery Sessions</Button>
@@ -114,7 +114,7 @@ const GiftovateHub = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold mb-4">Accessible Relief & Youth Empowerment</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Every Hub is both a recovery station and a launchpad for local careers.
+                  Every Oasis is both a recovery station and a launchpad for local careers.
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
@@ -158,7 +158,7 @@ const GiftovateHub = () => {
                 <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">THE ANALYTICS CORE</p>
                 <h2 className="text-3xl font-bold mb-4">Your Personal Clinical Command Center</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  If the Ring is the observer, the Hub is the strategist. The Giftovate Hub serves as the central processing unit for your hyperhidrosis management — aggregating data from your wearables, app logs, and environmental sensors, and transforming raw biometric noise into actionable clinical insights.
+                  If the Ring is the observer, the Oasis is the strategist. The Giftovate Oasis serves as the central processing unit for your hyperhidrosis management — aggregating data from your wearables, app logs, and environmental sensors, and transforming raw biometric noise into actionable clinical insights.
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
@@ -181,7 +181,7 @@ const GiftovateHub = () => {
             <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
               <h2 className="text-3xl font-bold mb-4">Join the Pilot Program</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                We are launching Hub centers across the region. We are looking for volunteers to experience our recovery sessions and for motivated youth interested in joining our Specialist Training Program.
+                We are launching Oasis centers across the region. We are looking for volunteers to experience our recovery sessions and for motivated youth interested in joining our Specialist Training Program.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button size="lg">Express Interest in Recovery Sessions</Button>
