@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Thermometer, Zap, Hand, Heart } from "lucide-react";
+import gloveImage from "@/assets/thermoelectric-glove.png";
 
 const ThermoelectricGlove = () => {
   const features = [
