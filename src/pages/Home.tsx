@@ -191,7 +191,7 @@ const Home = () => {
               Explore our innovative solutions and join the community working to reduce stigma and improve care for hyperhidrosis
             </p>
             <Link to="/resources">
-              <Button size="lg" className="bg-[#6B21A8] text-white hover:bg-[#581c87]">Explore Resources</Button>
+              <Button size="lg">Explore Resources</Button>
             </Link>
           </Card>
         </div>
