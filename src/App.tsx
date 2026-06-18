@@ -36,6 +36,7 @@ const App = () => (
           <Route path="/face-mask" element={<FaceMask />} />
           <Route path="/giftovate-ring" element={<GiftovateRing />} />
           <Route path="/giftovate-hub" element={<GiftovateHub />} />
+          <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
