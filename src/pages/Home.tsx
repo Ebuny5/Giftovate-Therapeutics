@@ -155,7 +155,7 @@ const Home = () => {
           </div>
 
           {/* Face Mask Section */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-4">
             <div className="relative order-2 md:order-1">
               <img 
                 src={faceMaskImage} 
