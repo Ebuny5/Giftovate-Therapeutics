@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Leaf, Users, FlaskConical, Wallet } from "lucide-react";
+import ecoCapsImage from "@/assets/ecocaps-hero.jpg";
 
 const EcoCaps = () => {
   const features = [
