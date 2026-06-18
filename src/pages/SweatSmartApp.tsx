@@ -300,7 +300,7 @@ const SweatSmartApp = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="text-base px-8 py-6">
+                <Button size="lg" className="max-w-full whitespace-normal h-auto text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 leading-snug">
                   Get Early Access to SweatSmart
                 </Button>
               </a>

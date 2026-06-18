@@ -68,28 +68,19 @@ const FaceMask = () => {
           </div>
         </section>
 
-        {/* Product Image Section */}
+        {/* Science Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div className="relative">
-                <img
-                  src={faceMaskImage}
-                  alt="Face mask prototype for craniofacial hyperhidrosis relief"
-                  className="rounded-lg shadow-lg w-full h-auto"
-                />
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold mb-6">
-                  The Science of Craniofacial Cooling
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Facial sweating is driven by a dense concentration of eccrine sweat glands on the forehead, temples, and cheeks. In tropical climates where ambient temperatures routinely exceed 28°C and humidity crosses 70%, the body's natural evaporative cooling system fails — leading to visible, uncontrollable perspiration.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our face mask uses Peltier effect technology to create a localized temperature differential, actively extracting heat from the skin's surface before the sweat response is triggered. This is not masking the symptom — it is intercepting the cascade.
-                </p>
-              </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl font-bold mb-6">
+                The Science of Craniofacial Cooling
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Facial sweating is driven by a dense concentration of eccrine sweat glands on the forehead, temples, and cheeks. In tropical climates where ambient temperatures routinely exceed 28°C and humidity crosses 70%, the body's natural evaporative cooling system fails — leading to visible, uncontrollable perspiration.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Our face mask uses Peltier effect technology to create a localized temperature differential, actively extracting heat from the skin's surface before the sweat response is triggered. This is not masking the symptom — it is intercepting the cascade.
+              </p>
             </div>
           </div>
         </section>
