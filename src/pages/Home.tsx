@@ -106,12 +106,12 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Giftovate Hub Section */}
+          {/* Giftovate Oasis Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div className="relative order-2 md:order-1">
               <img
                 src={hubAsset.url}
-                alt="Giftovate Hub recovery station"
+                alt="Giftovate Oasis recovery station"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
@@ -120,13 +120,13 @@ const Home = () => {
                 CLINICAL RELIEF ON DEMAND
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Giftovate Hub: Empowering Lives, One Session at a Time.
+                Giftovate Oasis: Empowering Lives, One Session at a Time.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.
               </p>
               <Link to="/giftovate-hub" className="text-primary hover:underline font-medium">
-                Learn more about the Giftovate Hub →
+                Learn more about the Giftovate Oasis →
               </Link>
             </div>
           </div>
