@@ -10,6 +10,8 @@ import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
 import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
+import ringAsset from "@/assets/giftovate-ring.jpg.asset.json";
+import hubAsset from "@/assets/giftovate-hub.jpg.asset.json";
 
 const Home = () => {
   return (
@@ -75,6 +77,56 @@ const Home = () => {
               </p>
               <Link to="/sweatsmart-app" className="text-primary hover:underline font-medium">
                 Learn more about SweatSmart →
+              </Link>
+            </div>
+          </div>
+
+          {/* Giftovate Ring Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div>
+              <p className="overline-label mb-3">
+                THE BIOMETRIC STANDARD
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Giftovate Ring: Clinical-Grade Monitoring, Always On.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Precise, continuous, and unobtrusive. The Giftovate Ring captures the physiological data that mobile apps miss — monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) directly from the finger to predict hyperhidrosis triggers before they manifest.
+              </p>
+              <Link to="/giftovate-ring" className="text-primary hover:underline font-medium">
+                Learn more about the Giftovate Ring →
+              </Link>
+            </div>
+            <div className="relative">
+              <img
+                src={ringAsset.url}
+                alt="Giftovate Ring biometric wearable"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+          </div>
+
+          {/* Giftovate Hub Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div className="relative order-2 md:order-1">
+              <img
+                src={hubAsset.url}
+                alt="Giftovate Hub recovery station"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <p className="overline-label mb-3">
+                CLINICAL RELIEF ON DEMAND
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Giftovate Hub: Empowering Lives, One Session at a Time.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.
+              </p>
+              <Link to="/giftovate-hub" className="text-primary hover:underline font-medium">
+                Learn more about the Giftovate Hub →
               </Link>
             </div>
           </div>
