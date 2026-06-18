@@ -182,6 +182,50 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Giftovate Oasis Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+            <div className="relative order-2 md:order-1">
+              <img
+                src={hubAsset.url}
+                alt="Giftovate Oasis recovery station"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <p className="overline-label mb-3">
+                CLINICAL RELIEF ON DEMAND
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Giftovate Oasis: Empowering Lives, One Session at a Time.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.
+              </p>
+              <Link to="/giftovate-hub" className="text-primary hover:underline font-medium">
+                Learn more about the Giftovate Oasis →
+              </Link>
+            </div>
+          </div>
+
+          {/* Roadmap Section */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <Card className="p-8 md:p-12 border-l-4 border-l-primary bg-gradient-card">
+              <p className="overline-label mb-3">
+                THE PATH TO CLINICAL EQUALITY
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                The Giftovate Roadmap: Building the Infrastructure of Care.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                A four-phase "Data-to-Device" plan — from diagnostic visibility (2025) to global clinical integration (2028+). We first understand hyperhidrosis through high-resolution data, then treat it with targeted hardware.
+              </p>
+              <Link to="/roadmap">
+                <Button>Learn more about the Roadmap →</Button>
+              </Link>
+            </Card>
+          </div>
+
+
           {/* Face Mask Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-12">
             <div className="relative order-2 md:order-1">
