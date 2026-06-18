@@ -13,6 +13,7 @@ import EcoCaps from "./pages/EcoCaps";
 import FaceMask from "./pages/FaceMask";
 import GiftovateRing from "./pages/GiftovateRing";
 import GiftovateHub from "./pages/GiftovateHub";
+import Roadmap from "./pages/Roadmap";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
