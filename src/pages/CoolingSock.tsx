@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Footprints, ShieldCheck, Wind, Thermometer } from "lucide-react";
+import sockImage from "@/assets/cooling-sock.jpg";
 
 const CoolingSock = () => {
   const features = [
