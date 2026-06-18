@@ -26,7 +26,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="pt-16 md:pt-20 pb-4 md:pb-6 bg-gradient-to-b from-background to-muted/20">
+      <section className="pt-16 md:pt-20 pb-0 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto mb-16">
             <p className="overline-label mb-3">
