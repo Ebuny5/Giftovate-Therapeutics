@@ -81,26 +81,26 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Giftovate Ring Section */}
+          {/* Giftovate Band Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
               <p className="overline-label mb-3">
                 THE BIOMETRIC STANDARD
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Giftovate Ring: Clinical-Grade Monitoring, Always On.
+                Giftovate Band: Clinical-Grade Monitoring, Always On.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Precise, continuous, and unobtrusive. The Giftovate Ring captures the physiological data that mobile apps miss — monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) directly from the finger to predict hyperhidrosis triggers before they manifest.
+                Precise, continuous, and unobtrusive. The Giftovate Band captures the physiological data that mobile apps miss — monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) from the wrist to predict hyperhidrosis triggers before they manifest.
               </p>
-              <Link to="/giftovate-ring" className="text-primary hover:underline font-medium">
-                Learn more about the Giftovate Ring →
+              <Link to="/giftovate-band" className="text-primary hover:underline font-medium">
+                Learn more about the Giftovate Band →
               </Link>
             </div>
             <div className="relative">
               <img
-                src={ringImage}
-                alt="Giftovate Ring biometric wearable"
+                src={bandImage.url}
+                alt="Giftovate Band biometric wearable on a warrior's wrist"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
