@@ -11,7 +11,7 @@ import ThermoelectricGlove from "./pages/ThermoelectricGlove";
 import CoolingSock from "./pages/CoolingSock";
 import EcoCaps from "./pages/EcoCaps";
 import FaceMask from "./pages/FaceMask";
-import GiftovateRing from "./pages/GiftovateRing";
+import GiftovateBand from "./pages/GiftovateBand";
 import GiftovateOasis from "./pages/GiftovateOasis";
 import Roadmap from "./pages/Roadmap";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
