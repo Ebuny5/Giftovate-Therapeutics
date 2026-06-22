@@ -10,7 +10,7 @@ import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
 import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
-import ringImage from "@/assets/giftovate-ring.jpg";
+import bandImage from "@/assets/giftovate-band.png.asset.json";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
 
 const Home = () => {
