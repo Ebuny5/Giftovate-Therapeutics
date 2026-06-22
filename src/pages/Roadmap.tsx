@@ -16,7 +16,7 @@ const Roadmap = () => {
       years: "2026–2027",
       title: "Data-Driven Intervention",
       focus:
-        "Scaling the Giftovate Ring and Oasis integration to provide 24/7 clinical monitoring and predictive trigger alerts.",
+        "Scaling the Giftovate Band and Oasis integration to provide 24/7 clinical monitoring and predictive trigger alerts.",,
     },
     {
       phase: "Phase 3",
