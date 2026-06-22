@@ -131,6 +131,31 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Face Mask Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-12">
+            <div className="relative order-2 md:order-1">
+              <img 
+                src={faceMaskImage} 
+                alt="Face mask prototype for craniofacial hyperhidrosis relief"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <p className="overline-label mb-3">
+                PRECISION THERMAL REGULATION
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Face Mask: Craniofacial Mastery
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Stop the "rain" before it begins. Command the room with total composure. Our innovative face mask prototype provides targeted, silent relief for craniofacial hyperhidrosis. Utilizing integrated Peltier cooling modules, the mask provides active heat extraction from the forehead and cheeks, bypassing the "evaporative failure" that occurs in tropical zones once the climate crosses the 28°C and 70% humidity threshold.
+              </p>
+              <Link to="/face-mask" className="text-primary hover:underline font-medium">
+                Learn more about Face Mask →
+              </Link>
+            </div>
+          </div>
+
           {/* Thermoelectric Glove Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
