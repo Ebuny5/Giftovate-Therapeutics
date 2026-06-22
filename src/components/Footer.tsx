@@ -22,7 +22,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Products</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/sweatsmart-app" className="text-muted-foreground hover:text-primary transition-colors">SweatSmart App</Link></li>
-              <li><Link to="/giftovate-ring" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Ring</Link></li>
+              <li><Link to="/giftovate-band" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Band</Link></li>
               <li><Link to="/giftovate-oasis" className="text-muted-foreground hover:text-primary transition-colors">Giftovate Oasis</Link></li>
               <li><Link to="/thermoelectric-glove" className="text-muted-foreground hover:text-primary transition-colors">Thermoelectric Glove</Link></li>
               <li><Link to="/cooling-sock" className="text-muted-foreground hover:text-primary transition-colors">Cooling Sock</Link></li>

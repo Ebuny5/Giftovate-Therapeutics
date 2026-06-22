@@ -11,7 +11,7 @@ import ThermoelectricGlove from "./pages/ThermoelectricGlove";
 import CoolingSock from "./pages/CoolingSock";
 import EcoCaps from "./pages/EcoCaps";
 import FaceMask from "./pages/FaceMask";
-import GiftovateRing from "./pages/GiftovateRing";
+import GiftovateBand from "./pages/GiftovateBand";
 import GiftovateOasis from "./pages/GiftovateOasis";
 import Roadmap from "./pages/Roadmap";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -34,7 +34,7 @@ const App = () => (
           <Route path="/cooling-sock" element={<CoolingSock />} />
           <Route path="/ecocaps" element={<EcoCaps />} />
           <Route path="/face-mask" element={<FaceMask />} />
-          <Route path="/giftovate-ring" element={<GiftovateRing />} />
+          <Route path="/giftovate-band" element={<GiftovateBand />} />
           <Route path="/giftovate-oasis" element={<GiftovateOasis />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -3,27 +3,27 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Activity, HeartPulse, Watch, Radio } from "lucide-react";
-import ringImage from "@/assets/giftovate-ring.jpg";
+import bandImage from "@/assets/giftovate-band.png.asset.json";
 
-const GiftovateRing = () => {
+const GiftovateBand = () => {
   const features = [
     {
       icon: Activity,
       title: "Continuous EDA Tracking",
       description:
-        "Captures real-time skin conductance, identifying spikes in sympathetic activity long before a visible episode begins.",
+        "Captures real-time skin conductance from the wrist, identifying spikes in sympathetic activity long before a visible episode begins.",
     },
     {
       icon: HeartPulse,
       title: "Physiological Correlation",
       description:
-        "Syncs Heart Rate Variability (HRV) with thermal data to distinguish between metabolic sweat and nervous system-induced sudomotor activity.",
+        "Syncs Heart Rate Variability (HRV) with thermal and motion data to distinguish between metabolic sweat and nervous system-induced sudomotor activity.",
     },
     {
       icon: Watch,
       title: "Invisible Comfort",
       description:
-        "Designed for 24/7 wear, ensuring you have a complete longitudinal view of your thermal profile without the bulk of traditional wearables.",
+        "Engineered as a lightweight, wrist-worn band for 24/7 wear, giving you a complete longitudinal view of your thermal profile without the bulk of traditional clinical devices.",
     },
     {
       icon: Radio,
@@ -37,12 +37,12 @@ const GiftovateRing = () => {
     {
       step: "1",
       title: "Wear",
-      text: "The ring sits comfortably on your finger, continuously measuring micro-fluctuations in skin conductivity.",
+      text: "The band sits comfortably on your wrist, continuously measuring micro-fluctuations in skin conductivity, heart rate, and motion.",
     },
     {
       step: "2",
       title: "Analyze",
-      text: "The onboard sensors capture EDA, while the mobile app correlates this with environmental data (Climate Alert).",
+      text: "The onboard sensors capture EDA and HRV, while the mobile app correlates this with environmental data (Climate Alert).",
     },
     {
       step: "3",
@@ -60,8 +60,8 @@ const GiftovateRing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <img
-                src={ringImage}
-                alt="Giftovate Ring biometric wearable on a warrior's finger"
+                src={bandImage.url}
+                alt="Giftovate Band biometric wearable on a warrior's wrist"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
               <div className="text-center">
@@ -69,10 +69,10 @@ const GiftovateRing = () => {
                   THE BIOMETRIC STANDARD
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                  Giftovate Ring: Clinical-Grade Monitoring, Always On.
+                  Giftovate Band: Clinical-Grade Monitoring, Always On.
                 </h1>
                 <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Precise, continuous, and unobtrusive. The Giftovate Ring captures the physiological data that mobile apps miss. By monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) directly from the finger — the most sensitive site for sympathetic nervous system activity — the ring provides the raw data needed to predict hyperhidrosis triggers before they manifest.
+                  Precise, continuous, and unobtrusive. The Giftovate Band captures the physiological data that mobile apps miss. By monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) from the wrist — a stable, high-signal site for sympathetic nervous system activity — the band provides the raw data needed to predict hyperhidrosis triggers before they manifest.
                 </p>
                 <Button size="lg">Join the Pilot Program</Button>
               </div>
@@ -126,7 +126,7 @@ const GiftovateRing = () => {
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
             <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
-              <h2 className="text-3xl font-bold mb-4">Reserve Your Ring</h2>
+              <h2 className="text-3xl font-bold mb-4">Reserve Your Band</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Be among the first warriors to wear clinical-grade biometric monitoring designed for tropical climates.
               </p>
@@ -141,4 +141,4 @@ const GiftovateRing = () => {
   );
 };
 
-export default GiftovateRing;
+export default GiftovateBand;
