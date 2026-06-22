@@ -34,7 +34,7 @@ const App = () => (
           <Route path="/cooling-sock" element={<CoolingSock />} />
           <Route path="/ecocaps" element={<EcoCaps />} />
           <Route path="/face-mask" element={<FaceMask />} />
-          <Route path="/giftovate-ring" element={<GiftovateRing />} />
+          <Route path="/giftovate-band" element={<GiftovateBand />} />
           <Route path="/giftovate-oasis" element={<GiftovateOasis />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
