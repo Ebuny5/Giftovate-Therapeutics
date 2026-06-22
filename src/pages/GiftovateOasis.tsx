@@ -47,7 +47,7 @@ const GiftovateOasis = () => {
       icon: Database,
       title: "Centralized Aggregation",
       description:
-        "Connects your Giftovate Band, cooling wearables, and environmental trackers into one unified data ecosystem.",,
+        "Connects your Giftovate Band, cooling wearables, and environmental trackers into one unified data ecosystem.",
     },
     {
       icon: LineChart,
