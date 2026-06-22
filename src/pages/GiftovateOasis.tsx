@@ -47,7 +47,7 @@ const GiftovateOasis = () => {
       icon: Database,
       title: "Centralized Aggregation",
       description:
-        "Connects your Giftovate Ring, cooling wearables, and environmental trackers into one unified data ecosystem.",
+        "Connects your Giftovate Band, cooling wearables, and environmental trackers into one unified data ecosystem.",,
     },
     {
       icon: LineChart,
@@ -158,7 +158,7 @@ const GiftovateOasis = () => {
                 <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">THE ANALYTICS CORE</p>
                 <h2 className="text-3xl font-bold mb-4">Your Personal Clinical Command Center</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  If the Ring is the observer, the Oasis is the strategist. The Giftovate Oasis serves as the central processing unit for your hyperhidrosis management — aggregating data from your wearables, app logs, and environmental sensors, and transforming raw biometric noise into actionable clinical insights.
+                  If the Band is the observer, the Oasis is the strategist. The Giftovate Oasis serves as the central processing unit for your hyperhidrosis management — aggregating data from your wearables, app logs, and environmental sensors, and transforming raw biometric noise into actionable clinical insights.
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
