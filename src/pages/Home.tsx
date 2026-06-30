@@ -35,7 +35,7 @@ const Home = () => {
               EMPOWERING RELIEF
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Transforming Hyperhidrosis Care in Africa
+              Transforming Hyperhidrosis Care Globally
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Hyperhidrosis is not merely a cosmetic concern; it is a silent medical crisis impacting 385 million Warriors worldwide. At Giftovate Therapeutics Ltd, we are dismantling the systemic barriers to specialized care across the continent. By fusing clinical-grade sudomotor biometrics with revolutionary thermoelectric hardware, we empower Warriors with the freedom to be seen without trepidation.
