@@ -1,0 +1,211 @@
+/* Giftovate Card System & Typography Utilities
+   Color palette pulled from logo: Indigo #5B21B6 → Magenta #C026D3
+   Inspired by premium healthcare/tech brands with glass + gradient depth
+*/
+
+/* ===== TYPOGRAPHY HIERARCHY FIX ===== */
+
+.overline-label {
+  /* Make overline clearly SUBORDINATE */
+  font-size: 0.75rem; /* 12px */
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: hsl(var(--primary) / 0.7); /* Slightly muted vs full primary */
+  margin-bottom: 0.75rem;
+}
+
+/* Ensure H2/H3 headings dominate visually */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 5vw, 2rem); /* 28–32px */
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+}
+
+/* ===== CARD BASE STYLES ===== */
+
+.card-gradient-base {
+  /* Clean gradient background: indigo → magenta from logo */
+  background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 50%, #C026D3 100%);
+  border-radius: 0.75rem;
+}
+
+.card-glass-light {
+  /* For light sections: soft lavender-tinted glass on white */
+  background: rgba(249, 240, 255, 0.4); /* Soft lavender tint, semi-transparent */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(192, 38, 211, 0.2); /* Magenta edge, very subtle */
+  border-radius: 0.75rem;
+}
+
+.card-glass-dark {
+  /* For dark sections: deeper indigo glass */
+  background: rgba(91, 33, 182, 0.08); /* Indigo, very subtle */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(192, 38, 211, 0.15); /* Magenta edge */
+  border-radius: 0.75rem;
+}
+
+.card-gradient-border {
+  /* Card with gradient border (logo colors: indigo → magenta) */
+  background: hsl(var(--background));
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #5B21B6, #E879F9);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.card-gradient-shine {
+  /* Premium card with subtle shine effect and gradient underlay */
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(to bottom, hsl(var(--card)), hsl(var(--card)));
+  border: 1px solid rgba(192, 38, 211, 0.2);
+  border-radius: 0.75rem;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-accent-left {
+  /* Card with left accent border in magenta */
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-left: 3px solid #C026D3;
+  border-radius: 0.75rem;
+}
+
+/* ===== FEATURE CARD STYLING ===== */
+
+.feature-card {
+  /* Icon background with gradient */
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border) / 0.5);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  border-color: rgba(192, 38, 211, 0.3);
+  transform: translateY(-2px);
+}
+
+.feature-icon-bg {
+  /* Icon container with gradient */
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #5B21B6 0%, #C026D3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(91, 33, 182, 0.25);
+}
+
+.feature-icon-bg svg {
+  color: white;
+}
+
+/* ===== SECTION CARD (ROADMAP, CTA) ===== */
+
+.section-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
+.section-card-with-accent {
+  /* Roadmap-style card with left accent and subtle gradient background */
+  background: linear-gradient(to right, 
+    rgba(192, 38, 211, 0.04) 0%, 
+    transparent 15%);
+  border: 1px solid hsl(var(--border));
+  border-left: 4px solid #C026D3;
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
+.cta-card {
+  /* Call-to-action card with soft gradient background and glass feel */
+  background: 
+    linear-gradient(135deg, rgba(91, 33, 182, 0.05) 0%, rgba(192, 38, 211, 0.03) 100%),
+    hsl(var(--card));
+  border: 1px solid rgba(192, 38, 211, 0.15);
+  border-radius: 0.75rem;
+  padding: 3rem 2rem;
+}
+
+/* ===== SPACING & RHYTHM ===== */
+
+.content-container {
+  /* Standard content spacing */
+  padding: 1rem;
+}
+
+.content-spacing {
+  /* Section spacing utilities */
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .content-spacing {
+    gap: 3rem;
+  }
+}
+
+/* ===== BADGE & LABEL ACCENTS ===== */
+
+.badge-accent {
+  /* For eyebrow labels with accent color */
+  color: #C026D3;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.5rem; /* 24px on mobile */
+  }
+  
+  .card-gradient-shine,
+  .feature-card {
+    padding: 1.5rem;
+  }
+}
+
+/* ===== UTILITY TRANSITIONS ===== */
+
+.transition-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
