@@ -128,7 +128,7 @@ const Home = () => {
 
       {/* HERO — dark band, big italic-accent headline, coral CTA */}
       <section className="band-ink relative overflow-hidden">
-        <div className="container mx-auto px-4 pt-16 md:pt-24 pb-20 md:pb-32">
+        <div className="container mx-auto px-4 pt-8 md:pt-12 pb-20 md:pb-32">
           <div className="max-w-4xl">
             <p className="overline-label">GIFTOVATE THERAPEUTICS LTD</p>
             <h1 className="mb-8">
@@ -258,9 +258,7 @@ const Home = () => {
         </div>
       </section>
 
-      <footer style={{ backgroundColor: "#000000" }}>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 };

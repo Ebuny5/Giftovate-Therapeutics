@@ -116,13 +116,13 @@
   /* Small subordinate eyebrow — clearly below heading */
   .overline-label {
     font-family: 'Sora', 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.125rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.18em;
     color: hsl(var(--overline));
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   /* Italic serif accent word — like beyondsweat / faith driven */
