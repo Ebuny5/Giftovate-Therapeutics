@@ -13,6 +13,9 @@ import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 import bandImage from "@/assets/giftovate-band.png.asset.json";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
 
+// Import the new card styles
+import "@/styles/giftovate-cards.css";
+
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -31,7 +34,7 @@ const Home = () => {
       <section className="pt-16 md:pt-20 pb-0 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto mb-16">
-            <p className="overline-label mb-3">
+            <p className="overline-label">
               EMPOWERING RELIEF
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -56,7 +59,7 @@ const Home = () => {
             </Link>
           </div>
 
-          {/* SweatSmart App Section */}
+          {/* SweatSmart App Section - UPDATED CARD STYLING */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div className="relative order-2 md:order-1">
               <img 
@@ -66,7 +69,7 @@ const Home = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <p className="overline-label mb-3">
+              <p className="overline-label">
                 INNOVATIVE SCREENING
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -81,10 +84,10 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Giftovate Band Section */}
+          {/* Giftovate Band Section - GLASS CARD */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
-              <p className="overline-label mb-3">
+              <p className="overline-label">
                 THE BIOMETRIC STANDARD
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -97,19 +100,19 @@ const Home = () => {
                 Learn more about the Giftovate Band →
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative card-glass-light p-6">
               <img
                 src={bandImage.url}
                 alt="Giftovate Band biometric wearable on a warrior's wrist"
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg w-full h-auto"
               />
             </div>
           </div>
 
-          {/* Thermoelectric Glove Section */}
+          {/* Thermoelectric Glove Section - GRADIENT SHINE CARD */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
-              <p className="overline-label mb-3">
+              <p className="overline-label">
                 THE THERMOELECTRIC FRONTIER
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -122,26 +125,26 @@ const Home = () => {
                 Learn more about the Thermoelectric Glove →
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative card-gradient-shine p-6">
               <img 
                 src={gloveImage} 
                 alt="Thermoelectric glove prototype for palm sweating relief"
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg w-full h-auto"
               />
             </div>
           </div>
 
-          {/* Cooling Sock Section */}
+          {/* Cooling Sock Section - GLASS CARD DARK */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div className="relative order-2 md:order-1">
+            <div className="relative order-2 md:order-1 card-glass-dark p-6">
               <img
                 src={coolingSockImage}
                 alt="Cooling sock prototype for plantar hyperhidrosis relief"
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg w-full h-auto"
               />
             </div>
             <div className="order-1 md:order-2">
-              <p className="overline-label mb-3">
+              <p className="overline-label">
                 THE PLANTAR PROTOCOL
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -156,17 +159,17 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Face Mask Section */}
+          {/* Face Mask Section - GRADIENT SHINE CARD */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-12">
-            <div className="relative order-2 md:order-1">
+            <div className="relative order-2 md:order-1 card-gradient-shine p-6">
               <img 
                 src={faceMaskImage} 
                 alt="Face mask prototype for craniofacial hyperhidrosis relief"
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg w-full h-auto"
               />
             </div>
             <div className="order-1 md:order-2">
-              <p className="overline-label mb-3">
+              <p className="overline-label">
                 PRECISION THERMAL REGULATION
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -181,10 +184,10 @@ const Home = () => {
             </div>
           </div>
 
-          {/* EcoCaps Section */}
+          {/* EcoCaps Section - CARD GRADIENT BORDER */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
             <div>
-              <p className="overline-label mb-3">
+              <p className="overline-label">
                 SUDOMOTOR SYNERGY FROM WITHIN
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -197,26 +200,26 @@ const Home = () => {
                 Learn more about EcoCaps →
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative card-gradient-border p-6">
               <img 
                 src={ecocapsImage} 
                 alt="EcoCaps plant-based herbal capsules for sustainable hyperhidrosis relief"
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg w-full h-auto"
               />
             </div>
           </div>
 
-          {/* Giftovate Oasis Section */}
+          {/* Giftovate Oasis Section - GLASS LIGHT CARD */}
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div className="relative order-2 md:order-1">
+            <div className="relative order-2 md:order-1 card-glass-light p-6">
               <img
                 src={oasisImage}
                 alt="Giftovate Oasis recovery station"
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg w-full h-auto"
               />
             </div>
             <div className="order-1 md:order-2">
-              <p className="overline-label mb-3">
+              <p className="overline-label">
                 CLINICAL RELIEF ON DEMAND
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -231,10 +234,10 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Roadmap Section */}
+          {/* Roadmap Section - ACCENT LEFT CARD */}
           <div className="max-w-5xl mx-auto mb-16">
-            <Card className="p-8 md:p-12 border-l-4 border-l-primary bg-gradient-card">
-              <p className="overline-label mb-3">
+            <div className="section-card-with-accent p-8 md:p-12 hover:shadow-lg transition-card">
+              <p className="overline-label">
                 THE PATH TO CLINICAL EQUALITY
               </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -246,24 +249,26 @@ const Home = () => {
               <Link to="/roadmap">
                 <Button>Learn more about the Roadmap →</Button>
               </Link>
-            </Card>
+            </div>
           </div>
 
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - CTA CARD */}
       <section className="pt-8 pb-16 md:pt-10 md:pb-20">
         <div className="container mx-auto px-4">
-          <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
-            <h2 className="text-3xl font-bold mb-4">Ready to Take Control?</h2>
-            <p className="text-lg text-muted-foreground mb-8">
+          <div className="cta-card max-w-3xl mx-auto hover:shadow-lg transition-card">
+            <h2 className="text-3xl font-bold mb-4 text-center">Ready to Take Control?</h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
               Explore our innovative solutions and join the community working to reduce stigma and improve care for hyperhidrosis
             </p>
-            <Link to="/resources">
-              <Button size="lg">Explore Resources</Button>
-            </Link>
-          </Card>
+            <div className="flex justify-center">
+              <Link to="/resources">
+                <Button size="lg">Explore Resources</Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
