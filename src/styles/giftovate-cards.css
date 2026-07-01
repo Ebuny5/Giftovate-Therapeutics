@@ -1,211 +1,135 @@
-/* Giftovate Card System & Typography Utilities
-   Color palette pulled from logo: Indigo #5B21B6 → Magenta #C026D3
-   Inspired by premium healthcare/tech brands with glass + gradient depth
+/* Giftovate colorful section band + card system.
+   Vibrant, opaque, not transparent. Alternating brand bands drive rhythm.
 */
 
-/* ===== TYPOGRAPHY HIERARCHY FIX ===== */
+/* ============ SECTION BANDS ============ */
+.band-ink {
+  background: linear-gradient(180deg, #0F0A1F 0%, #1A0B2E 100%);
+  color: #F5F0FF;
+}
+.band-ink h2, .band-ink h3 { color: #FFFFFF; }
+.band-ink .overline-label { color: #E879F9; }
 
-.overline-label {
-  /* Make overline clearly SUBORDINATE */
-  font-size: 0.75rem; /* 12px */
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: hsl(var(--primary) / 0.7); /* Slightly muted vs full primary */
-  margin-bottom: 0.75rem;
+.band-purple {
+  background: linear-gradient(135deg, #4C1D95 0%, #6B21A8 55%, #7C3AED 100%);
+  color: #F5F0FF;
+}
+.band-purple h2, .band-purple h3 { color: #FFFFFF; }
+.band-purple .overline-label { color: #F0ABFC; }
+
+.band-magenta {
+  background: linear-gradient(135deg, #6B21A8 0%, #C026D3 100%);
+  color: #FFF;
+}
+.band-magenta h2, .band-magenta h3 { color: #FFFFFF; }
+.band-magenta .overline-label { color: #FDE68A; }
+
+.band-cream {
+  background: linear-gradient(180deg, #FBF7FF 0%, #F3E8FF 100%);
 }
 
-/* Ensure H2/H3 headings dominate visually */
-h1, h2, h3 {
-  font-weight: 700;
-  line-height: 1.2;
+.band-coral-tint {
+  background: linear-gradient(135deg, #FFF7ED 0%, #FEE4D3 100%);
+}
+.band-coral-tint .overline-label { color: #EA580C; }
+
+.band-diagonal-cut {
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+.band-diagonal-top {
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
 }
 
-h2 {
-  font-size: clamp(1.75rem, 5vw, 2rem); /* 28–32px */
+/* ============ PRODUCT CARDS (opaque, colorful) ============ */
+.product-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  box-shadow: 0 20px 50px -18px rgba(15, 10, 31, 0.35);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -18px rgba(15, 10, 31, 0.45); }
+
+.product-card-purple {
+  background: linear-gradient(150deg, #4C1D95 0%, #7C3AED 100%);
+}
+.product-card-magenta {
+  background: linear-gradient(150deg, #6B21A8 0%, #C026D3 100%);
+}
+.product-card-indigo {
+  background: linear-gradient(150deg, #1E1B4B 0%, #4C1D95 100%);
+}
+.product-card-sunset {
+  background: linear-gradient(150deg, #7C3AED 0%, #E879F9 60%, #FF6B35 100%);
+}
+.product-card-cream {
+  background: linear-gradient(150deg, #FBF7FF 0%, #F3E8FF 100%);
+  border: 1px solid #E9D5FF;
+}
+.product-card img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-h3 {
-  font-size: 1.25rem; /* 20px */
+/* ============ STAT / ACCENT LABEL ============ */
+.big-stat {
+  font-family: 'Sora', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1;
+  background: linear-gradient(135deg, #C026D3, #FF6B35);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.04em;
 }
 
-/* ===== CARD BASE STYLES ===== */
-
-.card-gradient-base {
-  /* Clean gradient background: indigo → magenta from logo */
-  background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 50%, #C026D3 100%);
-  border-radius: 0.75rem;
-}
-
-.card-glass-light {
-  /* For light sections: soft lavender-tinted glass on white */
-  background: rgba(249, 240, 255, 0.4); /* Soft lavender tint, semi-transparent */
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(192, 38, 211, 0.2); /* Magenta edge, very subtle */
-  border-radius: 0.75rem;
-}
-
-.card-glass-dark {
-  /* For dark sections: deeper indigo glass */
-  background: rgba(91, 33, 182, 0.08); /* Indigo, very subtle */
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(192, 38, 211, 0.15); /* Magenta edge */
-  border-radius: 0.75rem;
-}
-
-.card-gradient-border {
-  /* Card with gradient border (logo colors: indigo → magenta) */
-  background: hsl(var(--background));
-  border-radius: 0.75rem;
+/* ============ CTA CARD ============ */
+.cta-card {
+  background: var(--gradient-hero);
+  color: white;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-brand);
   position: relative;
   overflow: hidden;
 }
-
-.card-gradient-border::before {
+.cta-card::before {
   content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(135deg, #5B21B6, #E879F9);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  position: absolute; inset: -50%;
+  background: radial-gradient(circle at 30% 20%, rgba(232,121,249,.35), transparent 50%),
+              radial-gradient(circle at 80% 90%, rgba(255,107,53,.25), transparent 50%);
   pointer-events: none;
 }
+.cta-card > * { position: relative; z-index: 1; }
+.cta-card h2 { color: white; }
+.cta-card p { color: rgba(255,255,255,0.9); }
 
-.card-gradient-shine {
-  /* Premium card with subtle shine effect and gradient underlay */
-  background: 
-    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
-    linear-gradient(to bottom, hsl(var(--card)), hsl(var(--card)));
-  border: 1px solid rgba(192, 38, 211, 0.2);
-  border-radius: 0.75rem;
-  box-shadow: 
-    inset 0 1px 0 rgba(255, 255, 255, 0.15),
-    0 8px 16px rgba(0, 0, 0, 0.08);
-}
-
-.card-accent-left {
-  /* Card with left accent border in magenta */
-  background: hsl(var(--card));
-  border: 1px solid hsl(var(--border));
-  border-left: 3px solid #C026D3;
-  border-radius: 0.75rem;
-}
-
-/* ===== FEATURE CARD STYLING ===== */
-
-.feature-card {
-  /* Icon background with gradient */
-  padding: 2rem;
-  border-radius: 0.75rem;
-  border: 1px solid hsl(var(--border) / 0.5);
-  transition: all 0.3s ease;
-}
-
-.feature-card:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-  border-color: rgba(192, 38, 211, 0.3);
-  transform: translateY(-2px);
-}
-
-.feature-icon-bg {
-  /* Icon container with gradient */
-  width: 4rem;
-  height: 4rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, #5B21B6 0%, #C026D3 100%);
-  display: flex;
+/* ============ LINK STYLES ============ */
+.link-arrow {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(91, 33, 182, 0.25);
+  gap: 0.5rem;
+  color: hsl(var(--primary));
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid transparent;
+  transition: gap .2s ease, border-color .2s ease;
+}
+.link-arrow:hover { gap: 0.85rem; border-bottom-color: hsl(var(--primary)); }
+.band-ink .link-arrow, .band-purple .link-arrow, .band-magenta .link-arrow {
+  color: #FDE68A;
+}
+.band-ink .link-arrow:hover, .band-purple .link-arrow:hover, .band-magenta .link-arrow:hover {
+  border-bottom-color: #FDE68A;
 }
 
-.feature-icon-bg svg {
-  color: white;
-}
-
-/* ===== SECTION CARD (ROADMAP, CTA) ===== */
-
-.section-card {
-  background: hsl(var(--card));
-  border: 1px solid hsl(var(--border));
-  border-radius: 0.75rem;
-  padding: 2rem;
-}
-
-.section-card-with-accent {
-  /* Roadmap-style card with left accent and subtle gradient background */
-  background: linear-gradient(to right, 
-    rgba(192, 38, 211, 0.04) 0%, 
-    transparent 15%);
-  border: 1px solid hsl(var(--border));
-  border-left: 4px solid #C026D3;
-  border-radius: 0.75rem;
-  padding: 2rem;
-}
-
-.cta-card {
-  /* Call-to-action card with soft gradient background and glass feel */
-  background: 
-    linear-gradient(135deg, rgba(91, 33, 182, 0.05) 0%, rgba(192, 38, 211, 0.03) 100%),
-    hsl(var(--card));
-  border: 1px solid rgba(192, 38, 211, 0.15);
-  border-radius: 0.75rem;
-  padding: 3rem 2rem;
-}
-
-/* ===== SPACING & RHYTHM ===== */
-
-.content-container {
-  /* Standard content spacing */
-  padding: 1rem;
-}
-
-.content-spacing {
-  /* Section spacing utilities */
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .content-spacing {
-    gap: 3rem;
-  }
-}
-
-/* ===== BADGE & LABEL ACCENTS ===== */
-
-.badge-accent {
-  /* For eyebrow labels with accent color */
-  color: #C026D3;
-  font-weight: 600;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* ===== RESPONSIVE ADJUSTMENTS ===== */
-
-@media (max-width: 640px) {
-  h2 {
-    font-size: 1.5rem; /* 24px on mobile */
-  }
-  
-  .card-gradient-shine,
-  .feature-card {
-    padding: 1.5rem;
-  }
-}
-
-/* ===== UTILITY TRANSITIONS ===== */
-
-.transition-card {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+/* ============ SECTION SPACING ============ */
+.section-pad {
+  padding-top: clamp(4rem, 8vw, 7rem);
+  padding-bottom: clamp(4rem, 8vw, 7rem);
 }

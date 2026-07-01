@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable.png";
-
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
 import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
@@ -13,261 +11,249 @@ import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 import bandImage from "@/assets/giftovate-band.png.asset.json";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
 
-// Import the new card styles
 import "@/styles/giftovate-cards.css";
+
+type Product = {
+  overline: string;
+  title: React.ReactNode;
+  body: string;
+  href: string;
+  cta: string;
+  image: string;
+  cardClass: string;
+  reverse?: boolean;
+  bandClass?: string;
+};
+
+const products: Product[] = [
+  {
+    overline: "INNOVATIVE SCREENING",
+    title: <>Engineering a <span className="accent-italic">sweat-free</span> future.</>,
+    body: "SweatSmart is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultations.",
+    href: "/sweatsmart-app",
+    cta: "Learn about SweatSmart",
+    image: sweatsmartImage,
+    cardClass: "product-card-purple",
+    bandClass: "band-cream",
+  },
+  {
+    overline: "THE BIOMETRIC STANDARD",
+    title: <>Clinical-grade monitoring, <span className="accent-italic accent-italic-magenta">always on.</span></>,
+    body: "The Giftovate Band captures the physiological data mobile apps miss — Electrodermal Activity and Heart Rate Variability read from the wrist to predict hyperhidrosis triggers before they manifest.",
+    href: "/giftovate-band",
+    cta: "Meet the Giftovate Band",
+    image: bandImage.url,
+    cardClass: "product-card-indigo",
+    reverse: true,
+    bandClass: "band-ink",
+  },
+  {
+    overline: "THE THERMOELECTRIC FRONTIER",
+    title: <>Restoring <span className="accent-italic">precision</span> & performance.</>,
+    body: "Active sudomotor suppression meets rapid recovery. Integrated Peltier modules pump heat away from the palm, bypassing the evaporative failure that grips tropical climates above 70% humidity.",
+    href: "/thermoelectric-glove",
+    cta: "Explore the glove",
+    image: gloveImage,
+    cardClass: "product-card-magenta",
+    bandClass: "band-cream",
+  },
+  {
+    overline: "THE PLANTAR PROTOCOL",
+    title: <>Ending <span className="accent-italic">shoe-removal</span> anxiety.</>,
+    body: "Bamboo and Merino fibers meet integrated Peltier units. Walk at your natural pace with total stability — feet locked into a dry, high-friction environment all day.",
+    href: "/cooling-sock",
+    cta: "See the cooling sock",
+    image: coolingSockImage,
+    cardClass: "product-card-purple",
+    reverse: true,
+    bandClass: "band-purple",
+  },
+  {
+    overline: "PRECISION THERMAL REGULATION",
+    title: <>Craniofacial <span className="accent-italic">mastery.</span></>,
+    body: "Stop the rain before it begins. Targeted, silent Peltier cooling for the forehead and cheeks — command the room with total composure, even past the 28°C / 70% humidity threshold.",
+    href: "/face-mask",
+    cta: "Discover the face mask",
+    image: faceMaskImage,
+    cardClass: "product-card-sunset",
+    bandClass: "band-cream",
+  },
+  {
+    overline: "SUDOMOTOR SYNERGY FROM WITHIN",
+    title: <>Holistic. Sustainable. <span className="accent-italic accent-italic-magenta">Validated.</span></>,
+    body: "EcoCaps are our plant-based sudomotor regulator — co-created with local African communities and pilot-tested through SweatSmart. A natural, synergetic alternative without pharmaceutical side effects.",
+    href: "/ecocaps",
+    cta: "Learn about EcoCaps",
+    image: ecocapsImage,
+    cardClass: "product-card-cream",
+    reverse: true,
+    bandClass: "band-coral-tint",
+  },
+  {
+    overline: "CLINICAL RELIEF ON DEMAND",
+    title: <>Empowering lives, one <span className="accent-italic">session</span> at a time.</>,
+    body: "Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.",
+    href: "/giftovate-oasis",
+    cta: "Visit the Oasis",
+    image: oasisImage,
+    cardClass: "product-card-magenta",
+    bandClass: "band-ink",
+  },
+];
+
+const ProductRow = ({ p }: { p: Product }) => (
+  <section className={`section-pad ${p.bandClass ?? ""}`}>
+    <div className="container mx-auto px-4">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
+        <div className={`product-card ${p.cardClass} ${p.reverse ? "md:order-2" : ""}`}>
+          <img src={p.image} alt="" />
+        </div>
+        <div className={p.reverse ? "md:order-1" : ""}>
+          <p className="overline-label">{p.overline}</p>
+          <h2 className="mb-6">{p.title}</h2>
+          <p className="text-lg leading-relaxed mb-8 opacity-90">{p.body}</p>
+          <Link to={p.href} className="link-arrow">
+            {p.cta} <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <img 
-          src={heroImage} 
-          alt="Thermoelectric glove with sustainable design" 
-          className="w-full h-auto object-cover"
-        />
-      </section>
 
-      {/* About Section */}
-      <section className="pt-16 md:pt-20 pb-0 bg-gradient-to-b from-background to-muted/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto mb-16">
-            <p className="overline-label">
-              EMPOWERING RELIEF
+      {/* HERO — dark band, big italic-accent headline, coral CTA */}
+      <section className="band-ink relative overflow-hidden">
+        <div className="container mx-auto px-4 pt-16 md:pt-24 pb-20 md:pb-32">
+          <div className="max-w-4xl">
+            <p className="overline-label">GIFTOVATE THERAPEUTICS LTD</p>
+            <h1 className="mb-8">
+              Transforming hyperhidrosis care{" "}
+              <span className="accent-italic">globally.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/80 max-w-2xl leading-relaxed mb-10">
+              Clinical-grade sudomotor biometrics fused with thermoelectric hardware —
+              built for the 385 million Warriors the industry forgot.
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Transforming Hyperhidrosis Care Globally
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Hyperhidrosis is not merely a cosmetic concern; it is a silent medical crisis impacting 385 million Warriors worldwide. At Giftovate Therapeutics Ltd, we are dismantling the systemic barriers to specialized care across the continent. By fusing clinical-grade sudomotor biometrics with revolutionary thermoelectric hardware, we empower Warriors with the freedom to be seen without trepidation.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              We achieve this through our operational digital platform,{" "}
-              <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer" className="text-[#6B21A8] hover:underline font-medium">SweatSmart</a>
-              —which provides proactive climate-aware alerts and HidroAlly clinical intelligence—and our upcoming line of localized thermoelectric cooling hardware, including smart gloves and Eco-Caps currently in the functional prototype stage.
-            </p>
-            <h3 className="text-2xl font-bold mb-4 mt-8">Our Strategic Partnership</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Our technical innovation is fueled by our close partnership with the{" "}
-              <a href="https://beyondsweat.org" target="_blank" rel="noopener noreferrer" className="text-[#6B21A8] hover:underline font-medium">Beyond Sweat Foundation</a>
-              . While Giftovate engineers the hardware and software solutions, the Foundation leads our mission-critical advocacy, community awareness, and educational outreaches. Together, we are building the first-ever Pan-African dataset to break the silence and restore bodily dignity to the 5% of the West African workforce currently threatened by heat-stress-induced productivity loss.
-            </p>
-            <Link to="/programs" className="text-primary hover:underline font-medium">
-              Get in touch →
-            </Link>
-          </div>
-
-          {/* SweatSmart App Section - UPDATED CARD STYLING */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div className="relative order-2 md:order-1">
-              <img 
-                src={sweatsmartImage} 
-                alt="SweatSmart mobile app showing palm scan feature"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <p className="overline-label">
-                INNOVATIVE SCREENING
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Engineering a Sweat-Free Future
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                SweatSmart is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence and high-fidelity analytics.
-              </p>
-              <Link to="/sweatsmart-app" className="text-primary hover:underline font-medium">
-                Learn more about SweatSmart →
+            <div className="flex flex-wrap gap-4">
+              <Link to="/sweatsmart-app" className="btn-coral">
+                Join the pilot <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link to="/programs" className="btn-purple">
+                Our programs
               </Link>
             </div>
           </div>
-
-          {/* Giftovate Band Section - GLASS CARD */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div>
-              <p className="overline-label">
-                THE BIOMETRIC STANDARD
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Giftovate Band: Clinical-Grade Monitoring, Always On.
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Precise, continuous, and unobtrusive. The Giftovate Band captures the physiological data that mobile apps miss — monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) from the wrist to predict hyperhidrosis triggers before they manifest.
-              </p>
-              <Link to="/giftovate-band" className="text-primary hover:underline font-medium">
-                Learn more about the Giftovate Band →
-              </Link>
-            </div>
-            <div className="relative card-glass-light p-6">
-              <img
-                src={bandImage.url}
-                alt="Giftovate Band biometric wearable on a warrior's wrist"
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Thermoelectric Glove Section - GRADIENT SHINE CARD */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div>
-              <p className="overline-label">
-                THE THERMOELECTRIC FRONTIER
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Thermoelectric Glove: Restoring Precision & Performance
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Active Sudomotor Suppression meets Rapid Recovery. While passive glove liners only manage the aftermath, Giftovate's prototype thermoelectric gloves address the source. By utilizing integrated Peltier cooling modules, the glove actively pumps heat away from the skin's surface, bypassing the "evaporative failure" that occurs in tropical climates once humidity crosses 70%.
-              </p>
-              <Link to="/thermoelectric-glove" className="text-primary hover:underline font-medium">
-                Learn more about the Thermoelectric Glove →
-              </Link>
-            </div>
-            <div className="relative card-gradient-shine p-6">
-              <img 
-                src={gloveImage} 
-                alt="Thermoelectric glove prototype for palm sweating relief"
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Cooling Sock Section - GLASS CARD DARK */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div className="relative order-2 md:order-1 card-glass-dark p-6">
-              <img
-                src={coolingSockImage}
-                alt="Cooling sock prototype for plantar hyperhidrosis relief"
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <p className="overline-label">
-                THE PLANTAR PROTOCOL
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Active Cooling Socks: Ending "Shoe-Removal Anxiety"
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                For warriors with plantar hyperhidrosis, every day feels like walking through a rainstorm inside their shoes. Our cooling socks are engineered with moisture-wicking natural fibers (Bamboo and Merino Wool) and integrated Peltier units to eliminate the "Catch-22" of enclosed footwear. Walk at your natural pace with total stability, knowing your feet are locked into a dry, high-friction environment.
-              </p>
-              <Link to="/cooling-sock" className="text-primary hover:underline font-medium">
-                Learn more about Cooling Sock →
-              </Link>
-            </div>
-          </div>
-
-          {/* Face Mask Section - GRADIENT SHINE CARD */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-12">
-            <div className="relative order-2 md:order-1 card-gradient-shine p-6">
-              <img 
-                src={faceMaskImage} 
-                alt="Face mask prototype for craniofacial hyperhidrosis relief"
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <p className="overline-label">
-                PRECISION THERMAL REGULATION
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Face Mask: Craniofacial Mastery
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Stop the "rain" before it begins. Command the room with total composure. Our innovative face mask prototype provides targeted, silent relief for craniofacial hyperhidrosis. Utilizing integrated Peltier cooling modules, the mask provides active heat extraction from the forehead and cheeks, bypassing the "evaporative failure" that occurs in tropical zones once the climate crosses the 28°C and 70% humidity threshold.
-              </p>
-              <Link to="/face-mask" className="text-primary hover:underline font-medium">
-                Learn more about Face Mask →
-              </Link>
-            </div>
-          </div>
-
-          {/* EcoCaps Section - CARD GRADIENT BORDER */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div>
-              <p className="overline-label">
-                SUDOMOTOR SYNERGY FROM WITHIN
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                EcoCaps: Holistic. Sustainable. Validated.
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Reclaim your internal balance. EcoCaps represent our commitment to plant-based sudomotor regulation. Co-created with local African communities and pilot-tested through the SweatSmart initiative, these eco-friendly capsules offer a natural, synergetic alternative for warriors seeking relief without the side effects of traditional pharmaceuticals.
-              </p>
-              <Link to="/ecocaps" className="text-primary hover:underline font-medium">
-                Learn more about EcoCaps →
-              </Link>
-            </div>
-            <div className="relative card-gradient-border p-6">
-              <img 
-                src={ecocapsImage} 
-                alt="EcoCaps plant-based herbal capsules for sustainable hyperhidrosis relief"
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Giftovate Oasis Section - GLASS LIGHT CARD */}
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            <div className="relative order-2 md:order-1 card-glass-light p-6">
-              <img
-                src={oasisImage}
-                alt="Giftovate Oasis recovery station"
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <p className="overline-label">
-                CLINICAL RELIEF ON DEMAND
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Giftovate Oasis: Empowering Lives, One Session at a Time.
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.
-              </p>
-              <Link to="/giftovate-oasis" className="text-primary hover:underline font-medium">
-                Learn more about the Giftovate Oasis →
-              </Link>
-            </div>
-          </div>
-
-          {/* Roadmap Section - ACCENT LEFT CARD */}
-          <div className="max-w-5xl mx-auto mb-16">
-            <div className="section-card-with-accent p-8 md:p-12 hover:shadow-lg transition-card">
-              <p className="overline-label">
-                THE PATH TO CLINICAL EQUALITY
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                The Giftovate Roadmap: Building the Infrastructure of Care.
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                A four-phase "Data-to-Device" plan — from diagnostic visibility (2025) to global clinical integration (2028+). We first understand hyperhidrosis through high-resolution data, then treat it with targeted hardware.
-              </p>
-              <Link to="/roadmap">
-                <Button>Learn more about the Roadmap →</Button>
-              </Link>
-            </div>
-          </div>
-
+        </div>
+        <div className="relative">
+          <img src={heroImage} alt="Sustainable thermoelectric wearable" className="w-full h-auto object-cover" />
         </div>
       </section>
 
-      {/* CTA Section - CTA CARD */}
-      <section className="pt-8 pb-16 md:pt-10 md:pb-20">
+      {/* MISSION — cream band, large body copy */}
+      <section className="section-pad band-cream">
         <div className="container mx-auto px-4">
-          <div className="cta-card max-w-3xl mx-auto hover:shadow-lg transition-card">
-            <h2 className="text-3xl font-bold mb-4 text-center">Ready to Take Control?</h2>
-            <p className="text-lg text-muted-foreground mb-8 text-center">
-              Explore our innovative solutions and join the community working to reduce stigma and improve care for hyperhidrosis
+          <div className="max-w-4xl mx-auto">
+            <p className="overline-label">EMPOWERING RELIEF</p>
+            <h2 className="mb-8">
+              Hyperhidrosis is not cosmetic. It's a{" "}
+              <span className="accent-italic accent-italic-magenta">silent medical crisis.</span>
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground/80">
+              At Giftovate Therapeutics Ltd, we are dismantling the systemic barriers to
+              specialized care. By fusing clinical-grade sudomotor biometrics with
+              revolutionary thermoelectric hardware, we empower Warriors with the freedom
+              to be seen without trepidation.
             </p>
-            <div className="flex justify-center">
-              <Link to="/resources">
-                <Button size="lg">Explore Resources</Button>
-              </Link>
+            <p className="text-lg leading-relaxed mb-6 text-foreground/80">
+              We achieve this through our operational digital platform,{" "}
+              <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer"
+                 className="text-[#6B21A8] font-semibold underline decoration-2 underline-offset-4">
+                SweatSmart
+              </a>
+              —which provides proactive climate-aware alerts and HidroAlly clinical
+              intelligence—and our upcoming line of localized thermoelectric cooling
+              hardware, including smart gloves and Eco-Caps currently in the functional
+              prototype stage.
+            </p>
+
+            <h3 className="mt-12 mb-4">Our strategic partnership</h3>
+            <p className="text-lg leading-relaxed text-foreground/80">
+              Our technical innovation is fueled by our close partnership with the{" "}
+              <a href="https://beyondsweat.org" target="_blank" rel="noopener noreferrer"
+                 className="text-[#6B21A8] font-semibold underline decoration-2 underline-offset-4">
+                Beyond Sweat Foundation
+              </a>
+              . Together, we are building the first-ever Pan-African dataset to break the
+              silence and restore bodily dignity to the 5% of the West African workforce
+              currently threatened by heat-stress-induced productivity loss.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* STAT BAND — impact numbers */}
+      <section className="band-ink section-pad">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto text-center">
+            <div>
+              <div className="big-stat">385M</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Warriors worldwide</p>
             </div>
+            <div>
+              <div className="big-stat">5%</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">West African workforce at risk</p>
+            </div>
+            <div>
+              <div className="big-stat">28°</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Climate alert threshold</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRODUCT ROWS */}
+      {products.map((p) => (
+        <ProductRow key={p.href} p={p} />
+      ))}
+
+      {/* ROADMAP TEASER */}
+      <section className="section-pad band-magenta">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="overline-label">THE PATH TO CLINICAL EQUALITY</p>
+            <h2 className="mb-6">
+              Building the <span className="accent-italic">infrastructure</span> of care.
+            </h2>
+            <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-10 max-w-2xl mx-auto">
+              A four-phase Data-to-Device plan — from diagnostic visibility in 2025 to
+              global clinical integration in 2028+. Understand hyperhidrosis through
+              high-resolution data, then treat it with targeted hardware.
+            </p>
+            <Link to="/roadmap" className="btn-coral">
+              Explore the roadmap <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section-pad">
+        <div className="container mx-auto px-4">
+          <div className="cta-card max-w-4xl mx-auto">
+            <p className="overline-label" style={{ color: "#FDE68A" }}>JOIN THE MOVEMENT</p>
+            <h2 className="mb-4">Ready to take <span className="accent-italic">control?</span></h2>
+            <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto">
+              Explore our solutions and join the community reducing stigma and improving
+              care for hyperhidrosis.
+            </p>
+            <Link to="/resources" className="btn-coral">
+              Explore resources <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
