@@ -7,21 +7,21 @@
   background: linear-gradient(180deg, #0F0A1F 0%, #1A0B2E 100%);
   color: #F5F0FF;
 }
-.band-ink h2, .band-ink h3 { color: #FFFFFF; }
+.band-ink h1, .band-ink h2, .band-ink h3 { color: #FFFFFF; }
 .band-ink .overline-label { color: #E879F9; }
 
 .band-purple {
   background: linear-gradient(135deg, #4C1D95 0%, #6B21A8 55%, #7C3AED 100%);
   color: #F5F0FF;
 }
-.band-purple h2, .band-purple h3 { color: #FFFFFF; }
+.band-purple h1, .band-purple h2, .band-purple h3 { color: #FFFFFF; }
 .band-purple .overline-label { color: #F0ABFC; }
 
 .band-magenta {
   background: linear-gradient(135deg, #6B21A8 0%, #C026D3 100%);
   color: #FFF;
 }
-.band-magenta h2, .band-magenta h3 { color: #FFFFFF; }
+.band-magenta h1, .band-magenta h2, .band-magenta h3 { color: #FFFFFF; }
 .band-magenta .overline-label { color: #FDE68A; }
 
 .band-cream {
@@ -130,6 +130,6 @@
 
 /* ============ SECTION SPACING ============ */
 .section-pad {
-  padding-top: clamp(4rem, 8vw, 7rem);
+  padding-top: clamp(2rem, 4vw, 3.5rem);
   padding-bottom: clamp(4rem, 8vw, 7rem);
 }
