@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Activity, HeartPulse, Watch, Radio } from "lucide-react";
-import giftovateRing from "@/assets/giftovate-band.jpg";
+import giftovateBand from "@/assets/giftovate-band.jpg";
 
 const GiftovateBand = () => {
   const features = [
@@ -60,7 +60,7 @@ const GiftovateBand = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <img
-                src={giftovateRing}
+                src={giftovateBand}
                 alt="Giftovate Band biometric wearable on a warrior's wrist"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
