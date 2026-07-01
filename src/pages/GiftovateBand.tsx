@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Activity, HeartPulse, Watch, Radio } from "lucide-react";
-import giftovateRing from "@/assets/giftovate-ring.jpg";
+import giftovateRing from "@/assets/giftovate-band.jpg";
 
 const GiftovateBand = () => {
   const features = [
