@@ -8,7 +8,7 @@ import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
 import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
-import giftovateRing from "@/assets/giftovate-band.jpg";
+import giftovateBand from "@/assets/giftovate-band.jpg";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
 import partnershipImage from "@/assets/strategic-partnership.jpg";
 
