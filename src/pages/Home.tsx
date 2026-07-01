@@ -10,7 +10,7 @@ import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 import giftovateRing from "@/assets/giftovate-band.jpg";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
-import partnershipImage from "@/assets/strategic-partnership.png";
+import partnershipImage from "@/assets/strategic-partnership.jpg";
 
 import "@/styles/giftovate-cards.css";
 
