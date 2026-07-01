@@ -8,8 +8,9 @@ import gloveImage from "@/assets/thermoelectric-glove.png";
 import faceMaskImage from "@/assets/face-mask.png";
 import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
-import bandImage from "@/assets/giftovate-band.png.asset.json";
+import giftovateRing from "@/assets/giftovate-ring.jpg";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
+import partnershipImage from "@/assets/strategic-partnership.png";
 
 import "@/styles/giftovate-cards.css";
 
@@ -27,6 +28,16 @@ type Product = {
 
 const products: Product[] = [
   {
+    overline: "STRATEGIC PARTNERSHIP",
+    title: <>Building the <span className="accent-italic">Pan-African</span> dataset.</>,
+    body: "Our technical innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and restoring bodily dignity to the 5% of the West African workforce threatened by heat-stress.",
+    href: "https://beyondsweat.org",
+    cta: "Visit Beyond Sweat",
+    image: partnershipImage,
+    cardClass: "product-card-indigo",
+    bandClass: "band-cream",
+  },
+  {
     overline: "INNOVATIVE SCREENING",
     title: <>Engineering a <span className="accent-italic">sweat-free</span> future.</>,
     body: "SweatSmart is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultations.",
@@ -42,7 +53,7 @@ const products: Product[] = [
     body: "The Giftovate Band captures the physiological data mobile apps miss — Electrodermal Activity and Heart Rate Variability read from the wrist to predict hyperhidrosis triggers before they manifest.",
     href: "/giftovate-band",
     cta: "Meet the Giftovate Band",
-    image: bandImage.url,
+    image: giftovateRing,
     cardClass: "product-card-indigo",
     reverse: true,
     bandClass: "band-ink",
@@ -169,7 +180,7 @@ const Home = () => {
               revolutionary thermoelectric hardware, we empower Warriors with the freedom
               to be seen without trepidation.
             </p>
-            <p className="text-lg leading-relaxed mb-6 text-foreground/80">
+            <p className="text-lg leading-relaxed text-foreground/80">
               We achieve this through our operational digital platform,{" "}
               <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer"
                  className="text-[#6B21A8] font-semibold underline decoration-2 underline-offset-4">
@@ -179,18 +190,6 @@ const Home = () => {
               intelligence—and our upcoming line of localized thermoelectric cooling
               hardware, including smart gloves and Eco-Caps currently in the functional
               prototype stage.
-            </p>
-
-            <h3 className="mt-12 mb-4">Our strategic partnership</h3>
-            <p className="text-lg leading-relaxed text-foreground/80">
-              Our technical innovation is fueled by our close partnership with the{" "}
-              <a href="https://beyondsweat.org" target="_blank" rel="noopener noreferrer"
-                 className="text-[#6B21A8] font-semibold underline decoration-2 underline-offset-4">
-                Beyond Sweat Foundation
-              </a>
-              . Together, we are building the first-ever Pan-African dataset to break the
-              silence and restore bodily dignity to the 5% of the West African workforce
-              currently threatened by heat-stress-induced productivity loss.
             </p>
           </div>
         </div>
