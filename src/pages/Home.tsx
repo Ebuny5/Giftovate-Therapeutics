@@ -53,7 +53,7 @@ const products: Product[] = [
     body: "The Giftovate Band captures the physiological data mobile apps miss — Electrodermal Activity and Heart Rate Variability read from the wrist to predict hyperhidrosis triggers before they manifest.",
     href: "/giftovate-band",
     cta: "Meet the Giftovate Band",
-    image: giftovateRing,
+    image: giftovateBand,
     cardClass: "product-card-indigo",
     reverse: true,
     bandClass: "band-ink",
