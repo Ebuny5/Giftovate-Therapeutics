@@ -32,7 +32,7 @@ const products: Product[] = [
     title: <>Building the <span className="accent-italic">Pan-African</span> dataset.</>,
     body: "Our technical innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and restoring bodily dignity to the 5% of the West African workforce threatened by heat-stress.",
     href: "https://beyondsweat.org",
-    cta: "Visit Beyond Sweat",
+    cta: "Visit Beyond Sweat Foundation",
     image: partnershipImage,
     cardClass: "product-card-indigo",
     bandClass: "band-cream",
@@ -209,8 +209,10 @@ const Home = () => {
             </div>
             <div>
               <div className="big-stat">28°</div>
-              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Climate alert threshold</p>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Default climate alert threshold</p>
+              <p className="mt-2 text-xs text-white/60 italic">Fully adjustable — tune to your local climate</p>
             </div>
+
           </div>
         </div>
       </section>

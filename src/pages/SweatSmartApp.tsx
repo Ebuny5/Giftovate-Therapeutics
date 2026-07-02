@@ -237,7 +237,7 @@ const SweatSmartApp = () => {
                 {features.map((feature, index) => (
                   <Card
                     key={index}
-                    className="p-8 md:p-10 hover:shadow-lg transition-all border-border/50"
+                    className="p-8 md:p-10 feature-card-vibrant"
                   >
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="flex-shrink-0">

@@ -91,7 +91,7 @@ const GiftovateBand = () => {
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 {features.map((f, i) => (
-                  <Card key={i} className="p-8 hover:shadow-soft transition-all border-border/50">
+                  <Card key={i} className="p-8 feature-card-vibrant border-border/50">
                     <div className="rounded-full bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center mb-6">
                       <f.icon className="text-white" size={28} />
                     </div>
