@@ -209,8 +209,10 @@ const Home = () => {
             </div>
             <div>
               <div className="big-stat">28°</div>
-              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Climate alert threshold</p>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Default climate alert threshold</p>
+              <p className="mt-2 text-xs text-white/60 italic">Fully adjustable — tune to your local climate</p>
             </div>
+
           </div>
         </div>
       </section>
