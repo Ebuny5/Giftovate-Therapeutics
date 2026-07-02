@@ -32,7 +32,7 @@ const products: Product[] = [
     title: <>Building the <span className="accent-italic">Pan-African</span> dataset.</>,
     body: "Our technical innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and restoring bodily dignity to the 5% of the West African workforce threatened by heat-stress.",
     href: "https://beyondsweat.org",
-    cta: "Visit Beyond Sweat",
+    cta: "Visit Beyond Sweat Foundation",
     image: partnershipImage,
     cardClass: "product-card-indigo",
     bandClass: "band-cream",
