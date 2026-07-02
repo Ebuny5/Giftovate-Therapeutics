@@ -53,11 +53,25 @@
     --brand-ink: #0F0A1F;
 
     --gradient-hero: linear-gradient(135deg, #2E1065 0%, #6B21A8 55%, #C026D3 100%);
+    --gradient-card: linear-gradient(135deg, #FBF7FF 0%, #F3E8FF 55%, #FCE7F3 100%);
     --gradient-purple: linear-gradient(135deg, #4C1D95 0%, #7C3AED 100%);
     --gradient-magenta: linear-gradient(135deg, #6B21A8 0%, #C026D3 100%);
     --gradient-sunset: linear-gradient(135deg, #7C3AED 0%, #E879F9 60%, #FF6B35 100%);
     --shadow-brand: 0 20px 40px -12px rgba(107, 33, 168, 0.35);
     --shadow-card: 0 10px 30px -8px rgba(15, 10, 31, 0.12);
+    --shadow-soft: 0 10px 30px -12px rgba(107, 33, 168, 0.25);
+
+    /* Vibrant icon accent palette — each product feature gets a distinct hue */
+    --icon-flame: 15 90% 55%;         /* coral */
+    --icon-waves: 200 85% 50%;        /* aqua */
+    --icon-zap: 45 95% 55%;           /* amber */
+    --icon-bell: 292 75% 55%;         /* magenta */
+    --icon-trend: 262 75% 60%;        /* violet */
+    --icon-fingerprint: 175 75% 45%;  /* teal */
+    --icon-bot: 220 80% 60%;          /* indigo */
+    --icon-usercheck: 340 80% 60%;    /* pink */
+    --icon-trophy: 35 90% 55%;        /* gold */
+
   }
 
   .dark {
