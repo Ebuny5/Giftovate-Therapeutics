@@ -8,7 +8,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} alt="Giftovate Therapeutics Ltd Logo" className="h-12 w-auto brightness-0 invert" />
+              <img
+                src={logo}
+                alt="Giftovate Therapeutics Ltd Logo"
+                className="h-12 w-auto brightness-0 invert"
+                style={{ cursor: 'pointer' }}
+                onClick={() => window.location.href = 'https://giftovate.world'}
+              />
             </div>
             <h3 className="font-bold text-lg mb-2 text-white">
               Giftovate Therapeutics Ltd
