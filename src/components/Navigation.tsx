@@ -21,12 +21,20 @@ const Navigation = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Giftovate Therapeutics Ltd Logo" className="h-12 w-auto" />
-            <div className="text-xl font-bold text-[#6B21A8]">
-              Giftovate Therapeutics Ltd
-            </div>
-          </Link>
+          <div className="flex items-center space-x-3">
+            <img
+              src={logo}
+              alt="Giftovate Therapeutics Ltd Logo"
+              className="h-12 w-auto"
+              style={{ cursor: 'pointer' }}
+              onClick={() => window.location.href = 'https://giftovate.world'}
+            />
+            <Link to="/">
+              <div className="text-xl font-bold text-[#6B21A8]">
+                Giftovate Therapeutics Ltd
+              </div>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
