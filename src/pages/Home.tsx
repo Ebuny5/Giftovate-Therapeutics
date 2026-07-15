@@ -11,6 +11,7 @@ import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 import giftovateBand from "@/assets/giftovate-band.jpg";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
 import partnershipImage from "@/assets/strategic-partnership.jpg";
+import f6sBadge from "@/assets/f6s-ai-badge.png";
 
 import "@/styles/giftovate-cards.css";
 
@@ -162,6 +163,20 @@ const Home = () => {
         </div>
         <div className="relative">
           <img src={heroImage} alt="Sustainable thermoelectric wearable" className="w-full h-auto object-cover" />
+        </div>
+      </section>
+
+      {/* F6S BADGE SECTION */}
+      <section className="section-pad band-cream border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
+            <a href="https://www.f6s.com/giftovate-therapeutics-ltd" target="_blank" rel="noopener noreferrer" className="shrink-0 transition-transform hover:scale-105">
+              <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-24 md:h-32 w-auto drop-shadow-md rounded" />
+            </a>
+            <p className="text-lg md:text-xl font-medium text-foreground/80 max-w-md">
+              Recognized globally as a #69 Top AI Company by F6S for our work in health innovation.
+            </p>
+          </div>
         </div>
       </section>
 
