@@ -41,9 +41,9 @@ const products: Product[] = [
   {
     overline: "INNOVATIVE SCREENING",
     title: <>Engineering a <span className="accent-italic">sweat-free</span> future.</>,
-    body: "SweatSmart is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultations.",
+    body: "HidroAlly is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultations.",
     href: "/sweatsmart-app",
-    cta: "Learn about SweatSmart",
+    cta: "Learn about HidroAlly",
     image: sweatsmartImage,
     cardClass: "product-card-purple",
     bandClass: "band-cream",
@@ -93,7 +93,7 @@ const products: Product[] = [
   {
     overline: "SUDOMOTOR SYNERGY FROM WITHIN",
     title: <>Holistic. Sustainable. <span className="accent-italic accent-italic-magenta">Validated.</span></>,
-    body: "EcoCaps are our plant-based sudomotor regulator — co-created with local African communities and pilot-tested through SweatSmart. A natural, synergetic alternative without pharmaceutical side effects.",
+    body: "EcoCaps are our plant-based sudomotor regulator — co-created with local African communities and pilot-tested through HidroAlly. A natural, synergetic alternative without pharmaceutical side effects.",
     href: "/ecocaps",
     cta: "Learn about EcoCaps",
     image: ecocapsImage,

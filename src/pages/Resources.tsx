@@ -22,7 +22,7 @@ const Resources = () => {
       title: "Product Guides",
       description: "Detailed information about our innovative solutions",
       items: [
-        "SweatSmart App User Guide",
+        "HidroAlly App User Guide",
         "Thermoelectric Glove Instructions",
         "Cooling Sock Care Guide",
       ],
@@ -32,7 +32,7 @@ const Resources = () => {
       title: "Video Tutorials",
       description: "Visual guides to help you get the most from our products",
       items: [
-        "Getting Started with SweatSmart",
+        "Getting Started with HidroAlly",
         "Device Maintenance Tips",
         "Success Stories",
       ],
@@ -104,7 +104,7 @@ const Resources = () => {
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <Link to="/sweatsmart-app" className="block">
                   <Card className="p-6 text-center hover:shadow-soft transition-all hover:-translate-y-1 cursor-pointer">
-                    <h3 className="font-semibold">SweatSmart App</h3>
+                    <h3 className="font-semibold">HidroAlly App</h3>
                   </Card>
                 </Link>
                 <Link to="/thermoelectric-glove" className="block">

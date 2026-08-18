@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/sweatsmart-hero.jpg";
 
-const SweatSmartApp = () => {
+const HidroAllyApp = () => {
   const features = [
     {
       icon: BellRing,
@@ -25,7 +25,7 @@ const SweatSmartApp = () => {
       iconBg: "hsl(var(--icon-bell) / 0.12)",
       title: "Proactive Climate Alerting",
       description:
-        "Unlike generic weather applications, SweatSmart features a background climate monitoring system that syncs every 30 minutes.",
+        "Unlike generic weather applications, HidroAlly features a background climate monitoring system that syncs every 30 minutes.",
       details: [
         {
           subtitle: "Threshold Intelligence",
@@ -125,7 +125,7 @@ const SweatSmartApp = () => {
         <section className="relative w-full overflow-hidden">
           <img
             src={heroImage}
-            alt="SweatSmart app interface"
+            alt="HidroAlly app interface"
             className="w-full h-auto block"
           />
         </section>
@@ -147,7 +147,7 @@ const SweatSmartApp = () => {
                   "agentic mastery."
                 </span>{" "}
                 We achieve this through our operational digital platform,
-                SweatSmart, and our upcoming line of thermoelectric cooling
+                HidroAlly, and our upcoming line of thermoelectric cooling
                 hardware.
               </p>
             </div>
@@ -218,13 +218,13 @@ const SweatSmartApp = () => {
           </div>
         </section>
 
-        {/* The Solution: SweatSmart Features */}
+        {/* The Solution: HidroAlly Features */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  The Solution: SweatSmart
+                  The Solution: HidroAlly
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                   A fully operational digital ecosystem serving a dedicated beta
@@ -292,7 +292,7 @@ const SweatSmartApp = () => {
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Join our growing community of 50+ warriors already using
-                SweatSmart to master their condition with data-driven
+                HidroAlly to master their condition with data-driven
                 intelligence.
               </p>
               <a
@@ -301,7 +301,7 @@ const SweatSmartApp = () => {
                 rel="noopener noreferrer"
               >
                 <Button size="lg" className="max-w-full whitespace-normal h-auto text-sm sm:text-base px-5 sm:px-8 py-4 sm:py-6 leading-snug">
-                  Get Early Access to SweatSmart
+                  Get Early Access to HidroAlly
                 </Button>
               </a>
             </Card>
@@ -314,4 +314,4 @@ const SweatSmartApp = () => {
   );
 };
 
-export default SweatSmartApp;
+export default HidroAllyApp;

@@ -54,7 +54,7 @@ const EcoCaps = () => {
                   Reclaim your internal balance.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-                  EcoCaps represent our commitment to plant-based sudomotor regulation. Co-created with local African communities and pilot-tested through the SweatSmart initiative, these eco-friendly capsules offer a natural, synergetic alternative for warriors seeking relief without the side effects of traditional pharmaceuticals.
+                  EcoCaps represent our commitment to plant-based sudomotor regulation. Co-created with local African communities and pilot-tested through the HidroAlly initiative, these eco-friendly capsules offer a natural, synergetic alternative for warriors seeking relief without the side effects of traditional pharmaceuticals.
                 </p>
                 <Button size="lg">
                   Join the EcoCaps Pilot
@@ -109,9 +109,9 @@ const EcoCaps = () => {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-3">SweatSmart Integration</h3>
+                  <h3 className="font-semibold text-lg mb-3">HidroAlly Integration</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    By combining "Synergy from Within" with your digital tracking, you can finally end the anxiety-sweat cycle. Monitor your progress and optimize your dosage through the SweatSmart analytics dashboard.
+                    By combining "Synergy from Within" with your digital tracking, you can finally end the anxiety-sweat cycle. Monitor your progress and optimize your dosage through the HidroAlly analytics dashboard.
                   </p>
                 </div>
                 <div>

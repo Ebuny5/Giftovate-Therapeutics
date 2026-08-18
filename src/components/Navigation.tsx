@@ -12,7 +12,7 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/programs", label: "Programs" },
     { path: "/resources", label: "Resources" },
-    { path: "/sweatsmart-app", label: "SweatSmart App" },
+    { path: "/sweatsmart-app", label: "HidroAlly App" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

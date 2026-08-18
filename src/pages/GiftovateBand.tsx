@@ -27,9 +27,9 @@ const GiftovateBand = () => {
     },
     {
       icon: Radio,
-      title: "Seamless SweatSmart Sync",
+      title: "Seamless HidroAlly Sync",
       description:
-        "Automatically transmits biometric data to your SweatSmart dashboard, closing the loop between your body's signals and our predictive analytics.",
+        "Automatically transmits biometric data to your HidroAlly dashboard, closing the loop between your body's signals and our predictive analytics.",
     },
   ];
 

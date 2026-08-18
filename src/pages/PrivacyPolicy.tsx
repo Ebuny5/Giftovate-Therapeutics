@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Health data related to hyperhidrosis symptoms (when using SweatSmart app)</span>
+                      <span>Health data related to hyperhidrosis symptoms (when using HidroAlly app)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
@@ -127,7 +127,7 @@ const PrivacyPolicy = () => {
                   <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
                   <p className="text-muted-foreground leading-relaxed">
                     If you have questions about this privacy policy or wish to exercise your rights, 
-                    please contact us through our website or SweatSmart app.
+                    please contact us through our website or HidroAlly app.
                   </p>
                 </div>
 
