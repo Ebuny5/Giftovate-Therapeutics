@@ -31,7 +31,7 @@ const products: Product[] = [
   {
     overline: "STRATEGIC PARTNERSHIP",
     title: <>Building the <span className="accent-italic">Pan-African</span> dataset.</>,
-    body: "Our technical innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and restoring bodily dignity to the 5% of the West Af[...]
+    body: "Our technical innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and restoring bodily dignity to the 5% of the West African workforce threatened by heat-stress.",
     href: "https://beyondsweat.org",
     cta: "Visit Beyond Sweat Foundation",
     image: partnershipImage,
@@ -41,7 +41,7 @@ const products: Product[] = [
   {
     overline: "INNOVATIVE SCREENING",
     title: <>Engineering a <span className="accent-italic">sweat-free</span> future.</>,
-    body: "SweatSmart is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultati[...]
+    body: "SweatSmart is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultations.",
     href: "/sweatsmart-app",
     cta: "Learn about SweatSmart",
     image: sweatsmartImage,
@@ -51,7 +51,7 @@ const products: Product[] = [
   {
     overline: "THE BIOMETRIC STANDARD",
     title: <>Clinical-grade monitoring, <span className="accent-italic accent-italic-magenta">always on.</span></>,
-    body: "The Giftovate Band captures the physiological data mobile apps miss — Electrodermal Activity and Heart Rate Variability read from the wrist to predict hyperhidrosis triggers before th[...]
+    body: "The Giftovate Band captures the physiological data mobile apps miss — Electrodermal Activity and Heart Rate Variability read from the wrist to predict hyperhidrosis triggers before they manifest.",
     href: "/giftovate-band",
     cta: "Meet the Giftovate Band",
     image: giftovateBand,
@@ -62,7 +62,7 @@ const products: Product[] = [
   {
     overline: "THE THERMOELECTRIC FRONTIER",
     title: <>Restoring <span className="accent-italic">precision</span> & performance.</>,
-    body: "Active sudomotor suppression meets rapid recovery. Integrated Peltier modules pump heat away from the palm, bypassing the evaporative failure that grips tropical climates above 70% humi[...]
+    body: "Active sudomotor suppression meets rapid recovery. Integrated Peltier modules pump heat away from the palm, bypassing the evaporative failure that grips tropical climates above 70% humidity.",
     href: "/thermoelectric-glove",
     cta: "Explore the glove",
     image: gloveImage,
@@ -93,7 +93,7 @@ const products: Product[] = [
   {
     overline: "SUDOMOTOR SYNERGY FROM WITHIN",
     title: <>Holistic. Sustainable. <span className="accent-italic accent-italic-magenta">Validated.</span></>,
-    body: "EcoCaps are our plant-based sudomotor regulator — co-created with local African communities and pilot-tested through SweatSmart. A natural, synergetic alternative without pharmaceutic[...]
+    body: "EcoCaps are our plant-based sudomotor regulator — co-created with local African communities and pilot-tested through SweatSmart. A natural, synergetic alternative without pharmaceutical side effects.",
     href: "/ecocaps",
     cta: "Learn about EcoCaps",
     image: ecocapsImage,
@@ -104,7 +104,7 @@ const products: Product[] = [
   {
     overline: "CLINICAL RELIEF ON DEMAND",
     title: <>Empowering lives, one <span className="accent-italic">session</span> at a time.</>,
-    body: "Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand[...]
+    body: "Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.",
     href: "/giftovate-oasis",
     cta: "Visit the Oasis",
     image: oasisImage,
@@ -174,7 +174,7 @@ const Home = () => {
               <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-24 md:h-32 w-auto drop-shadow-md rounded" />
             </a>
             <p className="text-lg md:text-xl font-medium text-foreground/80 max-w-md">
-              Recognized as a #69 Top AI Company in Nigeria by F6S for our work in health innovation.
+              Recognized globally as a #69 Top AI Company by F6S for our work in health innovation.
             </p>
           </div>
         </div>
