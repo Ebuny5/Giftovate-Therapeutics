@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Programs from "./pages/Programs";
 import Resources from "./pages/Resources";
-import SweatSmartApp from "./pages/SweatSmartApp";
+import HidroAllyApp from "./pages/HidroAllyApp";
 import ThermoelectricGlove from "./pages/ThermoelectricGlove";
 import CoolingSock from "./pages/CoolingSock";
 import EcoCaps from "./pages/EcoCaps";
@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/sweatsmart-app" element={<SweatSmartApp />} />
+          <Route path="/hidroally-app" element={<HidroAllyApp />} />
           <Route path="/thermoelectric-glove" element={<ThermoelectricGlove />} />
           <Route path="/cooling-sock" element={<CoolingSock />} />
           <Route path="/ecocaps" element={<EcoCaps />} />

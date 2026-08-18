@@ -9,7 +9,7 @@ const Roadmap = () => {
       years: "2025–2026",
       title: "Diagnostic Visibility",
       focus:
-        "Launching the SweatSmart App and gathering the world's first granular dataset on hyperhidrosis triggers in tropical climates.",
+        "Launching the HidroAlly App and gathering the world's first granular dataset on hyperhidrosis triggers in tropical climates.",
     },
     {
       phase: "Phase 2",

@@ -86,7 +86,7 @@ const GiftovateOasis = () => {
             <div className="max-w-4xl mx-auto">
               <img
                 src={oasisImage}
-                alt="Giftovate Oasis recovery station with SweatSmart AI dashboard and thermoelectric gloves"
+                alt="Giftovate Oasis recovery station with HidroAlly AI dashboard and thermoelectric gloves"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
               <div className="text-center">

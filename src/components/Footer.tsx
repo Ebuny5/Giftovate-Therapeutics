@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-white">Products</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/sweatsmart-app" className="text-white/60 hover:text-white transition-colors">SweatSmart App</Link></li>
+              <li><Link to="/hidroally-app" className="text-white/60 hover:text-white transition-colors">HidroAlly App</Link></li>
               <li><Link to="/giftovate-band" className="text-white/60 hover:text-white transition-colors">Giftovate Band</Link></li>
               <li><Link to="/giftovate-oasis" className="text-white/60 hover:text-white transition-colors">Giftovate Oasis</Link></li>
               <li><Link to="/thermoelectric-glove" className="text-white/60 hover:text-white transition-colors">Thermoelectric Glove</Link></li>
