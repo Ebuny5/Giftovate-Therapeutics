@@ -42,7 +42,7 @@ const products: Product[] = [
     overline: "INNOVATIVE SCREENING",
     title: <>Engineering a <span className="accent-italic">sweat-free</span> future.</>,
     body: "HidroAlly is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultations.",
-    href: "/sweatsmart-app",
+    href: "/hidroally-app",
     cta: "Learn about HidroAlly",
     image: sweatsmartImage,
     cardClass: "product-card-purple",
@@ -152,7 +152,7 @@ const Home = () => {
               built for the 385 million Warriors the industry forgot.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/sweatsmart-app" className="btn-coral">
+              <Link to="/hidroally-app" className="btn-coral">
                 Join the pilot <ArrowRight className="w-4 h-4" />
               </Link>
               <Link to="/programs" className="btn-purple">
