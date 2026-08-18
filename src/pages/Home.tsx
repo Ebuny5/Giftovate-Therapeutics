@@ -174,7 +174,7 @@ const Home = () => {
               <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-24 md:h-32 w-auto drop-shadow-md rounded" />
             </a>
             <p className="text-lg md:text-xl font-medium text-foreground/80 max-w-md">
-              Recognized globally as a #69 Top AI Company by F6S for our work in health innovation.
+              Recognized as the 69th AI company in Nigeria in June 2026.
             </p>
           </div>
         </div>
