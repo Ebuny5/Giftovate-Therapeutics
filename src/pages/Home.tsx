@@ -199,7 +199,7 @@ const Home = () => {
               We achieve this through our operational digital platform,{" "}
               <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer"
                  className="text-[#6B21A8] font-semibold underline decoration-2 underline-offset-4">
-                SweatSmart
+                HidroAlly
               </a>
               —which provides proactive climate-aware alerts and HidroAlly clinical
               intelligence—and our upcoming line of localized thermoelectric cooling
