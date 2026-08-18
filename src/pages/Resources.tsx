@@ -102,7 +102,7 @@ const Resources = () => {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">Explore Our Solutions</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <Link to="/sweatsmart-app" className="block">
+                <Link to="/hidroally-app" className="block">
                   <Card className="p-6 text-center hover:shadow-soft transition-all hover:-translate-y-1 cursor-pointer">
                     <h3 className="font-semibold">HidroAlly App</h3>
                   </Card>
