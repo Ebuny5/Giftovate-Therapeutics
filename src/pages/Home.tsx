@@ -197,7 +197,7 @@ const Home = () => {
             </p>
             <p className="text-lg leading-relaxed text-foreground/80">
               We achieve this through our operational digital platform,{" "}
-              <a href="https://sweatsmart.guru" target="_blank" rel="noopener noreferrer"
+              <a href="https://hidroally.space" target="_blank" rel="noopener noreferrer"
                  className="text-[#6B21A8] font-semibold underline decoration-2 underline-offset-4">
                 HidroAlly
               </a>

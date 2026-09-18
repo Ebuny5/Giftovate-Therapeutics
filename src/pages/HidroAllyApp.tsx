@@ -296,7 +296,7 @@ const HidroAllyApp = () => {
                 intelligence.
               </p>
               <a
-                href="https://www.sweatsmart.guru"
+                href="https://hidroally.space"
                 target="_blank"
                 rel="noopener noreferrer"
               >
