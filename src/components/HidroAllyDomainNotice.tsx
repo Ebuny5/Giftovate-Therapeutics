@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { X, ExternalLink } from "lucide-react";
 
 const SHOW_DURATION = 10_000; // visible for 10 seconds
@@ -6,14 +6,14 @@ const HIDE_DURATION = 60_000; // pops up again after 1 minute
 
 const HidroAllyDomainNotice = () => {
   const [visible, setVisible] = useState(false);
+  const dismissedRef = useRef(false);
 
   useEffect(() => {
     let showTimer: ReturnType<typeof setTimeout>;
     let hideTimer: ReturnType<typeof setTimeout>;
-    let dismissed = false;
 
     const show = () => {
-      if (dismissed) return;
+      if (dismissedRef.current) return;
       setVisible(true);
       hideTimer = setTimeout(() => {
         setVisible(false);
@@ -25,13 +25,15 @@ const HidroAllyDomainNotice = () => {
     showTimer = setTimeout(show, 1500);
 
     return () => {
-      dismissed = true;
       clearTimeout(showTimer);
       clearTimeout(hideTimer);
     };
   }, []);
 
-  const dismissPermanently = () => setVisible(false);
+  const dismissPermanently = () => {
+    dismissedRef.current = true;
+    setVisible(false);
+  };
 
   return (
     <div
