@@ -39,10 +39,10 @@ const HidroAllyDomainNotice = () => {
     <div
       role="status"
       aria-live="polite"
-      className={`fixed bottom-4 left-4 right-4 z-[100] md:left-auto md:right-6 md:bottom-6 md:max-w-sm transition-all duration-500 ${
+      className={`fixed top-4 left-4 right-4 z-[100] md:left-auto md:right-6 md:top-6 md:max-w-sm transition-all duration-500 ${
         visible
           ? "opacity-100 translate-y-0 pointer-events-auto"
-          : "opacity-0 translate-y-6 pointer-events-none"
+          : "opacity-0 -translate-y-6 pointer-events-none"
       }`}
     >
       <div
