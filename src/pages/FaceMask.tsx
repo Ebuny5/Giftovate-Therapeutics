@@ -74,13 +74,14 @@ const FaceMask = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">
-                The Science of Craniofacial Iontophoresis
+                The Science:{" "}
+                <span className="accent-italic">Beyond Injections &amp; Compromise</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Facial sweating is driven by an intense concentration of hyperactive eccrine sweat glands on the forehead, temples, and cheeks. In tropical climates where ambient temperatures routinely exceed 28°C and humidity crosses 70%, the body's natural evaporative cooling system fails — leading to severe, uncontrollable perspiration.
+                Facial sweating is driven by an intense concentration of hyperactive eccrine glands across the forehead, temples, and perioral zones. In tropical heat and high humidity, natural evaporative cooling fails completely. Yet conventional clinical solutions force warriors into severe compromises: painful Botox injections demand dozens of needle strikes across delicate facial nerves every few months at exorbitant recurring costs, harsh topical aluminum compounds trigger burning and dermatitis on sensitive facial skin, and oral anticholinergics flood the body with systemic side effects like extreme dry mouth and blurred vision.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                While traditional cooling plates (Peltier modules) consume excessive battery power, generate condensation, and dump excess heat back onto the skull, HydroVisage uses targeted microcurrent iontophoresis. Gentle, calibrated sub-milliamp microcurrent (0.1–1.5 mA) safely introduces natural mineral ions into the eccrine sweat ducts, temporarily disrupting cholinergic sweat secretion for 5–8 days per maintenance session. This is not masking the symptom — it is silencing the sudomotor cascade.
+                HydroVisage replaces invasive needles and systemic drugs with targeted microcurrent iontophoresis. Delivering calibrated, sub-milliamp microcurrent (0.1–1.5 mA) through isotonic hydrogel contact pads, it safely introduces natural mineral ions into eccrine sweat ducts to temporarily silence cholinergic hyperactivation for 5–8 days per session. No needle punctures, no facial muscle paralysis, and zero systemic toxicity—just precise, needle-free sudomotor control engineered specifically for facial anatomy.
               </p>
             </div>
           </div>
