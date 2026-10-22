@@ -2,34 +2,35 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Thermometer, Users, Wind, Zap } from "lucide-react";
-import faceMaskImage from "@/assets/face-mask.png";
+import { Zap, Droplets, ShieldCheck, Activity } from "lucide-react";
+import faceMaskAsset from "@/assets/hydrovisage-mask.jpg.asset.json";
+const faceMaskImage = faceMaskAsset.url;
 
 const FaceMask = () => {
   const features = [
     {
-      icon: Thermometer,
-      title: "Silent Thermal Transfer",
-      description:
-        "Utilizing integrated Peltier cooling modules, the mask provides active heat extraction from the forehead and cheeks. This bypasses the \"evaporative failure\" that occurs in tropical zones once the climate crosses the 28°C and 70% humidity threshold.",
-    },
-    {
-      icon: Users,
-      title: "Restoring Social Confidence",
-      description:
-        "Designed for high-stakes social and professional interactions, the mask suppresses perspiration during public speaking or high-pressure meetings. It is a lightweight, non-invasive alternative to Botox that keeps your focus on your message, not your sweat.",
-    },
-    {
-      icon: Wind,
-      title: "Breathable, Ergonomic Design",
-      description:
-        "Crafted from advanced moisture-wicking materials, the mask stabilizes your facial thermal baseline, ensuring you remain dry, calm, and composed even in the most \"smothering\" environments.",
-    },
-    {
       icon: Zap,
-      title: "HidroAlly Integration",
+      title: "Sub-Milliamp Microcurrent Delivery",
       description:
-        "When HidroAlly detects an imminent episode triggered by climate or stress, it sends a proactive alert to activate your face mask's cooling system and stabilize your sudomotor baseline.",
+        "Calibrated specifically for sensitive facial skin, the mask delivers a strict cranial microcurrent ceiling (≤ 1.5 mA). Automated 5-minute biphasic polarity reversal prevents pH shifts and skin redness, delivering comfortable, invisible sudomotor interception without systemic pill side effects.",
+    },
+    {
+      icon: Droplets,
+      title: "Replaceable Isotonic Hydrogel Pads",
+      description:
+        "Sterile 0.9% saline hydrogel contact pads mold seamlessly across the forehead, temple crests, and upper lip. No messy water trays or dripping water — just uniform, comfortable ionic contact engineered for tropical humidity.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "25mm Anatomical Periorbital Eye-Safety Buffer",
+      description:
+        "Engineered with non-conductive medical silicone standoffs that mechanically guarantee all electrical pathways remain strictly on the forehead and temples, well clear of the orbital eye sockets and optic nerves.",
+    },
+    {
+      icon: Activity,
+      title: "HidroAlly & Giftovate Band Integration",
+      description:
+        "Seamlessly syncs with your Giftovate Band and HidroAlly app. When sudomotor sensors detect an impending sympathetic spike, HidroAlly prompts a quick 15-minute maintenance session to stabilize your sudomotor baseline before visible sweating begins.",
     },
   ];
 
@@ -49,16 +50,16 @@ const FaceMask = () => {
               />
               <div className="text-center">
                 <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">
-                  PRECISION THERMAL REGULATION
+                  TARGETED CRANIOFACIAL ELECTROTHERAPY
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
                   Face Mask: Craniofacial Mastery
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-                  Stop the "rain" before it begins. Command the room with total composure.
+                  Stop the sweat cascade at the source. Command the room with total composure.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-                  For many warriors, facial sweating is the most visible and stigmatizing barrier to professional success. Our innovative face mask prototype provides targeted, silent relief for craniofacial hyperhidrosis.
+                  For many warriors, facial sweating is the most visible and stigmatizing barrier to professional and social success. Our innovative HydroVisage face mask prototype provides targeted, silent, and clinically proven relief for craniofacial hyperhidrosis.
                 </p>
                 <Button size="lg">
                   Join the Pilot Program
@@ -73,13 +74,13 @@ const FaceMask = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">
-                The Science of Craniofacial Cooling
+                The Science of Craniofacial Iontophoresis
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Facial sweating is driven by a dense concentration of eccrine sweat glands on the forehead, temples, and cheeks. In tropical climates where ambient temperatures routinely exceed 28°C and humidity crosses 70%, the body's natural evaporative cooling system fails — leading to visible, uncontrollable perspiration.
+                Facial sweating is driven by an intense concentration of hyperactive eccrine sweat glands on the forehead, temples, and cheeks. In tropical climates where ambient temperatures routinely exceed 28°C and humidity crosses 70%, the body's natural evaporative cooling system fails — leading to severe, uncontrollable perspiration.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our face mask uses Peltier effect technology to create a localized temperature differential, actively extracting heat from the skin's surface before the sweat response is triggered. This is not masking the symptom — it is intercepting the cascade.
+                While traditional cooling plates (Peltier modules) consume excessive battery power, generate condensation, and dump excess heat back onto the skull, HydroVisage uses targeted microcurrent iontophoresis. Gentle, calibrated sub-milliamp microcurrent (0.1–1.5 mA) safely introduces natural mineral ions into the eccrine sweat ducts, temporarily disrupting cholinergic sweat secretion for 5–8 days per maintenance session. This is not masking the symptom — it is silencing the sudomotor cascade.
               </p>
             </div>
           </div>
