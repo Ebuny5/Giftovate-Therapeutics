@@ -5,7 +5,8 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable.png";
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
 import gloveImage from "@/assets/thermoelectric-glove.png";
-import faceMaskImage from "@/assets/face-mask.png";
+import faceMaskAsset from "@/assets/hydrovisage-mask.jpg.asset.json";
+const faceMaskImage = faceMaskAsset.url;
 import coolingSockImage from "@/assets/cooling-sock.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 import giftovateBand from "@/assets/giftovate-band.jpg";
@@ -81,9 +82,9 @@ const products: Product[] = [
     bandClass: "band-purple",
   },
   {
-    overline: "PRECISION THERMAL REGULATION",
+    overline: "TARGETED CRANIOFACIAL ELECTROTHERAPY",
     title: <>Craniofacial <span className="accent-italic">mastery.</span></>,
-    body: "Stop the rain before it begins. Targeted, silent Peltier cooling for the forehead and cheeks — command the room with total composure, even past the 28°C / 70% humidity threshold.",
+    body: "Stop the sweat cascade at the source. HydroVisage uses gentle sub-milliamp microcurrent iontophoresis on the forehead and temples — command the room with total composure, even past the 28°C / 70% humidity threshold.",
     href: "/face-mask",
     cta: "Discover the face mask",
     image: faceMaskImage,
