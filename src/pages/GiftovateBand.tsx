@@ -11,7 +11,7 @@ const GiftovateBand = () => {
       icon: Activity,
       title: "Continuous EDA Tracking",
       description:
-        "Captures real-time skin conductance from the wrist, identifying spikes in sympathetic activity long before a visible episode begins.",
+        "Captures real-time skin conductance from the ventral wrist, identifying spikes in sympathetic sudomotor activity 2–5 minutes before a visible episode begins.",
     },
     {
       icon: HeartPulse,
@@ -29,7 +29,7 @@ const GiftovateBand = () => {
       icon: Radio,
       title: "Seamless HidroAlly Sync",
       description:
-        "Automatically transmits biometric data to your HidroAlly dashboard, closing the loop between your body's signals and our predictive analytics.",
+        "Automatically transmits biometric data to your HidroAlly dashboard, closing the loop between your body's signals and targeted therapeutic intervention.",
     },
   ];
 
@@ -46,8 +46,8 @@ const GiftovateBand = () => {
     },
     {
       step: "3",
-      title: "Predict",
-      text: "Our AI identifies your unique 'pre-episode' biometric signature, notifying you to activate your cooling gear or take preemptive action.",
+      title: "Predict & Abort",
+      text: "Our AI identifies your unique 'pre-episode' biometric signature, notifying you to activate your targeted iontophoresis session to block sweat ducts before visible sweating manifests.",
     },
   ];
 
