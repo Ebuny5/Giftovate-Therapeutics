@@ -24,7 +24,7 @@ const Resources = () => {
       items: [
         "HidroAlly App User Guide",
         "HydroGlove Instructions",
-        "Cooling Sock Care Guide",
+        "HydroSock Care Guide",
       ],
     },
     {
@@ -112,9 +112,9 @@ const Resources = () => {
                     <h3 className="font-semibold">HydroGlove</h3>
                   </Card>
                 </Link>
-                <Link to="/cooling-sock" className="block">
+                <Link to="/hydrosock" className="block">
                   <Card className="p-6 text-center hover:shadow-soft transition-all hover:-translate-y-1 cursor-pointer">
-                    <h3 className="font-semibold">Cooling Sock</h3>
+                    <h3 className="font-semibold">HydroSock</h3>
                   </Card>
                 </Link>
                 <Link to="/ecocaps" className="block">

@@ -4,11 +4,11 @@ import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable.png";
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
-import gloveAsset from "@/assets/hydroglove-render.jpg.asset.json";
-const gloveImage = gloveAsset.url;
-import faceMaskAsset from "@/assets/hydrovisage-mask.jpg.asset.json";
-const faceMaskImage = faceMaskAsset.url;
-import coolingSockImage from "@/assets/cooling-sock.jpg";
+import gloveImage from "@/assets/hydroglove-render.jpg";
+const gloveImage = gloveImage;
+import faceMaskImage from "@/assets/hydrovisage-mask.jpg";
+const faceMaskImage = faceMaskImage;
+import coolingSockImage from "@/assets/hydrosock-render.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 import giftovateBand from "@/assets/giftovate-band.jpg";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
@@ -74,8 +74,8 @@ const products: Product[] = [
   {
     overline: "THE PLANTAR PROTOCOL",
     title: <>Ending <span className="accent-italic">shoe-removal</span> anxiety.</>,
-    body: "Bamboo and Merino fibers meet integrated Peltier units. Walk at your natural pace with total stability — feet locked into a dry, high-friction environment all day.",
-    href: "/cooling-sock",
+    body: "Five-toe plantar electrotherapy woven into Bamboo-Merino knit. Walk at your natural pace with total stability — 5–10 days of dry, high-friction footing per session.",
+    href: "/hydrosock",
     cta: "See the cooling sock",
     image: coolingSockImage,
     cardClass: "product-card-purple",

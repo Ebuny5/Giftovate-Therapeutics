@@ -25,7 +25,7 @@ const Footer = () => {
               <li><Link to="/giftovate-band" className="text-white/60 hover:text-white transition-colors">Giftovate Band</Link></li>
               <li><Link to="/giftovate-oasis" className="text-white/60 hover:text-white transition-colors">Giftovate Oasis</Link></li>
               <li><Link to="/hydroglove" className="text-white/60 hover:text-white transition-colors">HydroGlove</Link></li>
-              <li><Link to="/cooling-sock" className="text-white/60 hover:text-white transition-colors">Cooling Sock</Link></li>
+              <li><Link to="/hydrosock" className="text-white/60 hover:text-white transition-colors">HydroSock</Link></li>
               <li><Link to="/face-mask" className="text-white/60 hover:text-white transition-colors">Face Mask</Link></li>
               <li><Link to="/ecocaps" className="text-white/60 hover:text-white transition-colors">EcoCaps</Link></li>
             </ul>

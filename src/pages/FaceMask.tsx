@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Zap, Droplets, ShieldCheck, Activity } from "lucide-react";
-import faceMaskAsset from "@/assets/hydrovisage-mask.jpg.asset.json";
-const faceMaskImage = faceMaskAsset.url;
+import faceMaskImage from "@/assets/hydrovisage-mask.jpg";
+const faceMaskImage = faceMaskImage;
 
 const FaceMask = () => {
   const features = [
@@ -28,9 +28,9 @@ const FaceMask = () => {
     },
     {
       icon: Activity,
-      title: "HidroAlly & Giftovate Band Integration",
+      title: "HidroAlly App Sync",
       description:
-        "Seamlessly syncs with your Giftovate Band and HidroAlly app. When sudomotor sensors detect an impending sympathetic spike, HidroAlly prompts a quick 15-minute maintenance session to stabilize your sudomotor baseline before visible sweating begins.",
+        "Connects directly to the HidroAlly app to log craniofacial treatment sessions, track 5–8 day dryness intervals, and schedule needle-free maintenance sessions.",
     },
   ];
 
