@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Programs from "./pages/Programs";
 import Resources from "./pages/Resources";
 import HidroAllyApp from "./pages/HidroAllyApp";
-import ThermoelectricGlove from "./pages/ThermoelectricGlove";
+import HydroGlove from "./pages/HydroGlove";
 import CoolingSock from "./pages/CoolingSock";
 import EcoCaps from "./pages/EcoCaps";
 import FaceMask from "./pages/FaceMask";
@@ -31,7 +31,7 @@ const App = () => (
           <Route path="/programs" element={<Programs />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/hidroally-app" element={<HidroAllyApp />} />
-          <Route path="/thermoelectric-glove" element={<ThermoelectricGlove />} />
+          <Route path="/hydroglove" element={<HydroGlove />} />
           <Route path="/cooling-sock" element={<CoolingSock />} />
           <Route path="/ecocaps" element={<EcoCaps />} />
           <Route path="/face-mask" element={<FaceMask />} />

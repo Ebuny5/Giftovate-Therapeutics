@@ -4,7 +4,8 @@ import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable.png";
 import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
-import gloveImage from "@/assets/thermoelectric-glove.png";
+import gloveAsset from "@/assets/hydroglove-render.jpg.asset.json";
+const gloveImage = gloveAsset.url;
 import faceMaskAsset from "@/assets/hydrovisage-mask.jpg.asset.json";
 const faceMaskImage = faceMaskAsset.url;
 import coolingSockImage from "@/assets/cooling-sock.jpg";
@@ -61,11 +62,11 @@ const products: Product[] = [
     bandClass: "band-ink",
   },
   {
-    overline: "THE THERMOELECTRIC FRONTIER",
-    title: <>Restoring <span className="accent-italic">precision</span> & performance.</>,
-    body: "Active sudomotor suppression meets rapid recovery. Integrated Peltier modules pump heat away from the palm, bypassing the evaporative failure that grips tropical climates above 70% humidity.",
-    href: "/thermoelectric-glove",
-    cta: "Explore the glove",
+    overline: "THE PALMAR PROTOCOL",
+    title: <>Portable <span className="accent-italic">palmar</span> electrotherapy.</>,
+    body: "HydroGlove frees warriors from bulky, immobile water trays with wearable, targeted microcurrent iontophoresis — dry hands, confident handshakes, and unrestricted professional command.",
+    href: "/hydroglove",
+    cta: "Explore HydroGlove",
     image: gloveImage,
     cardClass: "product-card-magenta",
     bandClass: "band-cream",
