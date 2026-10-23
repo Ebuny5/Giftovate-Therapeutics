@@ -23,7 +23,7 @@ const Roadmap = () => {
       years: "2027–2028",
       title: "Targeted Hardware Ecosystem",
       focus:
-        "Production-scale deployment of Thermoelectric Gloves, Socks, and Headbands, manufactured via precision laser technology, tailored specifically for high-heat/high-humidity environments.",
+        "Production-scale deployment of HydroGlove, Socks, and Headbands, manufactured via precision laser technology, tailored specifically for high-heat/high-humidity environments.",
     },
     {
       phase: "Phase 4",

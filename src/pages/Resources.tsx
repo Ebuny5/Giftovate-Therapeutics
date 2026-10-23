@@ -23,7 +23,7 @@ const Resources = () => {
       description: "Detailed information about our innovative solutions",
       items: [
         "HidroAlly App User Guide",
-        "Thermoelectric Glove Instructions",
+        "HydroGlove Instructions",
         "Cooling Sock Care Guide",
       ],
     },
@@ -107,9 +107,9 @@ const Resources = () => {
                     <h3 className="font-semibold">HidroAlly App</h3>
                   </Card>
                 </Link>
-                <Link to="/thermoelectric-glove" className="block">
+                <Link to="/hydroglove" className="block">
                   <Card className="p-6 text-center hover:shadow-soft transition-all hover:-translate-y-1 cursor-pointer">
-                    <h3 className="font-semibold">Thermoelectric Glove</h3>
+                    <h3 className="font-semibold">HydroGlove</h3>
                   </Card>
                 </Link>
                 <Link to="/cooling-sock" className="block">
