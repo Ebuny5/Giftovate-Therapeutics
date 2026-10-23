@@ -42,7 +42,7 @@ const GiftovateBand = () => {
     {
       step: "2",
       title: "Analyze",
-      text: "The onboard sensors capture EDA and HRV, while the mobile app correlates this with environmental data (Climate Alert).",
+      text: "The band's onboard sensors monitor EDA and heart rate (HR/HRV), while environmental data and climate tracking are managed separately via the HidroAlly app.",
     },
     {
       step: "3",

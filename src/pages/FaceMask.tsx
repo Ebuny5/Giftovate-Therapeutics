@@ -58,7 +58,7 @@ const FaceMask = () => {
                   Stop the sweat cascade at the source. Command the room with total composure.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-                  For many warriors, facial sweating is the most visible and stigmatizing barrier to professional and social success. Our innovative HydroVisage face mask prototype provides targeted, silent, and clinically proven relief for craniofacial hyperhidrosis.
+                  For many warriors, facial sweating is the most visible and stigmatizing barrier to professional and social success. Our innovative HydroVisage face mask prototype provides targeted, silent relief for craniofacial hyperhidrosis using established iontophoresis principles.
                 </p>
                 <Button size="lg">
                   Join the Pilot Program
