@@ -4,7 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Hand, Droplets, Smartphone, Activity } from "lucide-react";
 import gloveImage from "@/assets/hydroglove-render.jpg";
-const gloveImage = gloveImage;
 
 const HydroGlove = () => {
   const features = [
