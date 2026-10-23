@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/((?!api/|.*\\..*).*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    { "source": "/sweatsmart-app", "destination": "/hidroally-app", "permanent": true },
+    { "source": "/thermoelectric-glove", "destination": "/hydroglove", "permanent": true },
+    { "source": "/cooling-sock", "destination": "/hydrosock", "permanent": true }
+  ]
+}
