@@ -42,7 +42,7 @@ const GiftovateBand = () => {
     {
       step: "2",
       title: "Analyze",
-      text: "The onboard sensors capture EDA and HRV, while the mobile app correlates this with environmental data (Climate Alert).",
+      text: "The band's onboard biometric sensors capture and process real-time EDA, heart rate variability (HR/HRV), and thermal fluctuations.",
     },
     {
       step: "3",
