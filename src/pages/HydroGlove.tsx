@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Hand, Droplets, Smartphone, Activity } from "lucide-react";
-import gloveAsset from "@/assets/hydroglove-render.jpg.asset.json";
-const gloveImage = gloveAsset.url;
+import gloveImage from "@/assets/hydroglove-render.jpg";
+const gloveImage = gloveImage;
 
 const HydroGlove = () => {
   const features = [
@@ -28,9 +28,9 @@ const HydroGlove = () => {
     },
     {
       icon: Activity,
-      title: "HidroAlly Predictive Sync",
+      title: "HidroAlly App Sync",
       description:
-        "Pairs with the Giftovate Band to forecast palmar trigger spikes and schedule treatments before high-stakes meetings or presentations.",
+        "Connects directly to the HidroAlly app to log palmar therapy sessions, track multi-day dryness intervals, and schedule maintenance routines ahead of high-stakes meetings or presentations.",
     },
   ];
 

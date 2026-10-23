@@ -8,7 +8,7 @@ import Programs from "./pages/Programs";
 import Resources from "./pages/Resources";
 import HidroAllyApp from "./pages/HidroAllyApp";
 import HydroGlove from "./pages/HydroGlove";
-import CoolingSock from "./pages/CoolingSock";
+import HydroSock from "./pages/HydroSock";
 import EcoCaps from "./pages/EcoCaps";
 import FaceMask from "./pages/FaceMask";
 import GiftovateBand from "./pages/GiftovateBand";
@@ -32,7 +32,7 @@ const App = () => (
           <Route path="/resources" element={<Resources />} />
           <Route path="/hidroally-app" element={<HidroAllyApp />} />
           <Route path="/hydroglove" element={<HydroGlove />} />
-          <Route path="/cooling-sock" element={<CoolingSock />} />
+          <Route path="/hydrosock" element={<HydroSock />} />
           <Route path="/ecocaps" element={<EcoCaps />} />
           <Route path="/face-mask" element={<FaceMask />} />
           <Route path="/giftovate-band" element={<GiftovateBand />} />
