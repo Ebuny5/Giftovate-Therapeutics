@@ -4,7 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Zap, Droplets, ShieldCheck, Activity } from "lucide-react";
 import faceMaskImage from "@/assets/hydrovisage-mask.jpg";
-const faceMaskImage = faceMaskImage;
 
 const FaceMask = () => {
   const features = [
