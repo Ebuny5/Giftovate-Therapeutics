@@ -29,25 +29,28 @@ type Product = {
 
 const products: Product[] = [
   {
-    overline: "STRATEGIC PARTNERSHIP",
-    title: <>Building the <span className="accent-italic">Pan-African</span> dataset.</>,
-    body: "Our technical innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and restoring bodily dignity to the 5% of the West African workforce threatened by heat-stress.",
-    href: "https://beyondsweat.org",
-    cta: "Visit Beyond Sweat Foundation",
-    image: partnershipImage,
-    cardClass: "product-card-indigo",
-    bandClass: "band-cream",
-  },
-  {
-    overline: "INNOVATIVE SCREENING",
-    title: <>Engineering a <span className="accent-italic">sweat-free</span> future.</>,
-    body: "HidroAlly is the world's first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle through integrated intelligence, climate-aware alerts and HidroAlly consultations.",
+    overline: "THE DIGITAL FRONT DOOR",
+    title: <>HidroAlly: your <span className="accent-italic">care pathway</span>, in your pocket.</>,
+    body: "HidroAlly is the world"s first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle — empirical symptom logging, climate-aware alerts and online consultations with partner dermatologists.",
     href: "/hidroally-app",
     cta: "Learn about HidroAlly",
     image: sweatsmartImage,
     cardClass: "product-card-purple",
     bandClass: "band-cream",
   },
+  {
+    overline: "LIVE SERVICE & MICRO-RETAILING",
+    title: <>Giftovate Oasis Hubs: <span className="accent-italic">affordable</span> physical relief.</>,
+    body: "Trained Clinical Nurses deliver certified pulsed-current iontophoresis. Consult online, get prescribed online by our partner dermatologists, and get treated locally — Intensive Launch Pass ₦30,000 (6 sessions), Monthly Maintenance ₦15,000, plus unbundled single-sachet topicals and blister-strip oral blockers.",
+    href: "/giftovate-oasis",
+    cta: "Find a Giftovate Treatment Hub",
+    image: oasisImage,
+    cardClass: "product-card-magenta",
+    bandClass: "band-ink", reverse: true,
+  },
+];
+
+const wearables: Product[] = [
   {
     overline: "THE BIOMETRIC STANDARD",
     title: <>Clinical-grade monitoring, <span className="accent-italic accent-italic-magenta">always on.</span></>,
@@ -56,8 +59,7 @@ const products: Product[] = [
     cta: "Meet the Giftovate Band",
     image: giftovateBand,
     cardClass: "product-card-indigo",
-    reverse: true,
-    bandClass: "band-ink",
+    bandClass: "band-cream",
   },
   {
     overline: "THE PALMAR PROTOCOL",
@@ -67,27 +69,39 @@ const products: Product[] = [
     cta: "Explore HydroGlove",
     image: gloveImage,
     cardClass: "product-card-magenta",
-    bandClass: "band-cream",
+    bandClass: "band-cream", reverse: true,
   },
   {
     overline: "THE PLANTAR PROTOCOL",
     title: <>Ending <span className="accent-italic">shoe-removal</span> anxiety.</>,
     body: "Five-toe plantar electrotherapy woven into Bamboo-Merino knit. Walk at your natural pace with total stability — 5–10 days of dry, high-friction footing per session.",
     href: "/hydrosock",
-    cta: "See the cooling sock",
+    cta: "Explore HydroSock",
     image: coolingSockImage,
     cardClass: "product-card-purple",
-    reverse: true,
     bandClass: "band-purple",
   },
   {
     overline: "TARGETED CRANIOFACIAL ELECTROTHERAPY",
     title: <>Craniofacial <span className="accent-italic">mastery.</span></>,
-    body: "Stop the sweat cascade at the source. HydroVisage uses gentle sub-milliamp microcurrent iontophoresis on the forehead and temples — command the room with total composure, even past the 28°C / 70% humidity threshold.",
+    body: "Stop the sweat cascade at the source. HydroVisage uses gentle sub-milliamp microcurrent iontophoresis on the forehead and temples — command the room with total composure.",
     href: "/face-mask",
-    cta: "Discover the face mask",
+    cta: "Discover HydroVisage",
     image: faceMaskImage,
     cardClass: "product-card-sunset",
+    bandClass: "band-cream", reverse: true,
+  },
+];
+
+const ecosystem: Product[] = [
+  {
+    overline: "STRATEGIC PARTNERSHIP",
+    title: <>Building the <span className="accent-italic">Pan-African</span> dataset.</>,
+    body: "Our innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and building the continent"s first centralized sudomotor data.",
+    href: "https://beyondsweat.org",
+    cta: "Visit Beyond Sweat Foundation",
+    image: partnershipImage,
+    cardClass: "product-card-indigo",
     bandClass: "band-cream",
   },
   {
@@ -98,18 +112,7 @@ const products: Product[] = [
     cta: "Learn about EcoCaps",
     image: ecocapsImage,
     cardClass: "product-card-cream",
-    reverse: true,
-    bandClass: "band-coral-tint",
-  },
-  {
-    overline: "CLINICAL RELIEF ON DEMAND",
-    title: <>Empowering lives, one <span className="accent-italic">session</span> at a time.</>,
-    body: "Localized recovery stations delivering professional-grade thermoelectric sessions at a micro-price — while training local youth into Certified Sudomotor Specialists. Relief on demand, careers built in place.",
-    href: "/giftovate-oasis",
-    cta: "Visit the Oasis",
-    image: oasisImage,
-    cardClass: "product-card-magenta",
-    bandClass: "band-ink",
+    bandClass: "band-coral-tint", reverse: true,
   },
 ];
 
@@ -124,9 +127,15 @@ const ProductRow = ({ p }: { p: Product }) => (
           <p className="overline-label">{p.overline}</p>
           <h2 className="mb-6">{p.title}</h2>
           <p className="text-lg leading-relaxed mb-8 opacity-90">{p.body}</p>
-          <Link to={p.href} className="link-arrow">
-            {p.cta} <ArrowRight className="w-5 h-5" />
-          </Link>
+          {p.href.startsWith("http") ? (
+            <a href={p.href} target="_blank" rel="noopener noreferrer" className="link-arrow">
+              {p.cta} <ArrowRight className="w-5 h-5" />
+            </a>
+          ) : (
+            <Link to={p.href} className="link-arrow">
+              {p.cta} <ArrowRight className="w-5 h-5" />
+            </Link>
+          )}
         </div>
       </div>
     </div>
@@ -142,21 +151,29 @@ const Home = () => {
       <section className="band-ink relative overflow-hidden">
         <div className="container mx-auto px-4 pt-8 md:pt-12 pb-20 md:pb-32">
           <div className="max-w-4xl">
-            <p className="overline-label">GIFTOVATE THERAPEUTICS LTD</p>
+            <p className="overline-label">THE AFRICAN BLIND SPOT IN DERMATOLOGY</p>
             <h1 className="mb-8">
-              Transforming hyperhidrosis care{" "}
-              <span className="accent-italic">globally.</span>
+              Hyperhidrosis is not cosmetic. It is a{" "}
+              <span className="accent-italic">silent medical crisis.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 max-w-2xl leading-relaxed mb-10">
-              Clinical-grade sudomotor biometrics fused with thermoelectric hardware —
-              built for the 385 million Warriors the industry forgot.
+            <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed mb-6">
+              While patients in Europe and America have established insurance-backed therapies,
+              structured clinical pathways, and easy access to specialized treatments, Africa
+              faces an absolute vacuum. There are no centralized sudomotor datasets, no clinical
+              pathway, and no affordable treatment.
+            </p>
+            <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed mb-10">
+              Giftovate Therapeutics is dismantling these barriers. We are building the
+              continent's first Online-to-Offline (O2O) health ecosystem. By combining empirical
+              data logging, independent dermatological partnerships, and hyper-accessible physical
+              care nodes, we are giving African Warriors their dignity back.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/hidroally-app" className="btn-coral">
-                Join the pilot <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link to="/programs" className="btn-purple">
-                Our programs
+              <a href="https://hidroally.space" target="_blank" rel="noopener noreferrer" className="btn-coral">
+                Download the HidroAlly App <ArrowRight className="w-4 h-4" />
+              </a>
+              <Link to="/giftovate-oasis" className="btn-purple">
+                Find a Giftovate Treatment Hub
               </Link>
             </div>
           </div>
@@ -180,52 +197,21 @@ const Home = () => {
         </div>
       </section>
 
-      {/* MISSION — cream band, large body copy */}
-      <section className="section-pad band-cream">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="overline-label">EMPOWERING RELIEF</p>
-            <h2 className="mb-8">
-              Hyperhidrosis is not cosmetic. It's a{" "}
-              <span className="accent-italic accent-italic-magenta">silent medical crisis.</span>
-            </h2>
-            <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground/80">
-              At Giftovate Therapeutics Ltd, we are dismantling the systemic barriers to
-              specialized care. By fusing clinical-grade sudomotor biometrics with
-              revolutionary thermoelectric hardware, we empower Warriors with the freedom
-              to be seen without trepidation.
-            </p>
-            <p className="text-lg leading-relaxed text-foreground/80">
-              We achieve this through our operational digital platform,{" "}
-              <a href="https://hidroally.space" target="_blank" rel="noopener noreferrer"
-                 className="text-[#6B21A8] font-semibold underline decoration-2 underline-offset-4">
-                HidroAlly
-              </a>
-              —which provides proactive climate-aware alerts and HidroAlly clinical
-              intelligence—and our upcoming line of localized thermoelectric cooling
-              hardware, including smart gloves and Eco-Caps currently in the functional
-              prototype stage.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* STAT BAND — impact numbers */}
       <section className="band-ink section-pad">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto text-center">
             <div>
-              <div className="big-stat">385M</div>
-              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Warriors worldwide</p>
+              <div className="big-stat">0</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Centralized sudomotor datasets in Africa</p>
             </div>
             <div>
               <div className="big-stat">5%</div>
               <p className="mt-3 uppercase tracking-widest text-sm text-white/70">West African workforce at risk</p>
             </div>
             <div>
-              <div className="big-stat">28°</div>
-              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Default climate alert threshold</p>
-              <p className="mt-2 text-xs text-white/60 italic">Fully adjustable — tune to your local climate</p>
+              <div className="big-stat">₦15K</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Monthly dryness maintenance</p>
             </div>
 
           </div>
@@ -234,6 +220,35 @@ const Home = () => {
 
       {/* PRODUCT ROWS */}
       {products.map((p) => (
+        <ProductRow key={p.href} p={p} />
+      ))}
+
+      {/* WEARABLES INTRO */}
+      <section className="section-pad band-purple">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="overline-label">THE FUTURE OF HARDWARE</p>
+            <h2 className="mb-6">
+              Micro-iontophoresis <span className="accent-italic">wearables.</span>
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed opacity-90">
+              Traditional iontophoresis requires heavy, stationary clinical equipment and messy
+              water immersion trays. Giftovate's prototyped hydro wearable tech eliminates that
+              entire burden. Our upcoming hardware line, currently in the advanced prototyping and
+              engineering stage, uses flexible, skin-conforming compression garments with
+              precision low-intensity microcurrents, carbon-silicone electrodes, and highly
+              affordable snap-on hydrogel pads to deliver safe, rapid, and precise sweat-duct
+              blocking therapy directly to the root.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {wearables.map((p) => (
+        <ProductRow key={p.href} p={p} />
+      ))}
+
+      {ecosystem.map((p) => (
         <ProductRow key={p.href} p={p} />
       ))}
 
