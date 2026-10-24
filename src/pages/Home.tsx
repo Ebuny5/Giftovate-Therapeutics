@@ -12,6 +12,7 @@ import giftovateBand from "@/assets/giftovate-band.jpg";
 import oasisImage from "@/assets/giftovate-oasis.jpg";
 import partnershipImage from "@/assets/strategic-partnership.jpg";
 import f6sBadge from "@/assets/f6s-ai-badge.png";
+import ondeaAward from "@/assets/ondea-award.jpg";
 
 import "@/styles/giftovate-cards.css";
 
@@ -151,9 +152,10 @@ const Home = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      {/* HERO — dark band, big italic-accent headline, coral CTA */}
+      {/* HERO — image first, then headline */}
       <section className="band-ink relative overflow-hidden">
-        <div className="container mx-auto px-4 pt-8 md:pt-12 pb-20 md:pb-32">
+        <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto block" />
+        <div className="container mx-auto px-4 pt-10 md:pt-14 pb-16 md:pb-24">
           <div className="max-w-4xl">
             <p className="overline-label">THE AFRICAN BLIND SPOT IN DERMATOLOGY</p>
             <h1 className="mb-8">
@@ -180,23 +182,6 @@ const Home = () => {
                 Find a Giftovate Treatment Hub
               </Link>
             </div>
-          </div>
-        </div>
-        <div className="relative">
-          <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto object-cover" />
-        </div>
-      </section>
-
-      {/* F6S BADGE SECTION */}
-      <section className="section-pad band-cream border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
-            <a href="https://www.f6s.com/giftovate-therapeutics-ltd" target="_blank" rel="noopener noreferrer" className="shrink-0 transition-transform hover:scale-105">
-              <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-24 md:h-32 w-auto drop-shadow-md rounded" />
-            </a>
-            <p className="text-lg md:text-xl font-medium text-foreground/80 max-w-md">
-              Recognized in Nigeria as a #69 Top AI Company by F6S for our work in health innovation.
-            </p>
           </div>
         </div>
       </section>
@@ -255,6 +240,41 @@ const Home = () => {
       {ecosystem.map((p) => (
         <ProductRow key={p.href} p={p} />
       ))}
+
+      {/* AWARDS & RECOGNITION */}
+      <section className="section-pad band-cream">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="overline-label">AWARDS &amp; RECOGNITION</p>
+              <h2>Recognized for <span className="accent-italic">innovation.</span></h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="rounded-3xl bg-card border border-border shadow-lg p-8 flex flex-col items-center text-center">
+                <span className="text-sm font-bold tracking-widest text-primary mb-4">01 · JUNE 2026</span>
+                <a href="https://www.f6s.com/giftovate-therapeutics-ltd" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105 mb-6">
+                  <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-32 w-auto rounded" />
+                </a>
+                <h3 className="text-2xl font-bold mb-3">F6S #69 Top AI Company</h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Recognized in Nigeria as a #69 Top AI Company by F6S for our work in health innovation.
+                </p>
+              </div>
+              <div className="rounded-3xl bg-card border border-border shadow-lg overflow-hidden flex flex-col">
+                <img src={ondeaAward} alt="Giftovate founder receiving the ONDEA Business Grant award" className="w-full h-72 object-cover object-top" />
+                <div className="p-8 text-center">
+                  <span className="text-sm font-bold tracking-widest text-primary">02 · SEPTEMBER 2026</span>
+                  <h3 className="text-2xl font-bold mt-3 mb-3">Ondo State Government Business Grant Winner</h3>
+                  <p className="text-foreground/80 leading-relaxed">
+                    Selected by the Ondo State Government through the Ondo State Entrepreneurship
+                    Agency (ONDEA) as one of the Top 20 distinguishing business ideas in September 2026.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ROADMAP TEASER */}
       <section className="section-pad band-magenta">
