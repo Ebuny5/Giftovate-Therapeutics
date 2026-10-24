@@ -151,9 +151,10 @@ const Home = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      {/* HERO — dark band, big italic-accent headline, coral CTA */}
+      {/* HERO — image first, then headline */}
       <section className="band-ink relative overflow-hidden">
-        <div className="container mx-auto px-4 pt-8 md:pt-12 pb-20 md:pb-32">
+        <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto block" />
+        <div className="container mx-auto px-4 pt-10 md:pt-14 pb-16 md:pb-24">
           <div className="max-w-4xl">
             <p className="overline-label">THE AFRICAN BLIND SPOT IN DERMATOLOGY</p>
             <h1 className="mb-8">
@@ -180,23 +181,6 @@ const Home = () => {
                 Find a Giftovate Treatment Hub
               </Link>
             </div>
-          </div>
-        </div>
-        <div className="relative">
-          <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto object-cover" />
-        </div>
-      </section>
-
-      {/* F6S BADGE SECTION */}
-      <section className="section-pad band-cream border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
-            <a href="https://www.f6s.com/giftovate-therapeutics-ltd" target="_blank" rel="noopener noreferrer" className="shrink-0 transition-transform hover:scale-105">
-              <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-24 md:h-32 w-auto drop-shadow-md rounded" />
-            </a>
-            <p className="text-lg md:text-xl font-medium text-foreground/80 max-w-md">
-              Recognized in Nigeria as a #69 Top AI Company by F6S for our work in health innovation.
-            </p>
           </div>
         </div>
       </section>
