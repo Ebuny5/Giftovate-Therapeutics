@@ -179,7 +179,7 @@ const Home = () => {
           </div>
         </div>
         <div className="relative">
-          <img src={heroImage} alt="Sustainable thermoelectric wearable" className="w-full h-auto object-cover" />
+          <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto object-cover" />
         </div>
       </section>
 
