@@ -31,7 +31,7 @@ const products: Product[] = [
   {
     overline: "THE DIGITAL FRONT DOOR",
     title: <>HidroAlly: your <span className="accent-italic">care pathway</span>, in your pocket.</>,
-    body: "HidroAlly is the world"s first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle — empirical symptom logging, climate-aware alerts and online consultations with partner dermatologists.",
+    body: "HidroAlly is the world’s first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle — empirical symptom logging, climate-aware alerts and online consultations with partner dermatologists.",
     href: "/hidroally-app",
     cta: "Learn about HidroAlly",
     image: sweatsmartImage,
@@ -46,7 +46,8 @@ const products: Product[] = [
     cta: "Find a Giftovate Treatment Hub",
     image: oasisImage,
     cardClass: "product-card-magenta",
-    bandClass: "band-ink", reverse: true,
+    bandClass: "band-ink",
+    reverse: true,
   },
 ];
 
@@ -69,7 +70,8 @@ const wearables: Product[] = [
     cta: "Explore HydroGlove",
     image: gloveImage,
     cardClass: "product-card-magenta",
-    bandClass: "band-cream", reverse: true,
+    bandClass: "band-cream",
+    reverse: true,
   },
   {
     overline: "THE PLANTAR PROTOCOL",
@@ -89,7 +91,8 @@ const wearables: Product[] = [
     cta: "Discover HydroVisage",
     image: faceMaskImage,
     cardClass: "product-card-sunset",
-    bandClass: "band-cream", reverse: true,
+    bandClass: "band-cream",
+    reverse: true,
   },
 ];
 
@@ -97,7 +100,7 @@ const ecosystem: Product[] = [
   {
     overline: "STRATEGIC PARTNERSHIP",
     title: <>Building the <span className="accent-italic">Pan-African</span> dataset.</>,
-    body: "Our innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and building the continent"s first centralized sudomotor data.",
+    body: "Our innovation is fueled by our close partnership with the Beyond Sweat Foundation. Together, we are breaking the silence and building the continent’s first centralized sudomotor data.",
     href: "https://beyondsweat.org",
     cta: "Visit Beyond Sweat Foundation",
     image: partnershipImage,
@@ -112,7 +115,8 @@ const ecosystem: Product[] = [
     cta: "Learn about EcoCaps",
     image: ecocapsImage,
     cardClass: "product-card-cream",
-    bandClass: "band-coral-tint", reverse: true,
+    bandClass: "band-coral-tint",
+    reverse: true,
   },
 ];
 
