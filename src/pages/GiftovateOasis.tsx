@@ -3,7 +3,9 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
-  Snowflake,
+  Zap,
+  CalendarCheck,
+  Pill,
   UserCheck,
   Coins,
   GraduationCap,
@@ -17,10 +19,22 @@ import oasisImage from "@/assets/giftovate-oasis.jpg";
 const GiftovateOasis = () => {
   const accessFeatures = [
     {
-      icon: Snowflake,
-      title: "15-Minute Thermoelectric Recovery",
+      icon: Zap,
+      title: "The Intensive Launch Pass (₦30,000)",
       description:
-        "For those who cannot afford personal wearables (gloves, socks, or masks), the Oasis provides access to high-intensity, thermoelectric cooling sessions that deliver hours of relief.",
+        "Get 6 clinical-grade iontophoresis sessions spread over 2 weeks (3 sessions per week). Our advanced pulsed-current microprocessors safely deactivate overactive eccrine sweat glands, bringing you down to a baseline of complete dryness.",
+    },
+    {
+      icon: CalendarCheck,
+      title: "Monthly Dryness Maintenance (₦15,000 / Month)",
+      description:
+        "Preserve your dryness with a single, predictable top-up session per week (4 sessions a month) to keep your sweat glands dormant.",
+    },
+    {
+      icon: Pill,
+      title: "Unbundled Clinical Micro-Retailing",
+      description:
+        "We respect local wallets. Prescription-strength topicals are unbundled into single-sachet packets and oral blockers into individual tablet blister strips — certified Aluminum Chloride topicals, daily maintenance lotions and oral anticholinergics dispensed legally through licensed pharmacy partners.",
     },
     {
       icon: UserCheck,
@@ -47,7 +61,7 @@ const GiftovateOasis = () => {
       icon: Database,
       title: "Centralized Aggregation",
       description:
-        "Connects your Giftovate Band, cooling wearables, and environmental trackers into one unified data ecosystem.",
+        "Connects your Giftovate Band, HidroAlly app, and environmental trackers into one unified data ecosystem.",
     },
     {
       icon: LineChart,
@@ -70,9 +84,9 @@ const GiftovateOasis = () => {
   ];
 
   const steps = [
-    { step: "1", title: "Book", text: "Select a 15-minute thermoelectric recovery session through our app or visit your local Oasis." },
-    { step: "2", title: "Expert Care", text: "Receive professional-grade cooling therapy from a trained Specialist who understands the science of hyperhidrosis." },
-    { step: "3", title: "Sustain", text: "A single session provides hours of relief, stabilizing your thermal baseline and restoring your confidence." },
+    { step: "1", title: "Consult Online", text: "Start your consultation online through the HidroAlly app." },
+    { step: "2", title: "Prescribed Online", text: "Our partner dermatologists review your case and prescribe your treatment online." },
+    { step: "3", title: "Treated Locally", text: "Your nearest Hub delivers the sessions, documented for clinician review, at a fraction of private clinic cost." },
     { step: "4", title: "Community Impact", text: "By choosing Giftovate Oasis, you are directly supporting the employment and professional development of a young person in your community." },
   ];
 
@@ -86,7 +100,7 @@ const GiftovateOasis = () => {
             <div className="max-w-4xl mx-auto">
               <img
                 src={oasisImage}
-                alt="Giftovate Oasis recovery station with HidroAlly AI dashboard and thermoelectric gloves"
+                alt="Giftovate Oasis recovery station with Clinical Nurses delivering iontophoresis sessions"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
               <div className="text-center">
@@ -94,10 +108,10 @@ const GiftovateOasis = () => {
                   CLINICAL RELIEF ON DEMAND
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                  Giftovate Oasis: Empowering Lives, One Session at a Time.
+                  Giftovate Oasis Hubs: Affordable Physical Relief
                 </h1>
                 <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                  We believe that effective hyperhidrosis relief should be a standard of care for all, not a luxury. The Giftovate Oasis is our localized solution to the hardware deficit in Africa — providing a pathway to professional-grade sudomotor suppression at an affordable, per-session cost, while simultaneously building a new generation of health-tech professionals.
+                  You don't need an expensive procedure to reclaim your dignity. Giftovate Oasis operates specialized clinical nodes where trained Clinical Nurses deliver certified, safe pulsed-current iontophoresis sessions for excessive sweating.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button size="lg">Express Interest in Recovery Sessions</Button>
@@ -112,9 +126,9 @@ const GiftovateOasis = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Accessible Relief & Youth Empowerment</h2>
+                <h2 className="text-3xl font-bold mb-4">Treatment Plans & Micro-Retailing</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Every Oasis is both a recovery station and a launchpad for local careers.
+                  Clear, predictable pricing built for local wallets.
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
