@@ -4,8 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Programs from "./pages/Programs";
-import Resources from "./pages/Resources";
 import HidroAllyApp from "./pages/HidroAllyApp";
 import HydroGlove from "./pages/HydroGlove";
 import HydroSock from "./pages/HydroSock";
@@ -28,8 +26,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/programs" element={<Programs />} />
-          <Route path="/resources" element={<Resources />} />
           <Route path="/hidroally-app" element={<HidroAllyApp />} />
           <Route path="/hydroglove" element={<HydroGlove />} />
           <Route path="/hydrosock" element={<HydroSock />} />

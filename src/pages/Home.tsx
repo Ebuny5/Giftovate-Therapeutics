@@ -191,16 +191,16 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto text-center">
             <div>
-              <div className="big-stat">0</div>
-              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Centralized sudomotor datasets in Africa</p>
-            </div>
-            <div>
               <div className="big-stat">5%</div>
               <p className="mt-3 uppercase tracking-widest text-sm text-white/70">West African workforce at risk</p>
             </div>
             <div>
-              <div className="big-stat">₦15K</div>
-              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Monthly dryness maintenance</p>
+              <div className="big-stat">0.05%</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Established clinical pathways in Africa</p>
+            </div>
+            <div>
+              <div className="big-stat">100%</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Integrated data-to-treatment funnel</p>
             </div>
 
           </div>
@@ -306,8 +306,8 @@ const Home = () => {
               Explore our solutions and join the community reducing stigma and improving
               care for hyperhidrosis.
             </p>
-            <Link to="/resources" className="btn-coral">
-              Explore resources <ArrowRight className="w-4 h-4" />
+            <Link to="/giftovate-oasis" className="btn-coral">
+              Find a Treatment Hub <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

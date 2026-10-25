@@ -10,8 +10,6 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/programs", label: "Programs" },
-    { path: "/resources", label: "Resources" },
     { path: "/hidroally-app", label: "HidroAlly App" },
   ];
 
