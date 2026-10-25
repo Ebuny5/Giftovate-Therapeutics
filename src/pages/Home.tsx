@@ -198,19 +198,19 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="bg-[#EFECE6] border border-amber-300/40 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat font-extrabold" style={{ color: "#FFD700" }}>5%</div>
-              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#FFD700" }}></div>
-              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#FFD700" }}>West African workforce at risk</p>
+              <div className="big-stat font-extrabold" style={{ color: "#0A192F" }}>5%</div>
+              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#D4AF37" }}></div>
+              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#0A192F" }}>West African workforce at risk</p>
             </div>
-            <div className="bg-[#FFFF65] border border-yellow-300 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat text-[#0F172A] font-extrabold">0.05%</div>
-              <div className="w-12 h-0.5 bg-[#0F172A] mx-auto my-3"></div>
-              <p className="uppercase tracking-widest text-xs font-bold text-[#0F172A]">Established clinical pathways in Africa</p>
+            <div className="bg-[#CAE00F] border border-lime-500/40 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
+              <div className="big-stat font-extrabold" style={{ color: "#3B0764" }}>0.05%</div>
+              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#D4AF37" }}></div>
+              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#3B0764" }}>Established clinical pathways in Africa</p>
             </div>
-            <div className="bg-[#FFD700] border border-amber-400 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat text-black font-extrabold">100%</div>
-              <div className="w-12 h-0.5 bg-black mx-auto my-3"></div>
-              <p className="uppercase tracking-widest text-xs font-bold text-black">Integrated data-to-treatment funnel</p>
+            <div className="bg-[#D4AF37] border border-amber-500/30 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
+              <div className="big-stat font-extrabold" style={{ color: "#0F0A1F" }}>100%</div>
+              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#0F0A1F" }}></div>
+              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#0F0A1F" }}>Integrated data-to-treatment funnel</p>
             </div>
           </div>
         </div>
