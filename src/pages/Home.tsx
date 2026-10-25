@@ -9,7 +9,8 @@ import faceMaskImage from "@/assets/hydrovisage-mask.jpg";
 import coolingSockImage from "@/assets/hydrosock-render.jpg";
 import ecocapsImage from "@/assets/ecocaps-hero.jpg";
 import giftovateBand from "@/assets/giftovate-band.jpg";
-import oasisImage from "@/assets/giftovate-oasis.jpg";
+import oasisImage from "@/assets/giftovate-oasis-new.png";
+import wearablesImage from "@/assets/hydro-wearables.jpg";
 import partnershipImage from "@/assets/strategic-partnership.jpg";
 import f6sBadge from "@/assets/f6s-ai-badge.png";
 import ondeaAward from "@/assets/ondea-award.jpg";
@@ -41,10 +42,10 @@ const products: Product[] = [
   },
   {
     overline: "LIVE SERVICE & MICRO-RETAILING",
-    title: <>Giftovate Oasis Hubs: <span className="accent-italic">affordable</span> physical relief.</>,
-    body: "Trained Clinical Nurses deliver certified pulsed-current iontophoresis. Consult online, get prescribed online by our partner dermatologists, and get treated locally — Intensive Launch Pass ₦30,000 (6 sessions), Monthly Maintenance ₦15,000, plus unbundled single-sachet topicals and blister-strip oral blockers.",
+    title: <>Giftovate Oasis: <span className="accent-italic">affordable</span> physical relief in 20 minutes.</>,
+    body: "Giftovate-Trained Youth Specialists deliver certified, safe pulsed-current iontophoresis. Get a consultation online by our partner dermatologists and get treated locally at our hub. Intensive Launch Pass ₦30,000 (6 sessions), Monthly Maintenance ₦15,000, plus single-sachet topicals and blister-strip oral blockers.",
     href: "/giftovate-oasis",
-    cta: "Find a Giftovate Treatment Hub",
+    cta: "Find a Giftovate Oasis Location",
     image: oasisImage,
     cardClass: "product-card-magenta",
     bandClass: "band-ink",
@@ -234,6 +235,7 @@ const Home = () => {
               affordable snap-on hydrogel pads to deliver safe, rapid, and precise sweat-duct
               blocking therapy directly to the root.
             </p>
+            <img src={wearablesImage} alt="Giftovate upcoming hydro wearable technology" className="w-full h-auto rounded-2xl mt-10" loading="lazy" />
           </div>
         </div>
       </section>

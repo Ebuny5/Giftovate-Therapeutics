@@ -14,7 +14,7 @@ import {
   FileText,
   ShieldAlert,
 } from "lucide-react";
-import oasisImage from "@/assets/giftovate-oasis.jpg";
+import oasisImage from "@/assets/giftovate-oasis-new.png";
 
 const GiftovateOasis = () => {
   const accessFeatures = [
@@ -34,7 +34,7 @@ const GiftovateOasis = () => {
       icon: Pill,
       title: "Unbundled Clinical Micro-Retailing",
       description:
-        "We respect local wallets. Prescription-strength topicals are unbundled into single-sachet packets and oral blockers into individual tablet blister strips — certified Aluminum Chloride topicals, daily maintenance lotions and oral anticholinergics dispensed legally through licensed pharmacy partners.",
+        "We respect local wallets. Prescription-strength topicals are unbundled into single-sachet packets and oral blockers into individual tablet blister strips, certified Aluminum Chloride topicals, daily maintenance lotions and oral anticholinergics dispensed legally through licensed pharmacy partners.",
     },
     {
       icon: UserCheck,
@@ -52,7 +52,7 @@ const GiftovateOasis = () => {
       icon: GraduationCap,
       title: "A Pipeline for Youth Employment",
       description:
-        "We recruit and train local youth, turning them into Certified Sudomotor Specialists — providing stable, dignified employment in cities and villages across Africa and beyond.",
+        "We recruit and train local youth, turning them into Certified Sudomotor Specialists, providing stable, dignified employment in cities and villages across Africa and beyond.",
     },
   ];
 
@@ -73,7 +73,7 @@ const GiftovateOasis = () => {
       icon: FileText,
       title: "Clinical Reporting",
       description:
-        "Generates automated, PDF-format evidence-based reports — shifting conversations from 'I think I'm sweating' to 'Here is my clinical data.'",
+        "Generates automated, PDF-format evidence-based reports, shifting conversations from 'I think I'm sweating' to 'Here is my clinical data.'",
     },
     {
       icon: ShieldAlert,
@@ -100,7 +100,7 @@ const GiftovateOasis = () => {
             <div className="max-w-4xl mx-auto">
               <img
                 src={oasisImage}
-                alt="Giftovate Oasis recovery station with Clinical Nurses delivering iontophoresis sessions"
+                alt="Giftovate Oasis recovery station with Giftovate-Trained Youth Specialists delivering iontophoresis sessions"
                 className="w-full h-auto rounded-2xl mb-10 md:mb-14"
               />
               <div className="text-center">
@@ -108,10 +108,10 @@ const GiftovateOasis = () => {
                   CLINICAL RELIEF ON DEMAND
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                  Giftovate Oasis Hubs: Affordable Physical Relief
+                  Giftovate Oasis: Affordable Physical Relief in 20 Minutes
                 </h1>
                 <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                  You don't need an expensive procedure to reclaim your dignity. Giftovate Oasis operates specialized clinical nodes where trained Clinical Nurses deliver certified, safe pulsed-current iontophoresis sessions for excessive sweating.
+                  You don't need an expensive procedure to reclaim your dignity. Giftovate Oasis operates specialized clinical nodes where Giftovate-Trained Youth Specialists deliver certified, safe pulsed-current iontophoresis sessions for excessive sweating.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button size="lg">Express Interest in Recovery Sessions</Button>
@@ -172,7 +172,7 @@ const GiftovateOasis = () => {
                 <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">THE ANALYTICS CORE</p>
                 <h2 className="text-3xl font-bold mb-4">Your Personal Clinical Command Center</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  If the Band is the observer, the Oasis is the strategist. The Giftovate Oasis serves as the central processing unit for your hyperhidrosis management — aggregating data from your wearables, app logs, and environmental sensors, and transforming raw biometric noise into actionable clinical insights.
+                  If the Band is the observer, the Oasis is the strategist. The Giftovate Oasis serves as the central processing unit for your hyperhidrosis management, aggregating data from your wearables, app logs, and environmental sensors, and transforming raw biometric noise into actionable clinical insights.
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
