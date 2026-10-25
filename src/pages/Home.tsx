@@ -191,12 +191,12 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto text-center">
             <div>
-              <div className="big-stat">0</div>
-              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Established clinical pathways in Africa</p>
-            </div>
-            <div>
               <div className="big-stat">5%</div>
               <p className="mt-3 uppercase tracking-widest text-sm text-white/70">West African workforce at risk</p>
+            </div>
+            <div>
+              <div className="big-stat">0.05%</div>
+              <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Established clinical pathways in Africa</p>
             </div>
             <div>
               <div className="big-stat">100%</div>
