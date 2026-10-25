@@ -197,20 +197,20 @@ const Home = () => {
       <section className="bg-slate-950/90 border-t-2 border-b-2 border-purple-500/30 py-16 relative">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* CARD 1: Off-white background (#FFF6E3), Navy Blue (#0F172A) text */}
-            <div className="bg-[#FFF6E3] border border-amber-200/60 rounded-2xl p-8 text-center shadow-lg relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 ease-out transform animate-in fade-in slide-in-from-bottom-4">
-              <div className="big-stat font-extrabold tracking-tight font-serif text-[#0F172A]">5%</div>
-              <div className="w-14 h-0.5 mx-auto my-4 bg-[#0F172A]/80 rounded-full"></div>
-              <p className="uppercase tracking-[0.2em] text-xs font-bold text-[#0F172A] leading-relaxed">
+            {/* CARD 1: Deep Ultramarine/Navy Blue background (#0011B8), White text */}
+            <div className="bg-[#0011B8] border border-blue-600/40 rounded-2xl p-8 text-center shadow-lg relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 ease-out transform animate-in fade-in slide-in-from-bottom-4">
+              <div className="big-stat font-extrabold tracking-tight font-serif text-white">5%</div>
+              <div className="w-14 h-0.5 mx-auto my-4 bg-white/80 rounded-full"></div>
+              <p className="uppercase tracking-[0.2em] text-xs font-bold text-white/90 leading-relaxed">
                 West African workforce at risk
               </p>
             </div>
 
-            {/* CARD 2: Fresh Lemon background (#CAE00F), Beaming Gold (#FFD700) text */}
+            {/* CARD 2: Fresh Lemon background (#CAE00F), Deep Purple text (#3B0764) */}
             <div className="bg-[#CAE00F] border border-lime-300 rounded-2xl p-8 text-center shadow-lg relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 ease-out transform animate-in fade-in slide-in-from-bottom-6">
-              <div className="big-stat font-extrabold tracking-tight font-serif text-[#FFD700] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.6)]">0.05%</div>
-              <div className="w-14 h-0.5 mx-auto my-4 bg-[#FFD700] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.4)]"></div>
-              <p className="uppercase tracking-[0.2em] text-xs font-bold text-[#FFD700] leading-relaxed drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.6)]">
+              <div className="big-stat font-extrabold tracking-tight font-serif text-[#3B0764]">0.05%</div>
+              <div className="w-14 h-0.5 mx-auto my-4 bg-[#3B0764] rounded-full"></div>
+              <p className="uppercase tracking-[0.2em] text-xs font-bold text-[#3B0764] leading-relaxed">
                 Established clinical pathways in Africa
               </p>
             </div>
