@@ -295,7 +295,7 @@ const Home = () => {
               Building the <span className="accent-italic">infrastructure</span> of care.
             </h2>
             <p className="text-lg md:text-xl text-white/85 leading-relaxed mb-10 max-w-2xl mx-auto">
-              A four-phase Data-to-Device plan — from diagnostic visibility in 2025 to
+              A four-phase Data-to-Device plan from diagnostic visibility in 2025 to
               global clinical integration in 2028+. Understand hyperhidrosis through
               high-resolution data, then treat it with targeted hardware.
             </p>

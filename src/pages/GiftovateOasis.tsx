@@ -40,7 +40,7 @@ const GiftovateOasis = () => {
       icon: UserCheck,
       title: "Professional Supervision",
       description:
-        "Every session is administered by a Giftovate-trained Specialist. You are in expert hands, receiving professional guidance to ensure the treatment is safe, effective, and tailored to your specific physiological needs.",
+        "Every session is administered by a Giftovate-Trained Youth Specialist. You are in expert hands, receiving professional guidance to ensure the treatment is safe, effective, and tailored to your specific physiological needs.",
     },
     {
       icon: Coins,
