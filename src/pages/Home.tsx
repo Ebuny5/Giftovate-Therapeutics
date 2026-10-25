@@ -327,8 +327,7 @@ const Home = () => {
             <p className="overline-label" style={{ color: "#FDE68A" }}>JOIN THE MOVEMENT</p>
             <h2 className="mb-4">Ready to take <span className="accent-italic">control?</span></h2>
             <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto">
-              Explore our solutions and join the community reducing stigma and improving
-              care for hyperhidrosis.
+              Explore our solutions and join the warriors reducing stigma and reclaiming their deserved dignity back.
             </p>
             <Link to="/giftovate-oasis" className="btn-coral">
               Find a Treatment Hub <ArrowRight className="w-4 h-4" />
