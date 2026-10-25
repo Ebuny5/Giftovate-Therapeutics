@@ -14,7 +14,6 @@ import GiftovateOasis from "./pages/GiftovateOasis";
 import Roadmap from "./pages/Roadmap";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
-import HidroAllyDomainNotice from "@/components/HidroAllyDomainNotice";
 
 const queryClient = new QueryClient();
 
@@ -38,7 +37,6 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <HidroAllyDomainNotice />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
