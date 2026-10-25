@@ -152,7 +152,7 @@ const Home = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      {/* HERO — text headline first, image after text */}
+      {/* HERO — image comes after H1 title, remaining text and CTAs come under image */}
       <section className="band-ink relative overflow-hidden">
         <div className="container mx-auto px-4 pt-10 md:pt-14 pb-12">
           <div className="max-w-4xl">
@@ -161,6 +161,13 @@ const Home = () => {
               Hyperhidrosis is not cosmetic. It is a{" "}
               <span className="accent-italic">silent medical crisis.</span>
             </h1>
+          </div>
+
+          <div className="my-8 md:my-10">
+            <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto rounded-2xl block" />
+          </div>
+
+          <div className="max-w-4xl">
             <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed mb-6">
               While patients in Europe and America have established insurance-backed therapies,
               structured clinical pathways, and easy access to specialized treatments, Africa
@@ -173,7 +180,7 @@ const Home = () => {
               data logging, independent dermatological partnerships, and hyper-accessible physical
               care nodes, we are giving African Warriors their dignity back.
             </p>
-            <div className="flex flex-wrap gap-4 mb-10">
+            <div className="flex flex-wrap gap-4">
               <a href="https://hidroally.space" target="_blank" rel="noopener noreferrer" className="btn-coral">
                 Download the HidroAlly App <ArrowRight className="w-4 h-4" />
               </a>
@@ -183,7 +190,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto block" />
       </section>
 
       {/* STAT BAND — impact numbers separated into distinct section */}
