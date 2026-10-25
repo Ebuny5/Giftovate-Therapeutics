@@ -183,7 +183,7 @@ const Home = () => {
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <a href="https://hidroally.space" target="_blank" rel="noopener noreferrer" className="btn-beaming-coral">
-                Download <ArrowRight className="w-4 h-4" />
+                Try HidroAlly App <ArrowRight className="w-4 h-4" />
               </a>
               <Link to="/giftovate-oasis" className="btn-beaming-purple">
                 Find a Hub <ArrowRight className="w-4 h-4" />
@@ -197,20 +197,20 @@ const Home = () => {
       <section className="bg-slate-950/90 border-t-2 border-b-2 border-purple-500/30 py-16 relative">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-slate-900/80 border border-purple-500/20 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:border-purple-500/50 transition-all">
-              <div className="big-stat text-amber-400">5%</div>
-              <div className="w-12 h-0.5 bg-amber-400/50 mx-auto my-3"></div>
-              <p className="uppercase tracking-widest text-xs font-bold text-white/80">West African workforce at risk</p>
+            <div className="bg-[#EFECE6] border border-slate-300 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
+              <div className="big-stat text-slate-900 font-extrabold">5%</div>
+              <div className="w-12 h-0.5 bg-slate-800/40 mx-auto my-3"></div>
+              <p className="uppercase tracking-widest text-xs font-bold text-slate-800">West African workforce at risk</p>
             </div>
-            <div className="bg-slate-900/80 border border-purple-500/20 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:border-purple-500/50 transition-all">
-              <div className="big-stat text-purple-400">0.05%</div>
-              <div className="w-12 h-0.5 bg-purple-400/50 mx-auto my-3"></div>
-              <p className="uppercase tracking-widest text-xs font-bold text-white/80">Established clinical pathways in Africa</p>
+            <div className="bg-[#FEF08A] border border-yellow-300 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
+              <div className="big-stat text-slate-900 font-extrabold">0.05%</div>
+              <div className="w-12 h-0.5 bg-slate-800/40 mx-auto my-3"></div>
+              <p className="uppercase tracking-widest text-xs font-bold text-slate-800">Established clinical pathways in Africa</p>
             </div>
-            <div className="bg-slate-900/80 border border-purple-500/20 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:border-purple-500/50 transition-all">
-              <div className="big-stat text-magenta-400" style={{ color: "#E879F9" }}>100%</div>
-              <div className="w-12 h-0.5 bg-pink-400/50 mx-auto my-3"></div>
-              <p className="uppercase tracking-widest text-xs font-bold text-white/80">Integrated data-to-treatment funnel</p>
+            <div className="bg-[#FDE047] border border-amber-300 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
+              <div className="big-stat text-slate-900 font-extrabold">100%</div>
+              <div className="w-12 h-0.5 bg-slate-800/40 mx-auto my-3"></div>
+              <p className="uppercase tracking-widest text-xs font-bold text-slate-800">Integrated data-to-treatment funnel</p>
             </div>
           </div>
         </div>
