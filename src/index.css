@@ -185,4 +185,63 @@
     box-shadow: var(--shadow-brand);
   }
   .btn-purple:hover { transform: translateY(-2px); }
+
+  /* Animated Beaming Compact Square Buttons */
+  @keyframes pulseBeamCoral {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7), 0 0 15px rgba(255, 107, 53, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 0 8px rgba(255, 107, 53, 0), 0 0 25px rgba(255, 107, 53, 0.8);
+    }
+  }
+
+  @keyframes pulseBeamPurple {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(192, 38, 211, 0.7), 0 0 15px rgba(192, 38, 211, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 0 8px rgba(192, 38, 211, 0), 0 0 25px rgba(192, 38, 211, 0.8);
+    }
+  }
+
+  .btn-beaming-coral {
+    background: hsl(var(--accent));
+    color: white;
+    font-weight: 700;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.875rem;
+    border-radius: 0.375rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    animation: pulseBeamCoral 2s infinite ease-in-out;
+    transition: transform .2s ease;
+  }
+  .btn-beaming-coral:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .btn-beaming-purple {
+    background: var(--gradient-magenta);
+    color: white;
+    font-weight: 700;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.875rem;
+    border-radius: 0.375rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    animation: pulseBeamPurple 2s infinite ease-in-out 1s;
+    transition: transform .2s ease;
+  }
+  .btn-beaming-purple:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
 }
