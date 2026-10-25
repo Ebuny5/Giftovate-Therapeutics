@@ -152,16 +152,22 @@ const Home = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      {/* HERO — image first, then headline */}
+      {/* HERO — image comes after H1 title, remaining text and CTAs come under image */}
       <section className="band-ink relative overflow-hidden">
-        <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto block" />
-        <div className="container mx-auto px-4 pt-10 md:pt-14 pb-16 md:pb-24">
+        <div className="container mx-auto px-4 pt-10 md:pt-14 pb-12">
           <div className="max-w-4xl">
             <p className="overline-label">THE AFRICAN BLIND SPOT IN DERMATOLOGY</p>
             <h1 className="mb-8">
               Hyperhidrosis is not cosmetic. It is a{" "}
               <span className="accent-italic">silent medical crisis.</span>
             </h1>
+          </div>
+
+          <div className="my-8 md:my-10">
+            <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto rounded-2xl block" />
+          </div>
+
+          <div className="max-w-4xl">
             <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed mb-6">
               While patients in Europe and America have established insurance-backed therapies,
               structured clinical pathways, and easy access to specialized treatments, Africa
@@ -186,8 +192,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* STAT BAND — impact numbers */}
-      <section className="band-ink section-pad">
+      {/* STAT BAND — impact numbers separated into distinct section */}
+      <section className="bg-slate-900 border-t border-b border-purple-900/40 py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto text-center">
             <div>
@@ -202,7 +208,6 @@ const Home = () => {
               <div className="big-stat">100%</div>
               <p className="mt-3 uppercase tracking-widest text-sm text-white/70">Integrated data-to-treatment funnel</p>
             </div>
-
           </div>
         </div>
       </section>
