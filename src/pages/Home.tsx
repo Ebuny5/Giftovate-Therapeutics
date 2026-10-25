@@ -214,6 +214,9 @@ const Home = () => {
       <section className="section-pad band-ink relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
+            <div className="mb-10 w-full overflow-hidden rounded-2xl shadow-2xl">
+              <img src={oasisImage} alt="Giftovate Oasis" className="w-full h-auto block" />
+            </div>
             <p className="overline-label">LIVE SERVICE &amp; MICRO-RETAILING</p>
             <h2 className="mb-6">
               Giftovate Oasis: <span className="accent-italic">affordable</span> physical relief in 20 minutes.
@@ -221,13 +224,10 @@ const Home = () => {
             <p className="text-lg md:text-xl leading-relaxed mb-8 opacity-90 max-w-3xl">
               Giftovate-Trained Youth Specialists deliver certified, safe pulsed-current iontophoresis. Get a consultation online by our partner dermatologists and get treated locally at our hub. Intensive Launch Pass ₦30,000 (6 sessions), Monthly Maintenance ₦15,000, plus single-sachet topicals and blister-strip oral blockers.
             </p>
-            <div className="mb-8">
+            <div>
               <Link to="/giftovate-oasis" className="link-arrow">
                 Find a Giftovate Oasis Location <ArrowRight className="w-5 h-5" />
               </Link>
-            </div>
-            <div className="w-full overflow-hidden rounded-2xl shadow-2xl">
-              <img src={oasisImage} alt="Giftovate Oasis" className="w-full h-auto block" />
             </div>
           </div>
         </div>
