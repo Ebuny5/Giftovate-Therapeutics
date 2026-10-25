@@ -197,20 +197,31 @@ const Home = () => {
       <section className="bg-slate-950/90 border-t-2 border-b-2 border-purple-500/30 py-16 relative">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-[#EFECE6] border border-amber-300/40 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat font-extrabold" style={{ color: "#FFD700" }}>5%</div>
-              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#FFD700" }}></div>
-              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#FFD700" }}>West African workforce at risk</p>
+            {/* CARD 1: Off-white background (#FFF6E3), Navy Blue (#0F172A) text */}
+            <div className="bg-[#FFF6E3] border border-amber-200/60 rounded-2xl p-8 text-center shadow-lg relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 ease-out transform animate-in fade-in slide-in-from-bottom-4">
+              <div className="big-stat font-extrabold tracking-tight font-serif text-[#0F172A]">5%</div>
+              <div className="w-14 h-0.5 mx-auto my-4 bg-[#0F172A]/80 rounded-full"></div>
+              <p className="uppercase tracking-[0.2em] text-xs font-bold text-[#0F172A] leading-relaxed">
+                West African workforce at risk
+              </p>
             </div>
-            <div className="bg-[#FFFF65] border border-yellow-300 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat text-[#0F172A] font-extrabold">0.05%</div>
-              <div className="w-12 h-0.5 bg-[#0F172A] mx-auto my-3"></div>
-              <p className="uppercase tracking-widest text-xs font-bold text-[#0F172A]">Established clinical pathways in Africa</p>
+
+            {/* CARD 2: Fresh Lemon background (#CAE00F), Beaming Gold (#FFD700) text */}
+            <div className="bg-[#CAE00F] border border-lime-300 rounded-2xl p-8 text-center shadow-lg relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 ease-out transform animate-in fade-in slide-in-from-bottom-6">
+              <div className="big-stat font-extrabold tracking-tight font-serif text-[#FFD700] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.6)]">0.05%</div>
+              <div className="w-14 h-0.5 mx-auto my-4 bg-[#FFD700] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.4)]"></div>
+              <p className="uppercase tracking-[0.2em] text-xs font-bold text-[#FFD700] leading-relaxed drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.6)]">
+                Established clinical pathways in Africa
+              </p>
             </div>
-            <div className="bg-[#FFD700] border border-amber-400 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat text-black font-extrabold">100%</div>
-              <div className="w-12 h-0.5 bg-black mx-auto my-3"></div>
-              <p className="uppercase tracking-widest text-xs font-bold text-black">Integrated data-to-treatment funnel</p>
+
+            {/* CARD 3: Bright Beaming Gold background (#FFD700), Black (#000000) text */}
+            <div className="bg-[#FFD700] border border-amber-400 rounded-2xl p-8 text-center shadow-lg relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 ease-out transform animate-in fade-in slide-in-from-bottom-8">
+              <div className="big-stat font-extrabold tracking-tight font-serif text-black">100%</div>
+              <div className="w-14 h-0.5 mx-auto my-4 bg-black rounded-full"></div>
+              <p className="uppercase tracking-[0.2em] text-xs font-bold text-black leading-relaxed">
+                Integrated data-to-treatment funnel
+              </p>
             </div>
           </div>
         </div>
