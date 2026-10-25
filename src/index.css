@@ -157,16 +157,15 @@
     color: white;
     font-weight: 700;
     font-family: 'Sora', sans-serif;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
     font-size: 0.8125rem;
-    padding: 1rem 2rem;
-    border-radius: 9999px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
-    box-shadow: 0 10px 25px -8px rgba(255, 107, 53, 0.5);
+    box-shadow: 0 6px 16px -6px rgba(255, 107, 53, 0.5);
   }
   .btn-coral:hover { transform: translateY(-2px); background: #FF5722; }
 
@@ -175,11 +174,10 @@
     color: white;
     font-weight: 700;
     font-family: 'Sora', sans-serif;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
     font-size: 0.8125rem;
-    padding: 1rem 2rem;
-    border-radius: 9999px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
