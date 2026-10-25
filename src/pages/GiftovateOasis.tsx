@@ -14,7 +14,7 @@ import {
   FileText,
   ShieldAlert,
 } from "lucide-react";
-import oasisImage from "@/assets/giftovate-oasis-new.png";
+import oasisImage from "@/assets/hub.jpeg";
 
 const GiftovateOasis = () => {
   const accessFeatures = [
