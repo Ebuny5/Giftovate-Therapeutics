@@ -240,7 +240,7 @@ const StatCard = ({ stat, unit, badge, label, bg, text, divider, border, delay, 
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-x-hidden w-full max-w-full">
       <Navigation />
 
       {/* HERO — image comes after H1 title, remaining text and CTAs come under image */}
