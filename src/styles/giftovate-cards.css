@@ -86,45 +86,92 @@
 }
 
 /* Editorial stat card: serif numeral, small % unit, eyebrow badge, scroll reveal */
-.stat-reveal {
+/* Left & Right Scroll Slide Animations */
+.slide-from-left {
   opacity: 0;
-  transform: translateY(48px);
-  transition: opacity .8s ease, transform .8s cubic-bezier(.22, 1, .36, 1);
+  transform: translateX(-80px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
-.stat-reveal.is-visible {
+.slide-from-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-from-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.slide-from-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-from-bottom {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.slide-from-bottom.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .stat-reveal { opacity: 1; transform: none; transition: none; }
+  .slide-from-left, .slide-from-right, .slide-from-bottom {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 .stat-badge {
   display: inline-block;
-  font-family: 'Sora', sans-serif;
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  font-family: 'Inter', 'Manrope', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
   border: 1px solid currentColor;
-  opacity: 0.75;
-  margin-bottom: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 0.85rem;
+}
+
+/* Pulsing / Beaming Animation for Stat Numbers */
+@keyframes pulseStatGlow {
+  0%, 100% {
+    text-shadow: 0 0 0px currentColor, 0 0 2px currentColor;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 12px currentColor, 0 0 24px currentColor;
+    transform: scale(1.03);
+  }
 }
 
 .stat-number {
-  font-family: 'Instrument Serif', Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(4.25rem, 9vw, 6rem);
-  line-height: 1;
-  letter-spacing: -0.02em;
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  font-size: clamp(3.5rem, 7vw, 4rem) !important; /* 64px range */
+  line-height: 1 !important;
+  letter-spacing: -1px !important;
+  display: inline-block;
+  animation: pulseStatGlow 2.5s infinite ease-in-out;
 }
 .stat-unit {
-  font-size: 0.4em;
-  margin-left: 0.08em;
+  font-size: 0.6em !important;
+  vertical-align: super !important;
+  margin-left: 0.05em;
   letter-spacing: 0;
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
 }
 
 /* ============ CTA CARD ============ */

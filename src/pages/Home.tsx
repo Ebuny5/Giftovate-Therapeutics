@@ -111,33 +111,7 @@ const ecosystem: Product[] = [
   },
 ];
 
-const ProductRow = ({ p }: { p: Product }) => (
-  <section className={`section-pad ${p.bandClass ?? ""}`}>
-    <div className="container mx-auto px-4">
-      <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
-        <div className={`product-card ${p.cardClass} ${p.reverse ? "md:order-2" : ""}`}>
-          <img src={p.image} alt="" />
-        </div>
-        <div className={p.reverse ? "md:order-1" : ""}>
-          <p className="overline-label">{p.overline}</p>
-          <h2 className="mb-6">{p.title}</h2>
-          <p className="text-lg leading-relaxed mb-8 opacity-90">{p.body}</p>
-          {p.href.startsWith("http") ? (
-            <a href={p.href} target="_blank" rel="noopener noreferrer" className="link-arrow">
-              {p.cta} <ArrowRight className="w-5 h-5" />
-            </a>
-          ) : (
-            <Link to={p.href} className="link-arrow">
-              {p.cta} <ArrowRight className="w-5 h-5" />
-            </Link>
-          )}
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-const useReveal = () => {
+const useReveal = (threshold = 0.2) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
@@ -150,12 +124,72 @@ const useReveal = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.25 }
+      { threshold }
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [threshold]);
   return { ref, visible };
+};
+
+const useTypewriter = (text: string, speed = 60, start = false) => {
+  const [displayText, setDisplayText] = useState("");
+  useEffect(() => {
+    if (!start) return;
+    let index = 0;
+    setDisplayText("");
+    const timer = setInterval(() => {
+      index++;
+      setDisplayText(text.slice(0, index));
+      if (index >= text.length) {
+        clearInterval(timer);
+      }
+    }, speed);
+    return () => clearInterval(timer);
+  }, [text, speed, start]);
+  return displayText;
+};
+
+const SectionSlide = ({ children, direction = "bottom", className = "" }: { children: React.ReactNode; direction?: "left" | "right" | "bottom"; className?: string }) => {
+  const { ref, visible } = useReveal(0.15);
+  const slideClass = direction === "left" ? "slide-from-left" : direction === "right" ? "slide-from-right" : "slide-from-bottom";
+  return (
+    <div ref={ref} className={`${slideClass} ${visible ? "is-visible" : ""} ${className}`}>
+      {children}
+    </div>
+  );
+};
+
+const ProductRow = ({ p, index = 0 }: { p: Product; index?: number }) => {
+  const { ref, visible } = useReveal(0.15);
+  const cardSlide = index % 2 === 0 ? "slide-from-left" : "slide-from-right";
+  const textSlide = index % 2 === 0 ? "slide-from-right" : "slide-from-left";
+
+  return (
+    <section className={`section-pad ${p.bandClass ?? ""}`}>
+      <div className="container mx-auto px-4" ref={ref}>
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
+          <div className={`${cardSlide} ${visible ? "is-visible" : ""} product-card ${p.cardClass} ${p.reverse ? "md:order-2" : ""}`}>
+            <img src={p.image} alt="" />
+          </div>
+          <div className={`${textSlide} ${visible ? "is-visible" : ""} ${p.reverse ? "md:order-1" : ""}`}>
+            <p className="overline-label">{p.overline}</p>
+            <h2 className="mb-6">{p.title}</h2>
+            <p className="text-lg leading-relaxed mb-8 opacity-90">{p.body}</p>
+            {p.href.startsWith("http") ? (
+              <a href={p.href} target="_blank" rel="noopener noreferrer" className="link-arrow">
+                {p.cta} <ArrowRight className="w-5 h-5" />
+              </a>
+            ) : (
+              <Link to={p.href} className="link-arrow">
+                {p.cta} <ArrowRight className="w-5 h-5" />
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 type StatCardProps = {
@@ -168,23 +202,38 @@ type StatCardProps = {
   divider: string;
   border: string;
   delay: number;
+  slideDirection: "left" | "right" | "bottom";
 };
 
-const StatCard = ({ stat, unit, badge, label, bg, text, divider, border, delay }: StatCardProps) => {
-  const { ref, visible } = useReveal();
+const StatCard = ({ stat, unit, badge, label, bg, text, divider, border, delay, slideDirection }: StatCardProps) => {
+  const { ref, visible } = useReveal(0.15);
+  const typedStat = useTypewriter(stat, 120, visible);
+  const typedLabel = useTypewriter(label, 30, visible);
+
+  const slideClass = slideDirection === "left" ? "slide-from-left" : slideDirection === "right" ? "slide-from-right" : "slide-from-bottom";
+
   return (
     <div
       ref={ref}
-      className={`stat-reveal ${visible ? "is-visible" : ""} rounded-2xl p-8 pt-9 text-center shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow`}
-      style={{ backgroundColor: bg, border: `1px solid ${border}`, transitionDelay: visible ? `${delay}ms` : undefined }}
+      className={`${slideClass} ${visible ? "is-visible" : ""} rounded-[24px] p-8 pt-9 text-center relative overflow-hidden transition-all duration-300 hover:-translate-y-2`}
+      style={{
+        backgroundColor: bg,
+        border: `1px solid ${border}`,
+        boxShadow: "0 12px 30px rgba(0,0,0,0.15)",
+        transitionDelay: visible ? `${delay}ms` : undefined
+      }}
     >
-      <span className="stat-badge" style={{ color: text }}>{badge}</span>
-      <div className="stat-number" style={{ color: text }}>
-        {stat}
-        <span className="stat-unit">{unit}</span>
+      <span className="stat-badge" style={{ color: text, borderColor: text }}>{badge}</span>
+      <div className="my-2">
+        <span className="stat-number" style={{ color: text }}>
+          {visible ? typedStat : ""}
+          <span className="stat-unit">{unit}</span>
+        </span>
       </div>
-      <div className="w-12 h-0.5 mx-auto my-4" style={{ backgroundColor: divider }}></div>
-      <p className="uppercase tracking-widest text-xs font-bold" style={{ color: text }}>{label}</p>
+      <div className="w-12 h-0.5 mx-auto my-4" style={{ backgroundColor: divider, opacity: 0.6 }}></div>
+      <p className="uppercase tracking-[2px] text-[10px] font-bold" style={{ color: text, fontFamily: "'Inter', 'Manrope', sans-serif" }}>
+        {visible ? typedLabel : ""}
+      </p>
     </div>
   );
 };
@@ -235,43 +284,46 @@ const Home = () => {
       </section>
 
       {/* STAT BAND — impact cards with serif numerals & staggered scroll reveal */}
-      <section className="bg-slate-950/90 border-t-2 border-b-2 border-purple-500/30 py-16 relative">
+      <section className="bg-slate-950/90 border-t-2 border-b-2 border-purple-500/30 py-16 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <StatCard
               stat="5" unit="%"
-              badge="Workforce Exposure"
-              label="West African workforce at risk"
-              bg="#EFECE6" text="#002D62" divider="#D4AF37"
-              border="rgba(212, 175, 55, 0.4)" delay={0}
+              badge="WORKFORCE EXPOSURE"
+              label="WEST AFRICAN WORKFORCE AT RISK"
+              bg="#FFFBEB" text="#1A365D" divider="#1A365D"
+              border="rgba(26, 54, 93, 0.15)" delay={0}
+              slideDirection="left"
             />
             <StatCard
               stat="0.05" unit="%"
-              badge="Clinical Access"
-              label="Established clinical pathways in Africa"
-              bg="#CAE00F" text="#581C87" divider="#D4AF37"
-              border="rgba(212, 175, 55, 0.5)" delay={150}
+              badge="CLINICAL ACCESS"
+              label="0.05% TREATMENT PATHWAY IN AFRICA"
+              bg="#E8FF00" text="#EA580C" divider="#EA580C"
+              border="rgba(234, 88, 12, 0.3)" delay={150}
+              slideDirection="bottom"
             />
             <StatCard
               stat="100" unit="%"
-              badge="Care Architecture"
-              label="Integrated data-to-treatment funnel"
-              bg="#D4AF37" text="#0F0A1F" divider="#0F0A1F"
-              border="rgba(15, 10, 31, 0.25)" delay={300}
+              badge="CARE ARCHITECTURE"
+              label="INTEGRATED DATA-TO-TREATMENT FUNNEL"
+              bg="#FFB703" text="#000000" divider="#000000"
+              border="rgba(0, 0, 0, 0.15)" delay={300}
+              slideDirection="right"
             />
           </div>
         </div>
       </section>
 
       {/* PRODUCT ROWS */}
-      {products.map((p) => (
-        <ProductRow key={p.href} p={p} />
+      {products.map((p, i) => (
+        <ProductRow key={p.href} p={p} index={i} />
       ))}
 
       {/* GIFTOVATE OASIS SECTION */}
       <section className="section-pad band-ink relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
+          <SectionSlide direction="left" className="max-w-5xl mx-auto">
             <div className="mb-10 w-full overflow-hidden rounded-2xl shadow-2xl">
               <img src={oasisImage} alt="Giftovate Oasis" className="w-full h-auto block" />
             </div>
@@ -287,14 +339,14 @@ const Home = () => {
                 Find a Giftovate Oasis Location <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
-          </div>
+          </SectionSlide>
         </div>
       </section>
 
       {/* WEARABLES INTRO */}
       <section className="section-pad band-purple">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center">
+          <SectionSlide direction="right" className="max-w-5xl mx-auto text-center">
             <div className="mb-10 overflow-hidden rounded-2xl shadow-2xl">
               <img src={futureHardwareImage} alt="The Future of Hardware - Micro-iontophoresis wearables" className="w-full h-auto block" />
             </div>
@@ -311,49 +363,53 @@ const Home = () => {
               affordable snap-on hydrogel pads to deliver safe, rapid, and precise sweat-duct
               blocking therapy directly to the root.
             </p>
-          </div>
+          </SectionSlide>
         </div>
       </section>
 
-      {wearables.map((p) => (
-        <ProductRow key={p.href} p={p} />
+      {wearables.map((p, i) => (
+        <ProductRow key={p.href} p={p} index={i} />
       ))}
 
-      {ecosystem.map((p) => (
-        <ProductRow key={p.href} p={p} />
+      {ecosystem.map((p, i) => (
+        <ProductRow key={p.href} p={p} index={i} />
       ))}
 
       {/* AWARDS & RECOGNITION */}
       <section className="section-pad band-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-8">
+            <SectionSlide direction="bottom" className="text-center mb-8">
               <p className="overline-label">AWARDS &amp; RECOGNITION</p>
               <h2>Recognized for <span className="accent-italic">innovation.</span></h2>
-            </div>
+            </SectionSlide>
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <div className="rounded-2xl bg-card border border-border shadow-md p-6 flex flex-col items-center text-center justify-between">
-                <div className="flex flex-col items-center w-full">
-                  <span className="text-xs font-bold tracking-widest text-primary mb-3">01 · JUNE 2026</span>
-                  <a href="https://www.f6s.com/giftovate-therapeutics-ltd" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105 mb-3">
-                    <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-20 w-auto rounded" />
-                  </a>
-                  <h3 className="text-xl font-bold mb-2">F6S #69 Top AI Company</h3>
-                  <p className="text-foreground/80 text-sm leading-relaxed">
-                    Recognized in Nigeria as a #69 Top AI Company by F6S for our work in health innovation.
-                  </p>
+              <SectionSlide direction="left">
+                <div className="rounded-2xl bg-card border border-border shadow-md p-6 flex flex-col items-center text-center justify-between h-full">
+                  <div className="flex flex-col items-center w-full">
+                    <span className="text-xs font-bold tracking-widest text-primary mb-3">01 · JUNE 2026</span>
+                    <a href="https://www.f6s.com/giftovate-therapeutics-ltd" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105 mb-3">
+                      <img src={f6sBadge} alt="F6S Top AI Company #69" className="h-20 w-auto rounded" />
+                    </a>
+                    <h3 className="text-xl font-bold mb-2">F6S #69 Top AI Company</h3>
+                    <p className="text-foreground/80 text-sm leading-relaxed">
+                      Recognized in Nigeria as a #69 Top AI Company by F6S for our work in health innovation.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="rounded-2xl bg-card border border-border shadow-md p-6 flex flex-col items-center text-center justify-between">
-                <div className="flex flex-col items-center w-full">
-                  <span className="text-xs font-bold tracking-widest text-primary mb-3">02 · SEPTEMBER 2026</span>
-                  <h3 className="text-xl font-bold mb-2">Ondo State Government Business Grant Winner</h3>
-                  <p className="text-foreground/80 text-sm leading-relaxed">
-                    Selected by the Ondo State Government through the Ondo State Entrepreneurship
-                    Agency (ONDEA) as one of the Top 20 distinguishing business ideas in September 2026.
-                  </p>
+              </SectionSlide>
+              <SectionSlide direction="right">
+                <div className="rounded-2xl bg-card border border-border shadow-md p-6 flex flex-col items-center text-center justify-between h-full">
+                  <div className="flex flex-col items-center w-full">
+                    <span className="text-xs font-bold tracking-widest text-primary mb-3">02 · SEPTEMBER 2026</span>
+                    <h3 className="text-xl font-bold mb-2">Ondo State Government Business Grant Winner</h3>
+                    <p className="text-foreground/80 text-sm leading-relaxed">
+                      Selected by the Ondo State Government through the Ondo State Entrepreneurship
+                      Agency (ONDEA) as one of the Top 20 distinguishing business ideas in September 2026.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </SectionSlide>
             </div>
           </div>
         </div>
@@ -362,7 +418,7 @@ const Home = () => {
       {/* ROADMAP TEASER */}
       <section className="section-pad band-magenta">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <SectionSlide direction="bottom" className="max-w-4xl mx-auto text-center">
             <p className="overline-label">THE PATH TO CLINICAL EQUALITY</p>
             <h2 className="mb-6">
               Building the <span className="accent-italic">infrastructure</span> of care.
@@ -375,14 +431,14 @@ const Home = () => {
             <Link to="/roadmap" className="btn-coral">
               Explore the roadmap <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
+          </SectionSlide>
         </div>
       </section>
 
       {/* CTA */}
       <section className="section-pad">
         <div className="container mx-auto px-4">
-          <div className="cta-card max-w-4xl mx-auto">
+          <SectionSlide direction="bottom" className="cta-card max-w-4xl mx-auto">
             <p className="overline-label" style={{ color: "#FDE68A" }}>JOIN THE MOVEMENT</p>
             <h2 className="mb-4">Ready to take <span className="accent-italic">control?</span></h2>
             <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto">
@@ -391,7 +447,7 @@ const Home = () => {
             <Link to="/giftovate-oasis" className="btn-coral">
               Find a Treatment Hub <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
+          </SectionSlide>
         </div>
       </section>
 
