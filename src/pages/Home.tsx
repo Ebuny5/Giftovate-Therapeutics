@@ -181,25 +181,31 @@ const Home = () => {
         </div>
       </section>
 
-      {/* STAT BAND — impact numbers separated into distinct section with cards & divider lines */}
+      {/* STAT BAND — impact cards with serif numerals & staggered scroll reveal */}
       <section className="bg-slate-950/90 border-t-2 border-b-2 border-purple-500/30 py-16 relative">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-[#EFECE6] border border-amber-300/40 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat font-extrabold" style={{ color: "#0A192F" }}>5%</div>
-              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#D4AF37" }}></div>
-              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#0A192F" }}>West African workforce at risk</p>
-            </div>
-            <div className="bg-[#CAE00F] border border-lime-500/40 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat font-extrabold" style={{ color: "#3B0764" }}>0.05%</div>
-              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#D4AF37" }}></div>
-              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#3B0764" }}>Established clinical pathways in Africa</p>
-            </div>
-            <div className="bg-[#D4AF37] border border-amber-500/30 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden group hover:shadow-xl transition-all">
-              <div className="big-stat font-extrabold" style={{ color: "#0F0A1F" }}>100%</div>
-              <div className="w-12 h-0.5 mx-auto my-3" style={{ backgroundColor: "#0F0A1F" }}></div>
-              <p className="uppercase tracking-widest text-xs font-bold" style={{ color: "#0F0A1F" }}>Integrated data-to-treatment funnel</p>
-            </div>
+            <StatCard
+              stat="5" unit="%"
+              badge="Workforce Exposure"
+              label="West African workforce at risk"
+              bg="#EFECE6" text="#002D62" divider="#D4AF37"
+              border="rgba(212, 175, 55, 0.4)" delay={0}
+            />
+            <StatCard
+              stat="0.05" unit="%"
+              badge="Clinical Access"
+              label="Established clinical pathways in Africa"
+              bg="#CAE00F" text="#581C87" divider="#D4AF37"
+              border="rgba(212, 175, 55, 0.5)" delay={150}
+            />
+            <StatCard
+              stat="100" unit="%"
+              badge="Care Architecture"
+              label="Integrated data-to-treatment funnel"
+              bg="#D4AF37" text="#0F0A1F" divider="#0F0A1F"
+              border="rgba(15, 10, 31, 0.25)" delay={300}
+            />
           </div>
         </div>
       </section>
