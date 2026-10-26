@@ -9,10 +9,6 @@ import {
   UserCheck,
   Coins,
   GraduationCap,
-  Database,
-  LineChart,
-  FileText,
-  ShieldAlert,
 } from "lucide-react";
 import oasisImage from "@/assets/hub.jpeg";
 
@@ -53,33 +49,6 @@ const GiftovateOasis = () => {
       title: "A Pipeline for Youth Employment",
       description:
         "We recruit and train local youth, turning them into Certified Sudomotor Specialists, providing stable, dignified employment in cities and villages across Africa and beyond.",
-    },
-  ];
-
-  const dataFeatures = [
-    {
-      icon: Database,
-      title: "Centralized Aggregation",
-      description:
-        "Connects your Giftovate Band, HidroAlly app, and environmental trackers into one unified data ecosystem.",
-    },
-    {
-      icon: LineChart,
-      title: "Predictive Baseline Modelling",
-      description:
-        "Identifies your specific 'Trigger Baseline' based on local humidity, temperature, and your personal biometric history.",
-    },
-    {
-      icon: FileText,
-      title: "Clinical Reporting",
-      description:
-        "Generates automated, PDF-format evidence-based reports, shifting conversations from 'I think I'm sweating' to 'Here is my clinical data.'",
-    },
-    {
-      icon: ShieldAlert,
-      title: "Proactive Guarding",
-      description:
-        "Sends localized alerts to your devices when environmental conditions (e.g., 28°C / 70% humidity) threaten to trigger an episode.",
     },
   ];
 
@@ -158,31 +127,6 @@ const GiftovateOasis = () => {
                     <div className="text-4xl font-bold text-primary mb-3">{s.step}</div>
                     <h3 className="text-lg font-semibold mb-2">{s.title}</h3>
                     <p className="text-muted-foreground text-sm">{s.text}</p>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">THE ANALYTICS CORE</p>
-                <h2 className="text-3xl font-bold mb-4">Your Personal Clinical Command Center</h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  If the Band is the observer, the Oasis is the strategist. The Giftovate Oasis serves as the central processing unit for your hyperhidrosis management, aggregating data from your wearables, app logs, and environmental sensors, and transforming raw biometric noise into actionable clinical insights.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-2 gap-8">
-                {dataFeatures.map((f, i) => (
-                  <Card key={i} className="p-8 feature-card-vibrant border-border/50">
-                    <div className="rounded-full bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center mb-6">
-                      <f.icon className="text-white" size={28} />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">{f.title}</h3>
-                    <p className="text-muted-foreground">{f.description}</p>
                   </Card>
                 ))}
               </div>
