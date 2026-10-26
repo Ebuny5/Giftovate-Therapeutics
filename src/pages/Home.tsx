@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -135,6 +136,58 @@ const ProductRow = ({ p }: { p: Product }) => (
     </div>
   </section>
 );
+
+const useReveal = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+  return { ref, visible };
+};
+
+type StatCardProps = {
+  stat: string;
+  unit: string;
+  badge: string;
+  label: string;
+  bg: string;
+  text: string;
+  divider: string;
+  border: string;
+  delay: number;
+};
+
+const StatCard = ({ stat, unit, badge, label, bg, text, divider, border, delay }: StatCardProps) => {
+  const { ref, visible } = useReveal();
+  return (
+    <div
+      ref={ref}
+      className={`stat-reveal ${visible ? "is-visible" : ""} rounded-2xl p-8 pt-9 text-center shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow`}
+      style={{ backgroundColor: bg, border: `1px solid ${border}`, transitionDelay: visible ? `${delay}ms` : undefined }}
+    >
+      <span className="stat-badge" style={{ color: text }}>{badge}</span>
+      <div className="stat-number" style={{ color: text }}>
+        {stat}
+        <span className="stat-unit">{unit}</span>
+      </div>
+      <div className="w-12 h-0.5 mx-auto my-4" style={{ backgroundColor: divider }}></div>
+      <p className="uppercase tracking-widest text-xs font-bold" style={{ color: text }}>{label}</p>
+    </div>
+  );
+};
 
 const Home = () => {
   return (
