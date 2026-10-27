@@ -298,14 +298,14 @@ const Home = () => {
             <StatCard
               stat="0.05" unit="%"
               badge="CLINICAL ACCESS"
-              label="0.05% TREATMENT PATHWAY IN AFRICA"
+              label="ESTABLISHED TREATMENT PATHWAYS IN AFRICA"
               bg="#E8FF00" text="#EA580C" divider="#EA580C"
               border="rgba(234, 88, 12, 0.3)" delay={150}
               slideDirection="bottom"
             />
             <StatCard
               stat="100" unit="%"
-              badge="CARE ARCHITECTURE"
+              badge="GIFTOVATE CARE ARCHITECTURE"
               label="INTEGRATED DATA-TO-TREATMENT FUNNEL"
               bg="#FFB703" text="#000000" divider="#000000"
               border="rgba(0, 0, 0, 0.15)" delay={300}
