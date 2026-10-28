@@ -64,22 +64,22 @@ const GiftovateOasis = () => {
       <Navigation />
 
       <div className="flex-grow">
-        <section className="bg-background py-10 md:py-16">
+        <section className="bg-background py-6 md:py-10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <img
                 src={oasisImage}
                 alt="Giftovate Oasis recovery station with Giftovate-Trained Youth Specialists delivering iontophoresis sessions"
-                className="w-full h-auto rounded-2xl mb-10 md:mb-14"
+                className="w-full h-auto rounded-2xl mb-6 md:mb-8"
               />
               <div className="text-center">
-                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">
+                <p className="text-sm font-bold text-primary mb-2 uppercase tracking-wider">
                   CLINICAL RELIEF ON DEMAND
                 </p>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
                   Giftovate Oasis: Affordable Physical Relief in 20 Minutes
                 </h1>
-                <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
                   You don't need an expensive procedure to reclaim your dignity. Giftovate Oasis operates specialized clinical nodes where Giftovate-Trained Youth Specialists deliver certified, safe pulsed-current iontophoresis sessions for excessive sweating.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -91,23 +91,23 @@ const GiftovateOasis = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-8 md:py-12 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Treatment Plans & Micro-Retailing</h2>
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold mb-2">Treatment Plans & Micro-Retailing</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Clear, predictable pricing built for local wallets.
                 </p>
               </div>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 {accessFeatures.map((f, i) => (
-                  <Card key={i} className="p-8 feature-card-vibrant border-border/50">
-                    <div className="rounded-full bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center mb-6">
-                      <f.icon className="text-white" size={28} />
+                  <Card key={i} className="p-6 feature-card-vibrant border-border/50">
+                    <div className="rounded-full bg-gradient-hero p-3 w-12 h-12 flex items-center justify-center mb-4">
+                      <f.icon className="text-white" size={24} />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">{f.title}</h3>
-                    <p className="text-muted-foreground">{f.description}</p>
+                    <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{f.description}</p>
                   </Card>
                 ))}
               </div>
@@ -115,18 +115,18 @@ const GiftovateOasis = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-8 md:py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">How It Works</h2>
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold mb-2">How It Works</h2>
               </div>
-              <div className="grid md:grid-cols-4 gap-6">
+              <div className="grid md:grid-cols-4 gap-4">
                 {steps.map((s) => (
-                  <Card key={s.step} className="p-6 text-center border-border/50">
-                    <div className="text-4xl font-bold text-primary mb-3">{s.step}</div>
-                    <h3 className="text-lg font-semibold mb-2">{s.title}</h3>
-                    <p className="text-muted-foreground text-sm">{s.text}</p>
+                  <Card key={s.step} className="p-5 text-center border-border/50">
+                    <div className="text-3xl font-bold text-primary mb-2">{s.step}</div>
+                    <h3 className="text-base font-semibold mb-1">{s.title}</h3>
+                    <p className="text-muted-foreground text-xs leading-relaxed">{s.text}</p>
                   </Card>
                 ))}
               </div>
@@ -134,10 +134,10 @@ const GiftovateOasis = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-8 md:py-12">
           <div className="container mx-auto px-4">
-            <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
-              <h2 className="text-3xl font-bold mb-4">Join the Pilot Program</h2>
+            <Card className="bg-gradient-card p-6 md:p-8 text-center max-w-3xl mx-auto border-primary/20">
+              <h2 className="text-3xl font-bold mb-3">Join the Pilot Program</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 We are launching Oasis centers across the region. We are looking for volunteers to experience our recovery sessions and for motivated youth interested in joining our Specialist Training Program.
               </p>

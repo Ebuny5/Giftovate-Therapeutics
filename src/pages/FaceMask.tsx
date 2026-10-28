@@ -39,25 +39,25 @@ const FaceMask = () => {
 
       <div className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-background py-10 md:py-16">
+        <section className="bg-background py-6 md:py-10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <img
                 src={faceMaskImage}
                 alt="Face mask prototype for craniofacial hyperhidrosis relief"
-                className="w-full h-auto rounded-2xl mb-10 md:mb-14"
+                className="w-full h-auto rounded-2xl mb-6 md:mb-8"
               />
               <div className="text-center">
-                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">
+                <p className="text-sm font-bold text-primary mb-2 uppercase tracking-wider">
                   TARGETED CRANIOFACIAL ELECTROTHERAPY
                 </p>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
                   Face Mask: Craniofacial Mastery
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                <p className="text-xl md:text-2xl text-muted-foreground mb-3">
                   Stop the sweat cascade at the source. Command the room with total composure.
                 </p>
-                <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+                <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
                   For many warriors, facial sweating is the most visible and stigmatizing barrier to professional and social success. Our innovative HydroVisage face mask prototype provides targeted, silent relief for craniofacial hyperhidrosis using established iontophoresis principles.
                 </p>
                 <Button size="lg">
@@ -69,17 +69,17 @@ const FaceMask = () => {
         </section>
 
         {/* Science Section */}
-        <section className="py-16 md:py-24">
+        <section className="py-8 md:py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="text-3xl font-bold mb-4">
                 The Science:{" "}
                 <span className="accent-italic">Beyond Injections &amp; Compromise</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+              <p className="text-base text-muted-foreground leading-relaxed mb-3">
                 Facial sweating is driven by an intense concentration of hyperactive eccrine glands across the forehead, temples, and perioral zones. In tropical heat and high humidity, natural evaporative cooling fails completely. Yet conventional clinical solutions force warriors into severe compromises: painful Botox injections demand dozens of needle strikes across delicate facial nerves every few months at exorbitant recurring costs, harsh topical aluminum compounds trigger burning and dermatitis on sensitive facial skin, and oral anticholinergics flood the body with systemic side effects like extreme dry mouth and blurred vision.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 HydroVisage replaces invasive needles and systemic drugs with targeted microcurrent iontophoresis. Delivering calibrated, sub-milliamp microcurrent (0.1–1.5 mA) through isotonic hydrogel contact pads, it safely introduces natural mineral ions into eccrine sweat ducts to temporarily silence cholinergic hyperactivation for 5–8 days per session. No needle punctures, no facial muscle paralysis, and zero systemic toxicity—just precise, needle-free sudomotor control engineered specifically for facial anatomy.
               </p>
             </div>
@@ -87,11 +87,11 @@ const FaceMask = () => {
         </section>
 
         {/* Features Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-8 md:py-12 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold mb-2">
                   Engineered for Composure
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -99,19 +99,19 @@ const FaceMask = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 {features.map((feature, index) => (
                   <Card
                     key={index}
-                    className="p-8 feature-card-vibrant border-border/50"
+                    className="p-6 feature-card-vibrant border-border/50"
                   >
-                    <div className="rounded-full bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center mb-6">
-                      <feature.icon className="text-white" size={28} />
+                    <div className="rounded-full bg-gradient-hero p-3 w-12 h-12 flex items-center justify-center mb-4">
+                      <feature.icon className="text-white" size={24} />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">
+                    <h3 className="text-xl font-semibold mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {feature.description}
                     </p>
                   </Card>
@@ -122,10 +122,10 @@ const FaceMask = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24">
+        <section className="py-8 md:py-12">
           <div className="container mx-auto px-4">
-            <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
-              <h2 className="text-3xl font-bold mb-4">Join Our Pilot Program</h2>
+            <Card className="bg-gradient-card p-6 md:p-8 text-center max-w-3xl mx-auto border-primary/20">
+              <h2 className="text-3xl font-bold mb-3">Join Our Pilot Program</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Be among the first to experience craniofacial mastery and help shape the future of facial sudomotor suppression
               </p>
