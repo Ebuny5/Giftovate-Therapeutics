@@ -90,7 +90,7 @@ const HidroAllyApp = () => {
         },
         {
           subtitle: "Consultant Status",
-          text: "It provides downloadable PDF Warrior Reports specifically formatted for dermatologists, including HDSS trend lines and trigger correlation matrices.",
+          text: "It provides Warrior Reports tailored for dermatologist clinical review.",
         },
       ],
     },
@@ -247,9 +247,6 @@ const HidroAllyApp = () => {
                         <feature.icon style={{ color: feature.iconColor }} size={24} />
                       </div>
                       <div className="flex items-center gap-2 flex-wrap text-left">
-                        <Badge variant="outline" className="text-xs shrink-0">
-                          {feature.letter}
-                        </Badge>
                         <h3 className="text-lg md:text-2xl font-bold text-left leading-tight">
                           {feature.title}
                         </h3>
