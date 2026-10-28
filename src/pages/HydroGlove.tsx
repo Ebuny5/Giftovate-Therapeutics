@@ -76,7 +76,7 @@ const HydroGlove = () => {
                 The Science of <span className="accent-italic">Palmar Iontophoresis</span>
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Palmar sweating is triggered by dense cholinergic innervation of eccrine glands on the palms and fingertip pads. HydroGlove utilizes contoured isotonic saline hydrogel pads and breathable technical compression knit to deliver calibrated 8–15 mA DC microcurrent evenly across the palm and fingertips, temporarily neutralizing excessive sweat secretion for up to a week per maintenance session.
+                Palmar sweating is triggered by dense cholinergic innervation of eccrine glands on the palms and fingertip pads. HydroGlove utilizes contoured isotonic saline hydrogel pads and breathable technical compression knit to deliver calibrated 8-15 mA DC microcurrent evenly across the palm and fingertips, temporarily neutralizing excessive sweat secretion for up to a week per maintenance session.
               </p>
             </div>
           </div>
