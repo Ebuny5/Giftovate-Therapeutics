@@ -258,20 +258,20 @@ const Home = () => {
             <img src={heroImage} alt="Giftovate hyperhidrosis care ecosystem" className="w-full h-auto rounded-2xl block" />
           </div>
 
-          <div className="max-w-4xl">
-            <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed mb-6">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-white/80 text-center mx-auto max-w-[700px] leading-relaxed mb-6">
               While patients in Europe and America have established insurance-backed therapies,
               structured clinical pathways, and easy access to specialized treatments, Africa
               faces an absolute vacuum. There are no centralized sudomotor datasets, no clinical
               pathway, and no affordable treatment.
             </p>
-            <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed mb-10">
+            <p className="text-lg md:text-xl text-white/80 text-center mx-auto max-w-[700px] leading-relaxed mb-10">
               Giftovate Therapeutics is dismantling these barriers. We are building the
               continent's first Online-to-Offline (O2O) health ecosystem. By combining empirical
               data logging, independent dermatological partnerships, and hyper-accessible physical
               care nodes, we are giving African Warriors their dignity back.
             </p>
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-wrap items-center justify-center gap-3 mx-auto">
               <a href="https://hidroally.space" target="_blank" rel="noopener noreferrer" className="btn-beaming-coral">
                 Try HidroAlly App <ArrowRight className="w-4 h-4" />
               </a>
