@@ -29,11 +29,11 @@ const HidroAllyApp = () => {
       details: [
         {
           subtitle: "Threshold Intelligence",
-          text: 'The system is hardcoded to trigger "High Risk" alerts when local temperature exceeds 28°C or humidity crosses 70%.',
+          text: "The system is hard-coded with clinically-defined, multi-tier risk thresholds that automatically trigger Moderate, High, and Extreme Risk classifications as environmental parameters exceed established baselines.",
         },
         {
           subtitle: "Agentic Management",
-          text: "Warriors receive personalized advice: \"Extreme humidity detected 77% — your body cannot cool itself via evaporation. Move to a ventilated space and use cooling products now to stabilize your sudomotor baseline.\"",
+          text: "Warriors receive personalized, risk-stratified intervention guidance that dynamically adapts based on the triggered risk level to stabilize their sudomotor baseline.",
         },
       ],
     },
