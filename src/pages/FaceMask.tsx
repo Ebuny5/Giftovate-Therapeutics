@@ -73,14 +73,10 @@ const FaceMask = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-4">
-                The Science:{" "}
-                <span className="accent-italic">Beyond Injections &amp; Compromise</span>
+                The Science of <span className="accent-italic">Craniofacial Iontophoresis</span>
               </h2>
-              <p className="text-base text-muted-foreground leading-relaxed mb-3">
-                Facial sweating is driven by an intense concentration of hyperactive eccrine glands across the forehead, temples, and perioral zones. In tropical heat and high humidity, natural evaporative cooling fails completely. Yet conventional clinical solutions force warriors into severe compromises: painful Botox injections demand dozens of needle strikes across delicate facial nerves every few months at exorbitant recurring costs, harsh topical aluminum compounds trigger burning and dermatitis on sensitive facial skin, and oral anticholinergics flood the body with systemic side effects like extreme dry mouth and blurred vision.
-              </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                HydroVisage replaces invasive needles and systemic drugs with targeted microcurrent iontophoresis. Delivering calibrated, sub-milliamp microcurrent (0.1–1.5 mA) through isotonic hydrogel contact pads, it safely introduces natural mineral ions into eccrine sweat ducts to temporarily silence cholinergic hyperactivation for 5–8 days per session. No needle punctures, no facial muscle paralysis, and zero systemic toxicity—just precise, needle-free sudomotor control engineered specifically for facial anatomy.
+                Craniofacial sweating is triggered by dense concentration of hyperactive eccrine glands across the forehead, temples and perioral zones. HydroVisage utilizes contoured isotonic hydrogel contact pads to deliver calibrated sub-milliamp microcurrent to temporarily silence sweat secretion for 5 to 8 days per session.
               </p>
             </div>
           </div>

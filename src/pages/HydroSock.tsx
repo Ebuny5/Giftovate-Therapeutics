@@ -79,18 +79,12 @@ const HydroSock = () => {
 
         <section className="py-8 md:py-12">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center space-y-4">
-              <h2 className="text-3xl font-bold">
-                The Science: <span className="accent-italic">Beyond Water Trays, Needles & Cracked Skin</span>
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl font-bold mb-4">
+                The Science of <span className="accent-italic">Plantar Iontophoresis</span>
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Plantar hyperhidrosis is driven by one of the highest concentrations of eccrine sweat glands on the human body, densely distributed across the toes, metatarsal ball, arch, and heel. In warm and tropical climates, sweat rapidly pools inside enclosed footwear, causing epidermal maceration, odor-producing bacterial breakdown, and dangerous loss of footing.
-              </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Conventional clinical options force severe trade-offs: bulky tap-water basins anchor warriors to a wall socket and miss sweaty toe web spaces, harsh aluminum foot topicals cause painful fissures and peeling, and plantar Botox injections require dozens of agonizing needle strikes across sensitive foot nerves.
-              </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                HydroSock replaces these compromises with targeted, portable plantar electrotherapy. Delivering calibrated, low-voltage direct microcurrent through five anatomically mapped isotonic hydrogel zones, it introduces mild mineral ions that temporarily normalize cholinergic sweat output at the duct level — providing 5–10 days of dry, stable gait per maintenance session.
+                Plantar sweating is triggered by dense cholinergic innervation of eccrine glands on the soles and toe pads. HydroSocks utilizes contoured isotonic saline hydrogel pads to deliver calibrated microcurrent evenly across the sole, temporarily neutralizing excessive sweat secretion for up to a week per maintenance session.
               </p>
             </div>
           </div>
