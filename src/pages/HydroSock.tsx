@@ -50,25 +50,25 @@ const HydroSock = () => {
       <Navigation />
 
       <div className="flex-grow">
-        <section className="bg-background py-10 md:py-16">
+        <section className="bg-background py-6 md:py-10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <img
                 src={sockImage}
                 alt="HydroSock five-toe plantar electrotherapy sock"
-                className="w-full h-auto rounded-2xl mb-10 md:mb-14"
+                className="w-full h-auto rounded-2xl mb-6 md:mb-8"
               />
               <div className="text-center">
-                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">
+                <p className="text-sm font-bold text-primary mb-2 uppercase tracking-wider">
                   THE PLANTAR PROTOCOL
                 </p>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
                   HydroSock: Targeted Five-Toe Plantar Electrotherapy
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                <p className="text-xl md:text-2xl text-muted-foreground mb-3">
                   Ending "Shoe-Removal Anxiety" and Restoring Every Confident Step.
                 </p>
-                <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+                <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
                   For warriors with plantar hyperhidrosis, every day feels like walking through a rainstorm inside their shoes. Where bulky water-basin trays fail in active daily life, our HydroSock five-toe wearable is engineered with moisture-wicking natural fibers (Bamboo and Merino Wool) and five-zone isotonic hydrogel iontophoresis electrodes to eliminate the "Catch-22" of enclosed footwear.
                 </p>
                 <Button size="lg">Join the Pilot Program</Button>
@@ -77,42 +77,42 @@ const HydroSock = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-8 md:py-12">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
+            <div className="max-w-3xl mx-auto text-center space-y-4">
               <h2 className="text-3xl font-bold">
                 The Science: <span className="accent-italic">Beyond Water Trays, Needles & Cracked Skin</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Plantar hyperhidrosis is driven by one of the highest concentrations of eccrine sweat glands on the human body, densely distributed across the toes, metatarsal ball, arch, and heel. In warm and tropical climates, sweat rapidly pools inside enclosed footwear, causing epidermal maceration, odor-producing bacterial breakdown, and dangerous loss of footing.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Conventional clinical options force severe trade-offs: bulky tap-water basins anchor warriors to a wall socket and miss sweaty toe web spaces, harsh aluminum foot topicals cause painful fissures and peeling, and plantar Botox injections require dozens of agonizing needle strikes across sensitive foot nerves.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 HydroSock replaces these compromises with targeted, portable plantar electrotherapy. Delivering calibrated, low-voltage direct microcurrent through five anatomically mapped isotonic hydrogel zones, it introduces mild mineral ions that temporarily normalize cholinergic sweat output at the duct level — providing 5–10 days of dry, stable gait per maintenance session.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-8 md:py-12 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">Revolutionary Plantar Care</h2>
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold mb-2">Revolutionary Plantar Care</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Every feature is engineered to restore confidence, stability, and freedom for warriors with plantar hyperhidrosis
                 </p>
               </div>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 {features.map((feature, index) => (
-                  <Card key={index} className="p-8 feature-card-vibrant border-border/50">
-                    <div className="rounded-full bg-gradient-hero p-4 w-16 h-16 flex items-center justify-center mb-6">
-                      <feature.icon className="text-white" size={28} />
+                  <Card key={index} className="p-6 feature-card-vibrant border-border/50">
+                    <div className="rounded-full bg-gradient-hero p-3 w-12 h-12 flex items-center justify-center mb-4">
+                      <feature.icon className="text-white" size={24} />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
+                    <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                   </Card>
                 ))}
               </div>
@@ -120,10 +120,10 @@ const HydroSock = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-8 md:py-12">
           <div className="container mx-auto px-4">
-            <Card className="bg-gradient-card p-8 md:p-12 text-center max-w-3xl mx-auto border-primary/20">
-              <h2 className="text-3xl font-bold mb-4">Join Our Pilot Program</h2>
+            <Card className="bg-gradient-card p-6 md:p-8 text-center max-w-3xl mx-auto border-primary/20">
+              <h2 className="text-3xl font-bold mb-3">Join Our Pilot Program</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Be among the first to experience portable plantar electrotherapy and help shape the future of needle-free foot-dryness treatment
               </p>
