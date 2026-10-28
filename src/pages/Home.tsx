@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable.png";
-import sweatsmartImage from "@/assets/sweatsmart-hero.jpg";
+import hidroallyImage from "@/assets/giftovate-hidroally.jpg";
 import gloveImage from "@/assets/hydroglove-render.jpg";
 import faceMaskImage from "@/assets/hydrovisage-mask.jpg";
 import coolingSockImage from "@/assets/hydrosock-render.jpg";
@@ -36,7 +36,7 @@ const products: Product[] = [
     body: "HidroAlly is the world’s first clinical-grade digital ecosystem designed to break the anxiety-sweat cycle — empirical symptom logging, climate-aware alerts and online consultations with partner dermatologists.",
     href: "/hidroally-app",
     cta: "Learn about HidroAlly",
-    image: sweatsmartImage,
+    image: hidroallyImage,
     cardClass: "product-card-purple",
     bandClass: "band-cream",
   },

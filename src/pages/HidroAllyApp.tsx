@@ -14,7 +14,7 @@ import {
   UserCheck,
   Trophy,
 } from "lucide-react";
-import heroImage from "@/assets/sweatsmart-hero.jpg";
+import heroImage from "@/assets/giftovate-hidroally.jpg";
 
 const HidroAllyApp = () => {
   const features = [
