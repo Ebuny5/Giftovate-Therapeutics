@@ -11,7 +11,7 @@ const HydroGlove = () => {
       icon: Hand,
       title: "Complete Mobility — No Messy Water Trays",
       description:
-        "Snap on the pre-moistened isotonic pads, secure the magnetic wrist pod, and complete your treatment while working or relaxing. No bulky, immobile water trays — ever.",
+        "Snap on the pre-moistened isotonic pads, secure the magnetic wrist pod, and complete your treatment while working or relaxing. No bulky, immobile water trays.",
     },
     {
       icon: Droplets,
