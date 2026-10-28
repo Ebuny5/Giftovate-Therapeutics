@@ -8,11 +8,11 @@ import {
   Waves,
   Zap,
   BellRing,
-  TrendingUp,
-  Fingerprint,
-  BotMessageSquare,
-  UserCheck,
-  Trophy,
+  BarChart3,
+  BrainCircuit,
+  Stethoscope,
+  LocateFixed,
+  BadgeCheck,
 } from "lucide-react";
 import heroImage from "@/assets/giftovate-hidroally.jpg";
 
@@ -38,7 +38,7 @@ const HidroAllyApp = () => {
       ],
     },
     {
-      icon: TrendingUp,
+      icon: BarChart3,
       letter: "B",
       iconColor: "hsl(var(--icon-trend))",
       iconBg: "hsl(var(--icon-trend) / 0.12)",
@@ -57,7 +57,7 @@ const HidroAllyApp = () => {
       ],
     },
     {
-      icon: Fingerprint,
+      icon: BrainCircuit,
       letter: "C",
       iconColor: "hsl(var(--icon-fingerprint))",
       iconBg: "hsl(var(--icon-fingerprint) / 0.12)",
@@ -76,7 +76,7 @@ const HidroAllyApp = () => {
       ],
     },
     {
-      icon: BotMessageSquare,
+      icon: Stethoscope,
       letter: "D",
       iconColor: "hsl(var(--icon-bot))",
       iconBg: "hsl(var(--icon-bot) / 0.12)",
@@ -95,7 +95,7 @@ const HidroAllyApp = () => {
       ],
     },
     {
-      icon: UserCheck,
+      icon: LocateFixed,
       letter: "E",
       iconColor: "hsl(var(--icon-usercheck))",
       iconBg: "hsl(var(--icon-usercheck) / 0.12)",
@@ -105,7 +105,7 @@ const HidroAllyApp = () => {
       details: [],
     },
     {
-      icon: Trophy,
+      icon: BadgeCheck,
       letter: "F",
       iconColor: "hsl(var(--icon-trophy))",
       iconBg: "hsl(var(--icon-trophy) / 0.12)",
@@ -237,44 +237,45 @@ const HidroAllyApp = () => {
                 {features.map((feature, index) => (
                   <Card
                     key={index}
-                    className="p-8 md:p-10 feature-card-vibrant"
+                    className="p-6 md:p-8 feature-card-vibrant"
                   >
-                    <div className="flex flex-col md:flex-row gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="rounded-2xl p-4 w-16 h-16 flex items-center justify-center" style={{ backgroundColor: feature.iconBg }}>
-                          <feature.icon style={{ color: feature.iconColor }} size={28} />
-                        </div>
+                    <div className="flex flex-row items-center gap-3 md:gap-4 mb-4">
+                      <div
+                        className="w-12 h-12 min-w-[48px] rounded-xl flex items-center justify-center shrink-0"
+                        style={{ backgroundColor: feature.iconBg }}
+                      >
+                        <feature.icon style={{ color: feature.iconColor }} size={24} />
                       </div>
-                      <div className="flex-grow">
-                        <div className="flex items-center gap-3 mb-3">
-                          <Badge variant="outline" className="text-xs">
-                            {feature.letter}
-                          </Badge>
-                          <h3 className="text-xl md:text-2xl font-bold">
-                            {feature.title}
-                          </h3>
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed mb-4">
-                          {feature.description}
-                        </p>
-                        {feature.details.length > 0 && (
-                          <div className="grid sm:grid-cols-2 gap-4 mt-4">
-                            {feature.details.map((detail, dIndex) => (
-                              <div
-                                key={dIndex}
-                                className="bg-muted/50 rounded-lg p-4"
-                              >
-                                <h4 className="font-semibold text-sm mb-2 text-foreground">
-                                  {detail.subtitle}
-                                </h4>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                  {detail.text}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        )}
+                      <div className="flex items-center gap-2 flex-wrap text-left">
+                        <Badge variant="outline" className="text-xs shrink-0">
+                          {feature.letter}
+                        </Badge>
+                        <h3 className="text-lg md:text-2xl font-bold text-left leading-tight">
+                          {feature.title}
+                        </h3>
                       </div>
+                    </div>
+                    <div>
+                      <p className="text-muted-foreground leading-relaxed mb-4 text-left">
+                        {feature.description}
+                      </p>
+                      {feature.details.length > 0 && (
+                        <div className="grid sm:grid-cols-2 gap-4 mt-4">
+                          {feature.details.map((detail, dIndex) => (
+                            <div
+                              key={dIndex}
+                              className="bg-muted/50 rounded-lg p-4"
+                            >
+                              <h4 className="font-semibold text-sm mb-2 text-foreground text-left">
+                                {detail.subtitle}
+                              </h4>
+                              <p className="text-sm text-muted-foreground leading-relaxed text-left">
+                                {detail.text}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </Card>
                 ))}
