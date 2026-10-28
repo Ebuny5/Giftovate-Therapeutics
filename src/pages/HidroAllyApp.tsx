@@ -25,7 +25,7 @@ const HidroAllyApp = () => {
       iconBg: "hsl(var(--icon-bell) / 0.12)",
       title: "Proactive Climate Alerting",
       description:
-        "Unlike generic weather applications, HidroAlly features a background climate monitoring system that syncs every 30 minutes.",
+        "Unlike generic weather applications, HidroAlly features a background climate monitoring system that syncs every 5 minutes.",
       details: [
         {
           subtitle: "Threshold Intelligence",
