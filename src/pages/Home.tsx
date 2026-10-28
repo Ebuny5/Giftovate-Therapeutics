@@ -296,9 +296,9 @@ const Home = () => {
               slideDirection="left"
             />
             <StatCard
-              stat="0.05" unit="%"
+              stat="<1" unit="%"
               badge="CLINICAL ACCESS"
-              label="ESTABLISHED TREATMENT PATHWAYS IN AFRICA"
+              label="ACCESS TO CARE IN AFRICA"
               bg="#E8FF00" text="#EA580C" divider="#EA580C"
               border="rgba(234, 88, 12, 0.3)" delay={150}
               slideDirection="bottom"
