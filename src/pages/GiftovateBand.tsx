@@ -29,7 +29,7 @@ const GiftovateBand = () => {
       icon: Radio,
       title: "Seamless HidroAlly Sync",
       description:
-        "Automatically transmits biometric data to your HidroAlly dashboard, closing the loop between your body's signals and targeted therapeutic intervention.",
+        "Automatically transmits biometric data to your HidroAlly app, closing the loop between your body's signals and targeted therapeutic intervention.",
     },
   ];
 
@@ -72,7 +72,7 @@ const GiftovateBand = () => {
                   Giftovate Band: Clinical-Grade Monitoring, Always On.
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
-                  Precise, continuous, and unobtrusive. The Giftovate Band captures the physiological data that mobile apps miss. By monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) from the wrist — a stable, high-signal site for sympathetic nervous system activity — the band provides the raw data needed to predict hyperhidrosis triggers before they manifest.
+                  Precise, continuous, and unobtrusive. The Giftovate Band captures the physiological data that mobile apps miss. By monitoring Electrodermal Activity (EDA) and Heart Rate Variability (HRV) from the wrist — a stable, high-signal site for sympathetic nervous system activity. The band provides the raw data needed to predict hyperhidrosis triggers before they manifest.
                 </p>
                 <Button size="lg">Join the Pilot Program</Button>
               </div>
