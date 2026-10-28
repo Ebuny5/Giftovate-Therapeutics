@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} alt="Giftovate Therapeutics Ltd Logo" className="h-12 w-auto brightness-0 invert" />
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
+          <div className="sm:col-span-2 md:col-span-1">
+            <div className="mb-4">
+              <img src={logo} alt="Giftovate Therapeutics Ltd Logo" className="h-14 w-auto rounded-lg bg-white p-1 object-contain" />
             </div>
             <h3 className="font-bold text-lg mb-2 text-white">
               Giftovate Therapeutics Ltd
@@ -17,10 +17,10 @@ const Footer = () => {
               Developing affordable hyperhidrosis solutions in Africa
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4 text-white">Products</h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li><Link to="/hidroally-app" className="text-white/60 hover:text-white transition-colors">HidroAlly App</Link></li>
               <li><Link to="/giftovate-band" className="text-white/60 hover:text-white transition-colors">Giftovate Band</Link></li>
               <li><Link to="/giftovate-oasis" className="text-white/60 hover:text-white transition-colors">Giftovate Oasis</Link></li>
@@ -30,20 +30,13 @@ const Footer = () => {
               <li><Link to="/ecocaps" className="text-white/60 hover:text-white transition-colors">EcoCaps</Link></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4 text-white">Company</h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li><Link to="/roadmap" className="text-white/60 hover:text-white transition-colors">Roadmap</Link></li>
               <li><Link to="/privacy-policy" className="text-white/60 hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4 text-white">Connect</h4>
-            <p className="text-sm text-white/70">
-              Join our community in reducing stigma and improving care for hyperhidrosis.
-            </p>
           </div>
         </div>
         
