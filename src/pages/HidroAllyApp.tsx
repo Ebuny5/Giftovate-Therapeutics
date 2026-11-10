@@ -227,8 +227,7 @@ const HidroAllyApp = () => {
                   The Solution: HidroAlly
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  A fully operational digital ecosystem serving a dedicated beta
-                  community of 50+ participants — the world's first
+                  A fully operational digital ecosystem — the world's first
                   clinical-grade tool designed to break the anxiety-sweat cycle.
                 </p>
               </div>
