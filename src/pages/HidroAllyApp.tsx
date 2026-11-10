@@ -13,6 +13,7 @@ import {
   Stethoscope,
   LocateFixed,
   BadgeCheck,
+  CalendarClock,
 } from "lucide-react";
 import heroImage from "@/assets/giftovate-hidroally.jpg";
 
@@ -113,6 +114,25 @@ const HidroAllyApp = () => {
       description:
         "To foster resilience and community, the app features the Hyperhidrosis Warrior Badge. Warriors earn this badge by consistently logging their journey, providing them with a shareable symbol of their bravery in the face of stigma.",
       details: [],
+    },
+    {
+      icon: CalendarClock,
+      letter: "G",
+      iconColor: "hsl(var(--icon-bot))",
+      iconBg: "hsl(var(--icon-bot) / 0.12)",
+      title: "Coming Soon: The HidroAlly Agent",
+      description:
+        "Our upcoming HidroAlly Agent acts as a personal care coordinator for every warrior, closing the loop between digital symptom logs and physical relief.",
+      details: [
+        {
+          subtitle: "Automated Appointment Scheduling",
+          text: "The Agent matches your availability with partner dermatologists and reserves iontophoresis sessions at your nearest Giftovate Oasis, so booking care takes seconds.",
+        },
+        {
+          subtitle: "Weekly Check-ins",
+          text: "Warriors receive friendly weekly check-ins on WhatsApp and in the app to review symptoms, treatment progress and emerging flare-ups, with follow-up shared for clinician review.",
+        },
+      ],
     },
   ];
 
