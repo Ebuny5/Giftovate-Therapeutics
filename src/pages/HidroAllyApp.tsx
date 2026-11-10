@@ -138,7 +138,7 @@ const HidroAllyApp = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our mission is to move Hh care in Africa from a state of{" "}
+                Our mission is to move hyperhidrosis care in Africa from a state of{" "}
                 <span className="font-semibold text-foreground">
                   "silent suffering"
                 </span>{" "}
@@ -147,8 +147,8 @@ const HidroAllyApp = () => {
                   "agentic mastery."
                 </span>{" "}
                 We achieve this through our operational digital platform,
-                HidroAlly, and our upcoming line of thermoelectric cooling
-                hardware.
+                HidroAlly, Giftovate Oasis treatment hubs, and our upcoming line
+                of affordable electrotherapy wearables.
               </p>
             </div>
           </div>
