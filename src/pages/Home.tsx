@@ -332,7 +332,7 @@ const Home = () => {
               Giftovate Oasis: <span className="accent-italic">affordable</span> physical relief in 20 minutes.
             </h2>
             <p className="text-lg md:text-xl leading-relaxed mb-8 opacity-90 max-w-3xl">
-              Giftovate-Trained Youth Specialists deliver certified, safe pulsed-current iontophoresis. Get a consultation online by our partner dermatologists and get treated locally at our hub. Intensive Launch Pass ₦30,000 (6 sessions), Monthly Maintenance ₦15,000, plus single-sachet topicals and blister-strip oral blockers.
+              Giftovate-Trained Youth Specialists deliver certified, safe pulsed-current iontophoresis. Get a consultation online by our partner dermatologists and get treated locally at our hub. Choose an Intensive Launch Pass (6 sessions) or Monthly Maintenance, plus single-sachet topicals and blister-strip oral blockers.
             </p>
             <div>
               <Link to="/giftovate-oasis" className="link-arrow">

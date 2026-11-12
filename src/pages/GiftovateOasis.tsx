@@ -16,13 +16,13 @@ const GiftovateOasis = () => {
   const accessFeatures = [
     {
       icon: Zap,
-      title: "The Intensive Launch Pass (₦30,000)",
+      title: "The Intensive Launch Pass",
       description:
         "Get 6 clinical-grade iontophoresis sessions spread over 2 weeks (3 sessions per week). Our advanced pulsed-current microprocessors safely deactivate overactive eccrine sweat glands, bringing you down to a baseline of complete dryness.",
     },
     {
       icon: CalendarCheck,
-      title: "Monthly Dryness Maintenance (₦15,000 / Month)",
+      title: "Monthly Dryness Maintenance",
       description:
         "Preserve your dryness with a single, predictable top-up session per week (4 sessions a month) to keep your sweat glands dormant.",
     },
