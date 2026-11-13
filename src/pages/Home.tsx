@@ -249,7 +249,7 @@ const Home = () => {
           <div className="max-w-4xl">
             <p className="overline-label">THE AFRICAN BLIND SPOT IN DERMATOLOGY</p>
             <h1 className="mb-8">
-              Hyperhidrosis is not cosmetic. It is a{" "}
+              Hyperhidrosis: the{" "}
               <span className="accent-italic">silent medical crisis.</span>
             </h1>
           </div>
