@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import NewsletterSignup from "./NewsletterSignup";
 import logo from "@/assets/giftovate-logo.png";
 
 const Footer = () => {
   return (
+    <>
+    <NewsletterSignup />
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
@@ -45,6 +48,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
