@@ -25,7 +25,9 @@ export default function AssistantWidget() {
   const [err, setErr] = useState("");
   const [form, setForm] = useState({ full_name: "", phone: "", email: "", location: "", interest: INTERESTS[0], message: "" });
   const endRef = useRef<HTMLDivElement>(null);
-  useEffect(() => endRef.current?.scrollIntoView({ behavior: "smooth" }), [msgs, mode]);
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [msgs, mode]);
 
   async function send(text: string) {
     const t = text.trim();
